@@ -22,4 +22,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 https://github.com/gllgdabai/spider-admin
 
 ### 参考资料：
-http://renboo123.gitee.io/curryblog
+[库里博客](https://blog.csdn.net/YIZHILIUSHA2020/article/details/120906723?spm=1001.2101.3001.6650.6&utm_medium=distribute.wap_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-6-120906723-blog-106581347.wap_blog_relevant_default&depth_1-utm_source=distribute.wap_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-6-120906723-blog-106581347.wap_blog_relevant_default)
