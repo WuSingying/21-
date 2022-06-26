@@ -18,4 +18,8 @@ npm run build
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-### 参考资料：http://renboo123.gitee.io/curryblog
+### 21世纪历史网站--后台管理系统：
+https://github.com/gllgdabai/spider-admin
+
+### 参考资料：
+http://renboo123.gitee.io/curryblog
