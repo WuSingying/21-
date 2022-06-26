@@ -17,3 +17,5 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### 参考资料：http://renboo123.gitee.io/curryblog
