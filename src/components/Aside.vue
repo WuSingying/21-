@@ -1,7 +1,10 @@
 <template>
-    <el-tabs :tab-position="tabPosition" style="height: 500px " class="demo-tabs" stretch="true">
+    <el-tabs :tab-position="tabPosition" type="border-card" style="height:480px" class="demo-tabs" stretch="true">
         <ul v-infinite-scroll="load" class="infinite-list" style="height:100%; overflow: auto">
-        <el-tab-pane label="2000">2000年
+        <el-tab-pane label="2000">
+                <img src="../assets/zodiac/dragon.svg" class="zodiac">
+                <span class="year">2000年</span>
+
             <el-collapse v-model="activeNames" @change="handleChange">
                 <el-collapse-item title="1月" name="1">
                     <div style="margin-top:10px;">1月1日——被瑞士选民于1999年投票表决通过的新《瑞士宪法》正式实施。</div>
@@ -131,7 +134,9 @@
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2001">2001年
+        <el-tab-pane label="2001">
+            <img src="../assets/zodiac/snake.svg" class="zodiac">
+            <span class="year">2001年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
                     <div style="margin-top:10px;">1月1日——街机游戏《怒之铁拳》系列官网诞生。</div>
@@ -250,7 +255,9 @@
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2002">2002年
+        <el-tab-pane label="2002">
+            <img src="../assets/zodiac/horse.svg" class="zodiac">
+            <span class="year">2002年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
                     <div style="margin-top:10px;">1月1日——欧盟引进欧元纸钞和硬币。欧元成为比利时、德国、芬兰、法国、爱尔兰、意大利、卢森堡、荷兰、奥地利、葡萄牙和西班牙11个国家的唯一货币。</div>
@@ -440,7 +447,9 @@
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2003">2003年
+        <el-tab-pane label="2003">
+            <img src="../assets/zodiac/sheep.svg" class="zodiac">
+            <span class="year">2003年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
                     <div style="margin-top:10px;">1月1日——卢拉·达·席尔瓦上任巴西第27任总统。</div>
@@ -643,7 +652,9 @@
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2004">2004年
+        <el-tab-pane label="2004">
+            <img src="../assets/zodiac/monkey.svg" class="zodiac">
+            <span class="year">2004年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
                     <div style="margin-top:10px;">1月1日——时任日本首相小泉纯一郎于当日上午再次参拜了位于东京九段北的靖国神社。这是小泉纯一郎自2001年4月就任日本首相以来，不顾日本国内舆论和亚洲各国反对，第四次参拜靖国神社。</div>
@@ -896,7 +907,9 @@
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2005">2005年
+        <el-tab-pane label="2005">
+            <img src="../assets/zodiac/chook.svg" class="zodiac">
+            <span class="year">2005年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
                     <div style="margin-top:10px;">1月1日——内蒙古电视台少儿频道正式开播。</div>
@@ -1099,7 +1112,9 @@
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2006">2006年
+        <el-tab-pane label="2006">
+            <img src="../assets/zodiac/dog.svg" class="zodiac">
+            <span class="year">2006年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
                     <div style="margin-top:10px;">1月1日——中国政府网正式开通。</div>
@@ -1312,7 +1327,9 @@
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2007">2007年
+        <el-tab-pane label="2007">
+            <img src="../assets/zodiac/pig.svg" class="zodiac">
+            <span class="year">2007年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
                     <div style="margin-top:10px;">1月1日——江苏故事广播正式开播。</div>
@@ -1571,7 +1588,9 @@
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2008">2008年
+        <el-tab-pane label="2008">
+            <img src="../assets/zodiac/mouse.svg" class="zodiac">
+            <span class="year">2008年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
                     <div style="margin-top:10px;">1月1日——欧盟新成员塞浦路斯和马耳他改用欧元作为该国货币，使用欧元的国家数量增至15个。塞浦路斯英属基地区也开始使用欧元。</div>
@@ -1941,11 +1960,13 @@
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2009">2009年
+        <el-tab-pane label="2009">
+            <img src="../assets/zodiac/cow.svg" class="zodiac">
+            <span class="year">2009年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
                     <div style="margin-top:10px;">1月1日——《中华人民共和国营业税暂行条例》、《中华人民共和国消费税暂行条例》、《中华人民共和国增值税暂行条例》、《中华人民共和国循环经济促进法》正式施行。</div>
-                    <div style="margin-top:10px;">——国务院决定实施成品油税费改革，取消成品油价外征收的公路养路费、航道养护费、公路运输管理费、公路客货运附加费、水路运输管理费、水运客货运附加费等六项收费。</div>
+                    <div style="margin-top:10px;">1月1日——国务院决定实施成品油税费改革，取消成品油价外征收的公路养路费、航道养护费、公路运输管理费、公路客货运附加费、水路运输管理费、水运客货运附加费等六项收费。</div>
                     <div style="margin-top:10px;">1月1日——两院院士的津贴标准由原来每人每月200元改为每人每月1000元。</div>
                     <div style="margin-top:10px;">1月1日——中央人民广播电台老年之声正式开播；北京人民广播电台首都生活广播调整为故事广播。</div>
                     <div style="margin-top:10px;">1月1日——斯洛伐克正式加入了欧元区。</div>
@@ -2323,7 +2344,9 @@
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2010">2010年
+        <el-tab-pane label="2010">
+            <img src="../assets/zodiac/tiger.svg" class="zodiac">
+            <span class="year">2010年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
                     <div style="margin-top:10px;">1月1日——中国与东盟FTA（自由贸易协定）正式生效。这标志着中国—东盟自由贸易区正式启动。</div>
@@ -2740,639 +2763,2801 @@
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2011">2011年
+        <el-tab-pane label="2011">
+            <img src="../assets/zodiac/rabbit.svg" class="zodiac">
+            <span class="year">2011年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
-                    <div>1月1日——被瑞士选民于1999年投票表决通过的新《瑞士宪法》正式实施。</div>
-                    <div>1月1日——汉中音乐广播正式开播。</div>
+                    <div style="margin-top:10px;">1月1日——爱沙尼亚共和国正式加入欧元区。</div>
+                    <div style="margin-top:10px;">1月1日——中国中央电视台纪录频道（CCTV-9纪录）正式开播，央视其他频道正式调整频道呼号并在台标下方加注频道名称，新闻频道、少儿频道、音乐频道，除中央电视台高清综合频道(CCTV-5+前身)，海外戏曲频道、娱乐频道等保留原呼号外，分别加注序号13、14、15，同时中国中央电视台西班牙语国际频道的呼号由“CCTV-E”和法语国际频道的呼号由“CCTV-F”更名为“CCTV-Español”「西班牙语单词」和“CCTV-Français”「法语单词」。</div>
+                    <div style="margin-top:10px;">1月3日——上海729路公交车发生恶性抢劫事件。</div>
+                    <div style="margin-top:10px;">1月4日——1·4山东泰安持枪袭警事件。</div>
+                    <div style="margin-top:10px;">1月5日——美国新一届国会议员正式宣誓就职，共和党人约翰·博纳当选新任众议院议长。</div>
+                    <div style="margin-top:10px;">1月6日～日——国际消费电子展在美国西部城市拉斯韦加斯举行。</div>
+                    <div style="margin-top:10px;">1月7日～1月29日——2011年卡塔尔亚洲杯在卡塔尔举行。</div>
+                    <div style="margin-top:10px;">1月8日——中国长春、吉林市上空同时惊现冬日彩虹和幻日奇观，两道彩虹和三个“太阳”同时展现在城市上空。</div>
+                    <div style="margin-top:10px;">1月9日——应中国国务委员兼国防部长梁光烈邀请，美国国防部长罗伯特·盖茨对中国进行正式访问。</div>
+                    <div style="margin-top:10px;">1月11日——中国的新一代隐形战斗机——歼20试飞成功。</div>
+                    <div style="margin-top:10px;">1月12日——中国动画片《秦汉英雄传》首播</div>
+                    <div style="margin-top:10px;">1月14日——2010年度国家科学技术奖励大会在北京人民大会堂举行。中科院院士、中国工程院院士师昌绪和中国工程院院士王振义获2010年度国家最高科学技术奖。</div>
+                    <div style="margin-top:10px;">1月16日——第68届金球奖颁奖。</div>
+                    <div style="margin-top:10px;">1月17日～1月30日——2011年澳大利亚网球公开赛在澳大利亚城市墨尔本举行。</div>
+                    <div style="margin-top:10px;">1月18日～21日——应美国总统奥巴马邀请，时任国家主席胡锦涛对美国进行国事访问，就两国关系未来发展提出五点建议。两国发表联合声明，确认双方将共同努力建设相互尊重、互利共赢的中美合作伙伴关系。</div>
+                    <div style="margin-top:10px;">1月19日——由知名动作导演陈木胜执导，刘德华、成龙、谢霆锋、范冰冰等主演的功夫电影《新少林寺》上映。</div>
+                    <div style="margin-top:10px;">1月19日——1·19湖北武汉交通肇事案。</div>
+                    <div style="margin-top:10px;">1月21日——微信发布针对iPhone用户的1.0测试版。3天之后（1月24日），发布了针对Android用户的1.0测试版。</div>
+                    <div style="margin-top:10px;">1月22日——尼日利亚共和国举行总统大选。</div>
+                    <div style="margin-top:10px;">1月24日——中国拥有完全自主知识产权的世界单机容量最大水轮发电机组在向家坝电站进入正式安装阶段。</div>
+                    <div style="margin-top:10px;">1月24日——电视剧《爱情公寓2》于山东卫视，广东卫视，宁夏卫视，与山东教育电视台首播。</div>
+                    <div style="margin-top:10px;">1月26日至30日——第41届达沃斯世界经济论坛年会。</div>
+                    <div style="margin-top:10px;">1月26日——由王晓明执导，唐国强、孙维民、陈建斌、蒋林静、郑国霖、过齐鸣、马晓伟等主演的革命史诗剧《五星红旗迎风飘扬》在央视一套黄金时段首播。</div>
+                    <div style="margin-top:10px;">1月27日～2月6日——25届世界大学生冬季运动会在土耳其埃尔祖鲁姆举行。</div>
+                    <div style="margin-top:10px;">1月28日——美国“挑战者”号航天飞机失事25周年。</div>
+                    <div style="margin-top:10px;">1月29日――2011年卡塔尔亚洲杯决赛中，日本队凭借李忠成在加时赛的一记制胜球以1-0战胜澳大利亚队，第四次夺得亚洲杯冠军。</div>
+                    <div style="margin-top:10px;">1月30日～2月6日——2011年阿斯塔纳-阿拉木图亚洲冬季运动会在哈萨克斯坦阿斯塔纳和阿拉木图举行。这是哈萨克斯坦首次承办洲际体育赛事。</div>
+                    <div style="margin-top:10px;">1月31日――由李慧珠执导，杨幂、冯绍峰、何晟铭、佟丽娅等主演的古装穿越爱情剧《宫锁心玉》在湖南卫视黄金时段首播。</div>
                 </el-collapse-item>
                 <el-collapse-item title="2月" name="2">
-                    <div>控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；</div>
-                    <div>页面反馈：操作后，通过页面元素的变化清晰地展现当前状态。</div>
+                    <div style="margin-top:10px;">2月1日——《商品房屋租赁管理办法》开始施行。</div>
+                    <div style="margin-top:10px;">2月2日～6日——2011年斯诺克德国大师赛在柏林进行。</div>
+                    <div style="margin-top:10px;">2月5日——美俄新的核裁军条约生效。</div>
+                    <div style="margin-top:10px;">2月7日——苏丹总统巴希尔正式宣布接受苏丹南部公投最后结果——苏丹南方与北方分离。</div>
+                    <div style="margin-top:10px;">2月10日——国务院在北京召开全国粮食生产电视电话会议，温家宝作重要讲话。</div>
+                    <div style="margin-top:10px;">2月11日——埃及总统穆巴拉克下台，埃及将会由军队管治直至下次选举为止。</div>
+                    <div style="margin-top:10px;">2月12日——铁道部党组书记、部长刘志军涉嫌严重违纪接受调查。</div>
+                    <div style="margin-top:10px;">2月13日——埃及武装部队最高委员会宣布解散人民议会和协商会议，暂时中止现行宪法，并在6个月后举行总统和议会选举。</div>
+                    <div style="margin-top:10px;">2月14日～2月17日——移动通信世界大会在巴塞罗那举行。</div>
+                    <div style="margin-top:10px;">2月14日——巴西传奇球星罗纳尔多宣布退役。</div>
+                    <div style="margin-top:10px;">2月16日——温家宝主持召开国务院常务会议，研究部署促进稀土行业持续健康发展的政策措施。</div>
+                    <div style="margin-top:10px;">2月18日——二十国集团财长和央行行长会议在法国举行。</div>
+                    <div style="margin-top:10px;">2月19日～23日——中共中央在中央党校举行省部级主要领导干部社会管理及其创新专题研讨班。胡锦涛在开班式上发表讲话，阐述加强和创新社会管理的重要性和紧迫性，提出新形势下加强和创新社会管理、做好群众工作的总体思路和重点任务。</div>
+                    <div style="margin-top:10px;">2月22日——新西兰南岛最大城市克赖斯特彻奇发生6.3级地震，数百人伤亡。</div>
+                    <div style="margin-top:10px;">2月27日——第83届奥斯卡颁奖典礼。</div>
+                    <div style="margin-top:10px;">2月28日——由刘仕裕、颢然、谭俏执导，王新军、徐亮、尔玛依娜、李嘉明等主演的著名抗日神剧《抗日奇侠》在太原电视台影视频道首播。</div>
                 </el-collapse-item>
                 <el-collapse-item title="3月" name="3">
-                    <div>简化流程：设计简洁直观的操作流程；</div>
-                    <div>清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；</div>
-                    <div>帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</div>
+                    <div style="margin-top:10px;">3月1日——利比亚人权理事会成员国资格被中止。</div>
+                    <div style="margin-top:10px;">3月3日——中国召开政协十一届四次会议、十一届全国人大四次会议（“两会”）于2011年3月5日在北京召开。</div>
+                    <div style="margin-top:10px;">3月7日——中国香港证券交易所将延长与A股重叠交易时间，交易时段由原先的4小时延长至5小时。</div>
+                    <div style="margin-top:10px;">3月10日——中国云南省盈江县发生5.8级地震，25人遇难，250人受伤。</div>
+                    <div style="margin-top:10px;">3月11日——北京时间13时46分（当地时间14时46分），日本宫城县以东太平洋海域（北纬38.1度，东经142.6度）发生里氏9.0级地震并引发海啸，导致日本福岛第一核电站1号与3号机组发生氢气爆炸，引发世界范围内的“核危机”。</div>
+                    <div style="margin-top:10px;">3月15日——福岛第一核电站2号机组爆炸，负责运营的东京电力开始撤离部分工作人员。</div>
+                    <div style="margin-top:10px;">3月18日——美国水星探测卫星信使号预计进入水星轨道。</div>
+                    <div style="margin-top:10px;">3月19日——北约轰炸利比亚，利比亚战争全面爆发。</div>
+                    <div style="margin-top:10px;">3月21日——全球知名微博网站Twitter迎来自己5周岁的生日。</div>
+                    <div style="margin-top:10px;">3月28日——中国西藏自治区各族各界干部群众欢庆“西藏百万农奴解放纪念日”。</div>
                 </el-collapse-item>
                 <el-collapse-item title="4月" name="4">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">4月1日——《化妆品产品技术要求规范》施行，化妆品产品技术除了要符合国家有关法律法规、标准规范外，还应符合其文本格式的规定。</div>
+                    <div style="margin-top:10px;">4月4日——由于正编剧，吴锦源执导，林心如主演的古装情感剧《美人心计》在安徽卫视、山东卫视、河南卫视、东南卫视、深圳卫视五家卫视黄金时段首播。</div>
+                    <div style="margin-top:10px;">4月10日——《新闻纪实》在CCTV-13开播。</div>
+                    <div style="margin-top:10px;">4月10日——中国成功发射第八颗北斗导航卫星（I3）。</div>
+                    <div style="margin-top:10px;">4月11日——4·11北京居民楼爆炸事故。</div>
+                    <div style="margin-top:10px;">4月11日——4·11浙江苍南民房火灾。</div>
+                    <div style="margin-top:10px;">4月12日——福岛第一核电站事故被定为7级，与切尔诺贝利核事故相同。</div>
+                    <div style="margin-top:10px;">4月12日——2011年亚洲举重锦标赛在安徽铜陵举行。</div>
+                    <div style="margin-top:10px;">4月14日——玉树地震1周年祭。</div>
+                    <div style="margin-top:10px;">4月15日——博鳌亚洲论坛2011年年会在海南博鳌开幕。</div>
+                    <div style="margin-top:10px;">4月17日——世界一级方程式锦标赛（F1）中国大奖赛举行。</div>
+                    <div style="margin-top:10px;">4月19日——古巴共产党第六次全国代表大会闭幕，劳尔·卡斯特罗正式当选古共中央委员会第一书记。</div>
+                    <div style="margin-top:10px;">4月21日——2011上海国际汽车展开幕，规模将超过20万平方米。</div>
+                    <div style="margin-top:10px;">4月22日——西安市中级人民法院对被告人药家鑫故意杀人案作出一审判决，以故意杀人罪判处药家鑫死刑，剥夺政治权利终身，并处赔偿被害人家属经济损失45498.5元。</div>
+                    <div style="margin-top:10px;">4月24日——中国清华大学百年校庆。</div>
+                    <div style="margin-top:10px;">4月25日——4·25湖南长沙交通肇事案。</div>
+                    <div style="margin-top:10px;">4月27日——中国台湾阿里山森林铁路神木支线发生一起小火车翻车事故：一列挂有8节车厢的小火车从神木站开往阿里山站，行经70公里250米处，突然有棵大楠木枝干断裂，刚好击中最后一节车厢，结果造成4节车厢翻覆。造成5人遇难108人受伤，事故原因经台湾当局查实是树木腐朽自然断裂导致。</div>
+                    <div style="margin-top:10px;">4月28日——国家统计局局长马建堂宣布，第六次人口普查数据显示，全国总人口为137053.6875万人；城镇人口为66557万人，占总人口的49.68%，乡村人口为67415万人，占50.32%。</div>
+                    <div style="margin-top:10px;">4月28日~10月22日——2011年世界园艺博览会在西安举行。</div>
+                    <div style="margin-top:10px;">4月29日——英国威廉王子举行大婚，世纪婚礼引发全球关注。</div>
+                    <div style="margin-top:10px;">4月30日后——欧盟市场或对中国中药企业完全关闭。</div>
+                    <div style="margin-top:10px;">4月30日——利比亚领导人卡扎菲的最小儿子赛义夫·阿拉伯在北约空袭中丧生。</div>
                 </el-collapse-item>
                 <el-collapse-item title="5月" name="5">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">5月1日——中国上海世博会举办1周年纪念日。</div>
+                    <div style="margin-top:10px;">5月1日——吉林省通化市东昌区如家酒店起火，共造成10人死亡，35人受伤。</div>
+                    <div style="margin-top:10px;">5月1日——美国总统奥巴马1日晚突然召开记者会，正式宣布911事件的幕后总策划人、基地组织头目本·拉登已经死亡。这是美国官方首次公开确认本·拉登的死讯。</div>
+                    <div style="margin-top:10px;">5月3日——刚果（金）一艘船沉没，106人失踪。</div>
+                    <div style="margin-top:10px;">5月9日——2011年俄罗斯红场大阅兵。</div>
+                    <div style="margin-top:10px;">5月11日——第64届戛纳电影节举行。</div>
+                    <div style="margin-top:10px;">5月12日——第三个中国防灾减灾日，也是中国四川汶川地震3周年祭。</div>
+                    <div style="margin-top:10px;">5月13日——巴基斯坦西北部贾尔瑟达地区一个边防军训练学院附近发生炸弹袭击，造成80多人死亡，140多人受伤，巴塔武装宣布对袭击负责，并称这是为本拉登复仇的首个行动。</div>
+                    <div style="margin-top:10px;">5月14日——国际货币基金组织主席卡恩在纽约被捕，理由是被指控对一名酒店女佣进行性侵犯。</div>
+                    <div style="margin-top:10px;">5月15日——5·15江苏南京交通肇事案。</div>
+                    <div style="margin-top:10px;">5月20日——陕西省高级人民法院对被告人药家鑫故意杀人一案进行了二审公开开庭审理并宣判，依法裁定驳回药家鑫上诉，维持原判。</div>
+                    <div style="margin-top:10px;">5月20日～26日——应中共中央总书记、国家主席胡锦涛的邀请，朝鲜劳动党总书记、国防委员会委员长金正日对我国进行非正式访问，并在北京、黑龙江、吉林参观考察。</div>
+                    <div style="margin-top:10px;">5月21日——中华人民共和国与巴基斯坦建交60周年纪念。</div>
+                    <div style="margin-top:10px;">5月22日——第四次中日韩领导人会议在东京举行。</div>
+                    <div style="margin-top:10px;">5月23日——西藏和平解放60周年。</div>
+                    <div style="margin-top:10px;">5月23日——巴基斯坦卡拉奇的迈赫兰海军基地遭塔利班武装分子袭击。</div>
+                    <div style="margin-top:10px;">5月25日——在董存瑞烈士陵园内举行“董存瑞牺牲63周年纪念会”。</div>
+                    <div style="margin-top:10px;">5月27日——全明星代际互动节目《年代秀》在深圳卫视首播。</div>
                 </el-collapse-item>
                 <el-collapse-item title="6月" name="6">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">6月2日——日偏食。</div>
+                    <div style="margin-top:10px;">6月4日——法国网球公开赛女单决赛，中国金花李娜以2:0的比分横扫赛会卫冕冠军，来自意大利的斯齐亚沃尼。两盘比分为6:4和7:6（0）。她是法网100多年的历史上首位来自亚洲的单打冠军，也是亚洲历史上首位大满贯单打冠军。</div>
+                    <div style="margin-top:10px;">6月9日——上午，中国渔船在南沙遭到越南武装舰船的非法驱赶。</div>
+                    <div style="margin-top:10px;">6月10日——阳江虐妻案发生，经媒体披露后引发社会强烈关注。</div>
+                    <div style="margin-top:10px;">6月12日——达拉斯独行侠队（旧译达拉斯小牛队）在2010-11赛季NBA总决赛第六场比赛中，客场以105-95击败迈阿密热火队，从而以4-2的总比分历史上首次夺得总冠军。</div>
+                    <div style="margin-top:10px;">6月12日至20日——时任国家主席胡锦涛应邀对哈萨克斯坦、俄罗斯、乌克兰进行国事访问，并出席上海合作组织阿斯塔纳峰会、第十五届圣彼得堡国际经济论坛。</div>
+                    <div style="margin-top:10px;">6月13日——越南海军在其中部海岸附近某海域举行实弹演习，加剧南海局势紧张。</div>
+                    <div style="margin-top:10px;">6月14日——美国联合菲律宾、印度尼西亚等六个东盟国家，在南海周边的马六甲海峡、西里伯斯海和苏禄海举行持续10天联合军演。</div>
+                    <div style="margin-top:10px;">6月15日——由韩三平、黄建新执导，刘烨、陈坤、张嘉益、冯远征等主演的建党90周年献礼影片《建党伟业》正式上映。</div>
+                    <div style="margin-top:10px;">6月15日——上海合作组织成立10周年。</div>
+                    <div style="margin-top:10px;">6月15日——中国最大的海巡航赴新加坡访问，航线从北向南贯穿整个南海，并在南海海域进行维权巡航。</div>
+                    <div style="margin-top:10px;">6月15日——深圳地铁罗宝线西延段（深大-机场东）开通运营，复名为“深圳地铁1号线”。</div>
+                    <div style="margin-top:10px;">6月16日——深圳地铁4号线二期工程（少年宫-清湖）开通运营。</div>
+                    <div style="margin-top:10px;">6月16日——中国国家主席胡锦涛和俄罗斯总统梅德韦杰夫在莫斯科签署《中华人民共和国和俄罗斯联邦关于当前国际形势和重大国际问题的联合声明》。</div>
+                    <div style="margin-top:10px;">6月19日～8月2日——香港进行人口普查。</div>
+                    <div style="margin-top:10px;">6月21日——“激情广场”爱国歌曲大家唱大型文艺演出活动在河南濮阳举行。演出过程中，河南濮阳基层官员王留聚因冲上舞台强搂著名女高音歌唱家宋祖英的肩膀，被认定扰乱演出秩序。王留聚随后被拘留，同时被免职。亦由此成为网络红人。</div>
+                    <div style="margin-top:10px;">6月21日——解放军南海舰队军演。</div>
+                    <div style="margin-top:10px;">6月21日——抚顺矿业集团老虎台矿发生一起水害事故，造成3人死亡，2人轻伤，直接经济损失272.7万元。</div>
+                    <div style="margin-top:10px;">6月22日——深圳地铁5号线一期工程通车运营。</div>
+                    <div style="margin-top:10px;">6月25日～7月4日——2011年世界夏季特殊奥林匹克运动会在希腊雅典举行。</div>
+                    <div style="margin-top:10px;">6月28日——中共中央政治局就中国共产党保持和发展党的先进性研究进行第三十次集体学习。胡锦涛强调要深刻认识和充分运用党的建设历史经验，不断推进新形势下党的先进性建设。</div>
+                    <div style="margin-top:10px;">6月28日——深圳地铁2号线二期工程和深圳地铁3号线二期工程通车运营。</div>
+                    <div style="margin-top:10px;">6月29日—— 庆祝中国共产党成立90周年文艺晚会《我们的旗帜》举行。胡锦涛等党和国家领导人出席观看晚会，与首都各界群众共同庆贺中国共产党九十华诞。</div>
+                    <div style="margin-top:10px;">6月30日——京沪高速铁路通车。</div>
                 </el-collapse-item>
                 <el-collapse-item title="7月" name="7">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">7月1日——庆祝中国共产党成立90周年大会在北京人民大会堂隆重举行。中共中央总书记胡锦涛在会上发表重要讲话，回顾中国共产党90年的光辉历程和取得的伟大成就，总结党和人民创造的宝贵经验，提出新的历史条件下提高党的建设科学化水平的目标任务，阐述在新的历史起点上把中国特色社会主义伟大事业全面推向前进的大政方针。</div>
+                    <div style="margin-top:10px;">7月1日——中国人民解放军第二炮兵成立45周年。</div>
+                    <div style="margin-top:10px;">7月1日——青藏铁路通车5周年。</div>
+                    <div style="margin-top:10px;">7月1日——盛光祖对中国高铁全面降速降标。</div>
+                    <div style="margin-top:10px;">7月1日——香港回归14周年</div>
+                    <div style="margin-top:10px;">7月2日——中海油渤海蓬莱19－3油田发生溢油事故被披露。</div>
+                    <div style="margin-top:10px;">7月4日――2011年世界夏季特殊奥林匹克运动会正式宣布结束</div>
+                    <div style="margin-top:10px;">7月5日——北京地铁四号线动物园站自动扶梯发生故障，致使一人死亡，30人伤。</div>
+                    <div style="margin-top:10px;">7月8日——百度百科“2011大学生百科知识大赛”正式启动。</div>
+                    <div style="margin-top:10px;">7月9日——南苏丹共和国正式建国。</div>
+                    <div style="margin-top:10px;">7月10日——有百年历史的《世界新闻报》因窃听丑闻停刊。</div>
+                    <div style="margin-top:10px;">7月12日——海王星首次绕太阳公转一圈。海王星距离太阳约28亿英里(约合45亿公里)，围绕太阳公转一圈需要165个地球年，它于7月12日国际标准时22:27(北京时间7月13日6:27)回到了在1846年被发现时相同的轨道位置。</div>
+                    <div style="margin-top:10px;">7月13日——北京申奥成功10周年。</div>
+                    <div style="margin-top:10px;">7月15～25日——中国画画家、木刻版画家、漫画家与美术活动家朱宣咸的“世纪回眸——朱宣咸作品故乡行邀请展”，在浙江省台州市举行。7月15日，展览开幕式结束后召开了“朱宣咸作品研讨会”。</div>
+                    <div style="margin-top:10px;">7月16日～31日——第14届国际泳联世界锦标赛在中国上海举行。</div>
+                    <div style="margin-top:10px;">7月16日——由李平、丁仰国执导，李晟、海陆、张睿、李佳航等主演的古装言情偶像剧 《新还珠格格》在湖南卫视黄金时段首播。</div>
+                    <div style="margin-top:10px;">7月17日——2011年德国女足世界杯决赛，日本队两度扳平比分并进入点球赛，最终以总比分5-3战胜美国队获得冠军，创造历史成为首支夺得女足世界杯冠军的亚洲球队，亦是继美国、德国和挪威后第四支夺此殊荣的冠军之师。</div>
+                    <div style="margin-top:10px;">7月17日——以习近平为团长的中央代表团出席西藏和平解放60周年庆祝活动。</div>
+                    <div style="margin-top:10px;">7月20日——中国著名篮球运动员的姚明于上海举行的个人新闻发布会上，正式宣布退役。</div>
+                    <div style="margin-top:10px;">7月22日——京珠高速客车燃烧事故。</div>
+                    <div style="margin-top:10px;">7月22日——挪威首都奥斯陆市中心发生爆炸，首相官邸和数栋政府办公楼受损；犯罪嫌疑人布雷维克在奥斯陆郊外的于特岛向一个青少年夏令营举枪扫射，两起事件共造成77人死亡（挪威爆炸枪击事件）。</div>
+                    <div style="margin-top:10px;">7月23日——北京至福州的D301次列车在行驶至温州双屿路段时，与杭州开往福州的D3115次列车追尾，D301次列车4节车厢从高架桥上掉落，造成40人死亡、192人受伤（详见7·23甬温线特别重大铁路交通事故）。</div>
+                    <div style="margin-top:10px;">7月23日——厦门远华特大走私案首要犯罪嫌疑人赖昌星被加拿大有关司法部门遣返回国。</div>
+                    <div style="margin-top:10px;">7月26日——德国宣告肠出血性大肠杆菌疫情结束，共致50人死亡。</div>
+                    <div style="margin-top:10px;">7月27日——中国国防部首次证实正在利用一艘废旧航空母舰平台进行改造，用于科研试验和训练。</div>
+                    <div style="margin-top:10px;">7月27日——我国成功发射第九颗北斗导航卫星（I4）。</div>
+                    <div style="margin-top:10px;">7月27日——美国参议院于当日举行表决，一致批准现任商务部长骆家辉出任美国驻华大使，正式成为美国历史上首位华裔驻华大使。</div>
+                    <div style="margin-top:10px;">7月28日——唐山大地震35周年祭。</div>
+                    <div style="margin-top:10px;">7月28日——重庆地铁一号线通车。</div>
+                    <div style="margin-top:10px;">7月31日——中国小将孙杨在男子1500米自由泳比赛中获得冠军并打破世界纪录，成绩为14分34秒14。</div>
+                    <div style="margin-top:10px;">7月31日——“中国红十字会总会捐赠信息发布平台”上线试运行。</div>
                 </el-collapse-item>
                 <el-collapse-item title="8月" name="8">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">8月1日——中国《医疗卫生服务单位信息公开管理办法（试行）》、《网络游戏管理暂行办法》、新修订的《中国人民解放军现役士兵服役条例》、《无居民海岛使用金征收使用管理办法》开始实施。</div>
+                    <div style="margin-top:10px;">8月2日——由鞠觉亮执导，张涵予、吕良伟、李宗翰等主演的的新版《水浒传》在东方卫视、山东卫视、天津卫视、安徽卫视四家卫视黄金时段开始首轮上星播出。</div>
+                    <div style="margin-top:10px;">8月3日——皇家马德里在广州天河体育场进行的一场友谊赛中，以7-1大胜广州恒大。</div>
+                    <div style="margin-top:10px;">8月3日——埃及前总统穆巴拉克接受审判。</div>
+                    <div style="margin-top:10px;">8月5日——国际评级机构标普将美国长期主权信用评级由“AAA”降至“AA+”，评级展望负面，这是美国历史上首次失去AAA信用评级。</div>
+                    <div style="margin-top:10px;">8月6日——英国多地爆发骚乱。</div>
+                    <div style="margin-top:10px;">8月6日—— 一架北约直升机在阿富汗登吉山谷被塔利班击落，38人丧生。</div>
+                    <div style="margin-top:10px;">8月7日——舟曲泥石流1周年祭。</div>
+                    <div style="margin-top:10px;">8月8日——第三个中国全民健身日。</div>
+                    <div style="margin-top:10px;">8月11日——新疆克孜勒苏柯尔克孜自治州阿图什市、喀什地区伽师县交界处发生5.8级地震。</div>
+                    <div style="margin-top:10px;">8月12日～23日——第26届世界大学生运动会在中国深圳举行。</div>
+                    <div style="margin-top:10px;">8月14日——中国国家男子足球队主教练聘任签约仪式在北京万达索菲特大饭店举行，发布会上，足管中心主任韦迪正式宣布，西班牙教头卡马乔正式签约成为主帅，任期为3年半，由此成为中国男足历史上第七位外籍主帅。</div>
+                    <div style="margin-top:10px;">8月18日——酒泉卫星发射中心“长征二号丙”运载火箭发射“实践十一号04星”，火箭在飞行过程中发生故障，卫星未能进入预定轨道。</div>
+                    <div style="margin-top:10px;">8月18日——“蛟龙”号深海载人潜水器，完成5000米级海试回国。</div>
+                    <div style="margin-top:10px;">8月23日——第十届中国互联网大会在北京开幕。</div>
+                    <div style="margin-top:10px;">8月26日——日本首相菅直人正式辞职。</div>
+                    <div style="margin-top:10px;">8月27日～9月4日——2011年大邱世界田径锦标赛在韩国大邱举行。</div>
+                    <div style="margin-top:10px;">8月28日——江西省南昌市固定电话升8位</div>
+                    <div style="margin-top:10px;">8月28日——辽宁省抚顺市、铁岭市固定电话与沈阳市共用024区号，取消0413区号和0410区号，电话号码升8位</div>
+                    <div style="margin-top:10px;">8月30日——日本野田佳彦就任新首相。</div>
+                    <div style="margin-top:10px;">8月30日——俄罗斯车臣共和国首府格罗兹尼发生两起自杀式炸弹袭击事件，包括5名警察在内的7人死亡，18人受伤。</div>
+                    <div style="margin-top:10px;">8月31日——日本著名女歌手滨崎步的个人第二张迷你专辑《FIVE》（中文译名《5步曲》）发行，使滨崎步成为日本乐坛历史上唯一出道连续13年专辑夺冠，并拥有18张冠军专辑的女歌手。</div>
                 </el-collapse-item>
                 <el-collapse-item title="9月" name="9">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">9月1日——商务部等16部门和单位在北京联合举行新闻发布会，宣布2011年“诚信兴商宣传月”活动正式启动，以“诚信兴商，放心消费”为主题，进一步推进社会信用体系建设。</div>
+                    <div style="margin-top:10px;">9月1日——按照《非金融机构支付服务管理办法》规定，包括第三方支付在内的非金融机构须在2011年9月1日前申领《支付业务许可证》，逾期未能取得许可证者将被禁止继续从事支付业务。</div>
+                    <div style="margin-top:10px;">9月6日——李天一打人事件发生，经媒体披露后成为舆论焦点。</div>
+                    <div style="margin-top:10px;">9月10日～19日——第九届全国少数民族传统体育运动会将在中国贵阳举行。</div>
+                    <div style="margin-top:10px;">9月10日——由李国立执导，由刘诗诗、吴奇隆、郑嘉颖、袁弘、林更新等主演的古装穿越爱情剧《步步惊心》在湖南卫视黄金时段首播。</div>
+                    <div style="margin-top:10px;">9月11日——9·11事件十周年，届时9·11事件纪念馆将对遇难者亲属开放。</div>
+                    <div style="margin-top:10px;">9月12日～14日——2011年夏季达沃斯论坛在大连举行。</div>
+                    <div style="margin-top:10px;">9月14日——河南巩义市涉村镇东大街发生一起精神病人持斧头行凶伤人案件，当场造成4人死亡、2人重伤，2名伤者经抢救无效死亡（9·14河南巩义砍人事件）。</div>
+                    <div style="margin-top:10px;">9月16日——西安市第一条地铁线——西安地铁2号线正式开通，标志着西安进入地铁时代</div>
+                    <div style="margin-top:10px;">9月18日——九·一八事件80周年纪念日。</div>
+                    <div style="margin-top:10px;">9月25日——《新闻联播》画面配置改版，同时由欧阳夏丹和郎永淳首次主持。</div>
+                    <div style="margin-top:10px;">9月27日——上海地铁10号线老西门站发生两辆地铁追尾事故，伤员271人。</div>
+                    <div style="margin-top:10px;">9月28日——广州恒大提前四轮夺得2011年中国足球超级联赛冠军，也因此成为了第一支上演中超版 “凯泽斯劳滕神话”的球队。</div>
+                    <div style="margin-top:10px;">9月29日——21时16分03秒，中国首个空间实验室天宫一号在酒泉卫星发射中心发射成功。</div>
                 </el-collapse-item>
                 <el-collapse-item title="10月" name="10">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">10月1日——中华人民共和国62周年华诞。</div>
+                    <div style="margin-top:10px;">10月5日——苹果公司联合创始人史蒂夫·乔布斯逝世，享年56岁。</div>
+                    <div style="margin-top:10px;">10月5日——上午，“华平号”和“玉兴8号” 两艘商船在湄公河金三角水域遭遇袭击。经证实，“华平号”上的6名中国船员和“玉兴8号”上的7名中国船员，共13人，已全部遇难。</div>
+                    <div style="margin-top:10px;">10月7日——16时许滨保高速天津界内发生一起重特大交通事故，造成35人死亡。</div>
+                    <div style="margin-top:10px;">10月8日～16日——第43届世界体操锦标赛在日本东京举行。</div>
+                    <div style="margin-top:10px;">10月10日——辛亥革命100周年。</div>
+                    <div style="margin-top:10px;">10月11日～19日——第八届全国残疾人运动会在浙江举行。</div>
+                    <div style="margin-top:10px;">10月11日——美国国会参议院通过《2011年货币汇率监督改革法案》。</div>
+                    <div style="margin-top:10px;">10月12日——《曲苑杂坛》正式停播，退出CCTV-3。</div>
+                    <div style="margin-top:10px;">10月12日——美国洛杉矶南部一家美容院发生枪击案，导致8人死亡，一人重伤。</div>
+                    <div style="margin-top:10px;">10月13～18日——法国巴黎国际汽车工业展览拉开序幕，预计规模7达10000平方米以上。</div>
+                    <div style="margin-top:10px;">10月14日——2011中国国际通用航空大会在陕西蒲城举行飞行表演时，一架飞豹战机出现意外坠机。</div>
+                    <div style="margin-top:10px;">10月15日～17日——2011年世界设计大会在中国台湾台北举办。</div>
+                    <div style="margin-top:10px;">10月15日～18日——中国共产党第十七届中央委员会第六次全体会议在京召开，审议通过《中共中央关于深化文化体制改革、推动社会主义文化大发展大繁荣若干重大问题的决定》。《决定》全面贯彻党的十七大精神，认真总结文化改革发展取得的丰硕成果和宝贵经验，明确了文化改革发展的指导思想、重要方针、目标任务、政策举措，是新形势下推进文化改革发展的纲领性文件。</div>
+                    <div style="margin-top:10px;">10月16日～25日——第七届全国城市运动会在南昌举行。</div>
+                    <div style="margin-top:10px;">10月21日～26日——第八届中国—东盟博览会在南宁举行。重点主题为“环保合作”，主题国为马来西亚。</div>
+                    <div style="margin-top:10px;">10月22日——红军长征胜利日，红军长征胜利75周年。</div>
                 </el-collapse-item>
                 <el-collapse-item title="11月" name="11">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">11月——中国香港特别行政区将举行区议会选举，胜出的民选区议员将有机会角逐2012年9月香港立法会选举五席新增的区议会功能组别议席。</div>
+                    <div style="margin-top:10px;">11月1日——神舟八号成功发射升空。</div>
+                    <div style="margin-top:10px;">11月3日——凌晨1:36，神舟八号和天宫一号首次空间交会对接成功，中国从此成为继美俄之后世界上第三个掌握空间交会对接技术的国家。</div>
+                    <div style="margin-top:10px;">11月3日——11·3河南义马煤矿事故。</div>
+                    <div style="margin-top:10px;">11月3日至4日——G20峰会在法国戛纳召开，国家主席胡锦涛出席并发表重要讲话。</div>
+                    <div style="margin-top:10px;">11月5日——由澄丰执导，殷桃、刘晓庆、斯琴高娃、赵文瑄、唐国强、余少群、秦海璐等主演的古装历史剧《武则天秘史》在湖南卫视黄金时段首播。</div>
+                    <div style="margin-top:10px;">11月10日——第18届亚太经合组织（APEC）财长会议在美国夏威夷举行。</div>
+                    <div style="margin-top:10px;">11月11日——神棍日，这一天成了本世纪“1”最多的日子。于是，本世纪“最大的”光棍的称号，当之无愧是那些在2011年仍然单身的人，他们被戏称为“神棍”。电影《11-11-11》据称也会在本日上映。</div>
+                    <div style="margin-top:10px;">11月11日——中国台湾男歌手周杰伦的个人第十一张原创专辑《惊叹号》发行。</div>
+                    <div style="margin-top:10px;">11月11日至15日——第27届亚洲国际集邮展览将在无锡太湖国际会展中心举行，展览将分竞赛性和非竞赛性。</div>
+                    <div style="margin-top:10px;">11月14日——11·14西安高新区爆炸事故。</div>
+                    <div style="margin-top:10px;">11月16日——11·16甘肃正宁县特大交通事故。</div>
+                    <div style="margin-top:10px;">11月19日——第八届中国国际园林博览会在重庆开幕。</div>
+                    <div style="margin-top:10px;">11月20日——爱尔兰流行男子团体西域男孩（westlife）宣布解散。</div>
                 </el-collapse-item>
                 <el-collapse-item title="12月" name="12">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">12月2日——我国成功发射第十颗北斗导航卫星（I5）。</div>
+                    <div style="margin-top:10px;">12月4日——俄罗斯举行国家杜马议员选举。</div>
+                    <div style="margin-top:10px;">12月10日——俄罗斯多地发生大规模抗议活动，抗议国家杜马选举存在舞弊。</div>
+                    <div style="margin-top:10px;">12月11日——中国加入世界贸易组织10周年。</div>
+                    <div style="margin-top:10px;">12月12日——西安事变爆发75周年。</div>
+                    <div style="margin-top:10px;">12月12日——加拿大宣布退出《京都议定书》。</div>
+                    <div style="margin-top:10px;">12月14日——美国总统奥巴马宣布，最后一批美军将在未来几天内“昂首挺胸”地撤离伊拉克，至此长达九年的伊拉克战争将正式宣告结束。</div>
+                    <div style="margin-top:10px;">12月16日——俄罗斯正式加入世界贸易组织。</div>
+                    <div style="margin-top:10px;">12月16日——张艺谋执导的战争电影《金陵十三钗》首映。</div>
+                    <div style="margin-top:10px;">12月17日——朝鲜最高领导人金正日逝世，其子金正恩接任朝鲜最高领导人。</div>
+                    <div style="margin-top:10px;">12月18日——由杨阳执导，黄志忠、果静林、任泉、甘婷婷、甄锡等主演的战争题材剧《新亮剑》在浙江卫视黄金时段独家首播。</div>
+                    <div style="margin-top:10px;">12月18日——窑街煤电集团公司金河煤矿发生冒顶事故，共造成5人死亡，3人受伤。</div>
+                    <div style="margin-top:10px;">12月18日——美国正式宣布驻伊美军任务结束，部队撤离伊拉克。</div>
+                    <div style="margin-top:10px;">12月20日——时任中共中央总书记、国家主席、中央军委主席胡锦涛前往朝鲜驻华使馆，沉痛吊唁朝鲜劳动党总书记、国防委员会委员长、朝鲜人民军最高司令官金正日逝世。吴邦国、李长春、习近平等一同前往吊唁。</div>
+                    <div style="margin-top:10px;">12月20日——时任国务院总理温家宝签署613号国务院令，公布了《招标投标法实施条例》，自2012年2月1日正式实施。</div>
+                    <div style="margin-top:10px;">12月20日～24日——时任国家副主席习近平应邀对越南和泰国进行正式访问。</div>
+                    <div style="margin-top:10px;">12月24日——利比亚独立50周年。</div>
+                    <div style="margin-top:10px;">12月25日——苏联解体20周年。</div>
+                    <div style="margin-top:10px;">12月26日——广东男子刘强于26日凌晨在靖国神社门前纵火，随后逃脱日方拘捕转赴韩国。</div>
+                    <div style="margin-top:10px;">12月27日——中国北斗卫星导航系统开始试运行服务。</div>
+                    <div style="margin-top:10px;">12月30日——朝鲜劳动党中央政治局会议在平壤举行，会议宣布，根据已故最高领导人金正日2011年10月8日的遗训，推举金正恩为人民军最高司令官。</div>
+                    <div style="margin-top:10px;">12月——添马舰发展工程竣工，香港新特区政府总部及立法会大楼启用。</div>
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2012">2012年
+        <el-tab-pane label="2012">
+            <img src="../assets/zodiac/dragon.svg" class="zodiac">
+            <span class="year">2012年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
-                    <div>1月1日——被瑞士选民于1999年投票表决通过的新《瑞士宪法》正式实施。</div>
-                    <div>1月1日——汉中音乐广播正式开播。</div>
+                    <div style="margin-top:10px;">1月1日——《河北省森林防火规定》正式实施。</div>
+                    <div style="margin-top:10px;">1月1日——中国内蒙古电视台蒙古语文化频道正式开播。</div>
+                    <div style="margin-top:10px;">1月3日——日本四名国会议员登上钓鱼岛。</div>
+                    <div style="margin-top:10px;">1月3日～13日——中国第十二届全国冬季运动会在吉林省举行。</div>
+                    <div style="margin-top:10px;">1月5日——上午8时30分（日本时间上午9时30分），日本东京台东区一公寓内，两名在草苑日本语学校学习的台湾女留学生林芷滢、朱立婕被犯罪嫌疑人张志扬杀死，构成“2012年东京台湾女留学生命案”。</div>
+                    <div style="margin-top:10px;">1月5日——中国使用的ISRC作出微调，采用统一国际标准，由原来的“国家代码-出版者码-录制年码-记录码-记录项码/类别代码”（如“ISRC CN-M01-02-312-00/A.J6”）数据段模式改为“国家码-出版者码-录制年码-名称码”的四数据段模式（如“ISRC CN-A16-12-00007”）。</div>
+                    <div style="margin-top:10px;">1月6日～7日——全国金融工作会议召开。温家宝讲话强调，要坚持金融服务实体经济的本质要求，坚持市场配置金融资源的改革导向，坚持创新与监管相协调的发展理念，坚持把防范化解风险作为金融工作生命线，坚持自主渐进安全共赢的开放方针。</div>
+                    <div style="margin-top:10px;">1月8日～10日——十七届中央纪委七次全会举行。胡锦涛讲话强调，切实做好保持党的纯洁性各项工作，深入推进党风廉政建设和反腐败斗争。贺国强作工作报告。</div>
+                    <div style="margin-top:10px;">1月9日～11日——韩国总统李明博访问中国。</div>
+                    <div style="margin-top:10px;">1月12日——朝鲜劳动党中央委员会政治局发布特别公报说，朝鲜将永久保存已故最高领导人金正日的遗体，并为其建立铜像。</div>
+                    <div style="margin-top:10px;">1月12日——国务院印发《关于实行最严格水资源管理制度的意见》。</div>
+                    <div style="margin-top:10px;">1月12日——由上海美术电影制片厂出品的经典动画长片《大闹天宫》的重制版《大闹天宫3D》在中国大陆上映。</div>
+                    <div style="margin-top:10px;">1月13日——风云二号07星发射成功。</div>
+                    <div style="margin-top:10px;">1月13日～22日——第一届冬季青年奥林匹克运动会在奥地利因斯布鲁克举行。</div>
+                    <div style="margin-top:10px;">1月14日——2012中国台湾地区领导人大选：投票14日下午4时结束。投票结果显示，中国国民党候选人马英九、吴敦义获胜，得票数为6891139张，得票率为51.6%，分别担任台湾第13任正、副领导人，于2012年5月20日正式宣誓就任。蔡英文宣布卸任民进党主席。</div>
+                    <div style="margin-top:10px;">1月15日——中国广西龙江河段检测出重金属镉含量超标，使得沿岸及下游居民饮水安全遭到严重威胁。</div>
+                    <div style="margin-top:10px;">1月16日——由林添一执导，小沈阳主演的古装武侠轻喜剧《怪侠欧阳德》在江苏卫视首播。</div>
+                    <div style="margin-top:10px;">1月17日——国家统计局发布数据：2011年底中国大陆城镇人口为69079万，农村人口为65656万。城镇人口占总人口比重达到51.27％，首次超过农村。</div>
+                    <div style="margin-top:10px;">1月18日——中国浙江电台民生资讯广播正式开播。</div>
+                    <div style="margin-top:10px;">1月26日——由张纪中担任总制片人，张建亚执导，吴樾、聂远、臧金生、徐锦江等主演的魔幻古装神话剧《西游记》在浙江卫视、东方卫视、天津卫视、云南卫视四家卫视黄金时段首播。</div>
+                    <div style="margin-top:10px;">1月31日——爱神星（433 Eros），第二大的近地小行星（NEA）在地球大约0.179AU 的距离掠过。</div>
                 </el-collapse-item>
                 <el-collapse-item title="2月" name="2">
-                    <div>控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；</div>
-                    <div>页面反馈：操作后，通过页面元素的变化清晰地展现当前状态。</div>
+                    <div style="margin-top:10px;">2月1日——苏州工业园区发生火灾，苏州工业园区公安消防大队战士孙茂珲壮烈牺牲。年仅22岁，被国家公安部追授“新时期消防勇士”荣誉称号，荣获全国最美消防员、第四届江苏省道德模范称号。</div>
+                    <div style="margin-top:10px;">2月2日——中共中央印发《关于加强新形势下党外代表人士队伍建设的意见》。</div>
+                    <div style="margin-top:10px;">2月5日——中俄否决叙利亚问题决议草案。</div>
+                    <div style="margin-top:10px;">2月6日——李克强主持召开保障性住房公平分配工作座谈会并讲话。</div>
+                    <div style="margin-top:10px;">2月6日～7日——时任重庆市副市长王立军私自进入美国驻成都总领事馆滞留，在国内外造成恶劣影响。事后，侦查机关依法对此进行调查。</div>
+                    <div style="margin-top:10px;">2月6日至9日——叙利亚反对派代表团访华。</div>
+                    <div style="margin-top:10px;">2月7日——马尔代夫发生军人哗变，总统纳希德宣布辞职。</div>
+                    <div style="margin-top:10px;">2月7日至8日——全国社会管理创新综合试点工作座谈会召开。</div>
+                    <div style="margin-top:10px;">2月9日——中共中央办公厅印发《关于深入开展学雷锋活动的意见》。</div>
+                    <div style="margin-top:10px;">2月10日——温家宝接受第十一世班禅额尔德尼·确吉杰布拜见。</div>
+                    <div style="margin-top:10px;">2月17日——朝鲜庆祝首个光明星节，纪念金正日总书记诞辰70周年。</div>
+                    <div style="margin-top:10px;">2月19日——μ's的第一次的演唱会《ラブライブ。μ's First Love Live!》在横滨BLITZ正式举行，当日同时公布决定TV动画化；其余六人的Solo专辑也在同日发售。</div>
+                    <div style="margin-top:10px;">2月25日——中国成功发射第十一颗北斗导航卫星。</div>
+                    <div style="margin-top:10px;">2月26日——天文奇观双星伴月，中国各地可见。</div>
+                    <div style="margin-top:10px;">2月28日——演员白静因出轨在家中被其丈夫刺杀身亡，随后其丈夫自杀。</div>
+                    <div style="margin-top:10px;">2月28日——《环球记者连线》在CCTV-13开播。</div>
                 </el-collapse-item>
                 <el-collapse-item title="3月" name="3">
-                    <div>简化流程：设计简洁直观的操作流程；</div>
-                    <div>清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；</div>
-                    <div>帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</div>
+                    <div style="margin-top:10px;">3月1日——最高人民法院、最高人民检察院、公安部、 司法部联合制订的《社区矫正实施办法》正式实施。</div>
+                    <div style="margin-top:10px;">3月1日——芬兰当选总统绍利·尼尼斯托在芬兰议会大厦正式宣誓就职，开始他为期6年的总统任期。</div>
+                    <div style="margin-top:10px;">3月2日——深入开展学雷锋活动座谈会召开。中央精神文明建设指导委员会授予鞍山钢铁集团职工郭明义“当代雷锋”荣誉称号。</div>
+                    <div style="margin-top:10px;">3月3日——中国政协十一届五次会议在北京召开。</div>
+                    <div style="margin-top:10px;">3月5日——俄罗斯总理普京赢得2012年总统大选。</div>
+                    <div style="margin-top:10px;">3月5日——第十一届全国人民代表大会第五次会议在北京召开。</div>
+                    <div style="margin-top:10px;">3月7日——2012年亚冠联赛小组赛首轮，广州恒大客场5-1大胜韩国球队全北现代，创造中国球队在与韩国球队历史交锋中的最大比分的胜利。</div>
+                    <div style="margin-top:10px;">3月11日——东日本大地震1周年。</div>
+                    <div style="margin-top:10px;">3月21日——日本著名女歌手滨崎步的个人第十三张原创专辑《Party queen》（中文译名《派对女王》）发行，发行首周在日本公信榜的周间销量排行榜上屈居亚军，这是滨崎步自出道以来，首次有专辑未获得销量冠军。</div>
+                    <div style="margin-top:10px;">3月23日——中国百度网盘启动。</div>
+                    <div style="margin-top:10px;">3月26日——由郑晓龙执导，孙俪主演的清装宫斗剧《甄嬛传》在安徽卫视、东方卫视、天津卫视、江西卫视四家卫视黄金时段首播。</div>
+                    <div style="margin-top:10px;">3月27日——由李翰韬执导，贾静雯、郑爽、李湘等主演的古装历史剧《太平公主秘史》在湖南卫视黄金时段首播。</div>
+                    <div style="margin-top:10px;">3月31日—— 东日本大地震受灾的地区模拟电视停播。</div>
                 </el-collapse-item>
                 <el-collapse-item title="4月" name="4">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">4月8日——亚洲人气偶像天团EXO正式出道。</div>
+                    <div style="margin-top:10px;">4月9日——《新闻纪实》正式停播，撤出CCTV-13。</div>
+                    <div style="margin-top:10px;">4月10日——12艘中国渔船在中国黄岩岛潟湖内正常作业时，被一艘菲律宾军舰干扰，菲军舰一度企图抓扣被其堵在潟湖内的中国渔民，被赶来的中国两艘海监船所阻止。随后，中国渔政310船赶往事发地黄岩岛海域维权，菲方亦派多艘舰船增援，中菲黄岩岛对峙开始。</div>
+                    <div style="margin-top:10px;">4月10日——Windows Vista停止主流技术支持。</div>
+                    <div style="margin-top:10px;">4月12日——菲律宾不顾中方严正交涉与警告，再向黄岩岛海域派遣一艘海岸警卫队船只，中菲双方的对峙仍在继续。</div>
+                    <div style="margin-top:10px;">4月13日——朝鲜卫星“光明星3号”发射失败。</div>
+                    <div style="margin-top:10px;">4月16日——朝鲜庆祝金日成主席诞辰100周年大阅兵在平壤金日成广场举行，金正恩出席阅兵式并发表讲话。</div>
+                    <div style="margin-top:10px;">4月15日——为纪念朝鲜已故领导人金日成诞辰100周年，朝鲜在首都平壤举行阅兵仪式。朝鲜国家最高领导人金正恩出席阅兵式，并首次发表公开演讲。</div>
+                    <div style="margin-top:10px;">4月15日——泰坦尼克号沉没100周年纪念。</div>
+                    <div style="margin-top:10px;">4月16日——天文奇观“土星冲日”。</div>
+                    <div style="margin-top:10px;">4月19日——国务院印发《关于进一步支持小型微型企业健康发展的意见》。</div>
+                    <div style="margin-top:10px;">4月20日～27日——时任国务院总理温家宝应邀对冰岛、瑞典、波兰进行正式访问，并出席德国汉诺威工业博览会开幕式及中国伙伴国活动。</div>
+                    <div style="margin-top:10px;">4月26日～5月4日——时任中国国务院副总理李克强对俄罗斯、匈牙利、比利时和欧盟总部进行正式访问。4月28日，出席在莫斯科举行的中俄贸易和投资促进会议开幕式并发表《推动中俄贸易和投资合作再上新水平》的讲话。</div>
+                    <div style="margin-top:10px;">4月25日——朝鲜人民军成立80周年。</div>
+                    <div style="margin-top:10px;">4月30日——中国成功发射第十二、十三颗北斗导航系统组网卫星。</div>
                 </el-collapse-item>
                 <el-collapse-item title="5月" name="5">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">5月——中国共产主义青年团成立90周年。</div>
+                    <div style="margin-top:10px;">5月1日——中国内蒙古自治区成立65周年。</div>
+                    <div style="margin-top:10px;">5月1日——由林添一执导，陈浩民、宣萱、馨子、张亮等主演古装情感剧《薛平贵与王宝钏》在江苏卫视独家首播。</div>
+                    <div style="margin-top:10px;">5月4日——纪念中国共产主义青年团成立90周年大会在北京人民大会堂隆重举行。习近平主持大会。</div>
+                    <div style="margin-top:10px;">5月7日——2012年雪山隧道火烧车事故。</div>
+                    <div style="margin-top:10px;">5月7日——社会党候选人弗朗索瓦·奥朗德当选法国第七任总统。</div>
+                    <div style="margin-top:10px;">5月8日——号称中国首个“村级市”的河南省濮阳县庆祖镇“西辛庄市”挂牌成立。</div>
+                    <div style="margin-top:10px;">5月8日——“中国最美女教师”--张丽莉在失控的汽车冲向学生时，一把推开了两个学生，自己却被车轮碾轧，造成全身多处骨折，双腿高位截肢。</div>
+                    <div style="margin-top:10px;">5月12日——四川汶川地震4周年；中国的第四个防灾减灾日。</div>
+                    <div style="margin-top:10px;">5月12日——2012年韩国丽水世博会开幕，闭幕时间为8月12日。</div>
+                    <div style="margin-top:10px;">5月13日——第五次中日韩领导人会议在北京人民大会堂开始举行。</div>
+                    <div style="margin-top:10px;">5月17日——广州恒大俱乐部在召开新闻发布会，正式宣布曾率领意大利队夺得2006年世界杯冠军的功勋教练马塞洛·里皮接任恒大主教练一职。</div>
+                    <div style="margin-top:10px;">5月19日——切尔西在2012年欧洲冠军联赛决赛中点球大战战胜拜仁慕尼黑，俱乐部历史上第一次夺得欧冠冠军。</div>
+                    <div style="margin-top:10px;">5月20日——马英九、吴敦义在台北正式宣誓就职中国台湾地区第13任领导人，任期至2016年5月20日。</div>
+                    <div style="margin-top:10px;">5月21日——日环食，中国广西东南部、海南极小一角、广东大部、港澳、江西南部、福建大部、浙江东南角、台湾北部、日本南部、美国西部（美国为5月20日）的部分地区可见。这是日本自公元1080年以来的932年首次覆盖三大都市圈的中心食，东京、名古屋、大阪等城市均在环食带内。这也是“金”成为2012年日本年度汉字的原因之一（日语称日环食为“金环日食”）。此外，亚洲东部、北美洲大部都可见日偏食，包括中国除新疆和西藏两地最西端外的大部分地区。</div>
+                    <div style="margin-top:10px;">5月22日——凌晨，搭载“龙”飞船的“猎鹰9号”火箭从佛罗里达州卡纳维拉尔角空军基地升空。</div>
+                    <div style="margin-top:10px;">5月26日——（壬辰年闰四月初六）人类首艘商业飞船与国际空间站对接。</div>
+                    <div style="margin-top:10px;">5月29日——最美司机吴斌驾驶大客车行驶于沪宜高速被一个来历不明的金属片砸碎前窗玻璃后刺入腹部至肝脏破裂，他强忍疼痛将车停稳，并提醒车内24名乘客安全疏散和报警。后被送往中国人民解放军无锡101医院抢救。</div>
+                    <div style="margin-top:10px;">5月30日～31日——第三次全国对口支援新疆工作会议召开。胡锦涛、温家宝、习近平、李克强会见与会代表。李克强讲话。</div>
+                    <div style="margin-top:10px;">5月31日—— 中国工程院士林俊德去世。</div>
                 </el-collapse-item>
                 <el-collapse-item title="6月" name="6">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">6月1日——凌晨3点45分，中国最美司机吴斌因伤势过重抢救无效去世，终年48岁。</div>
+                    <div style="margin-top:10px;">6月1日——《生活提示》在CCTV-1开播。</div>
+                    <div style="margin-top:10px;">6月2日~6月5日——英国女王伊丽莎白二世登基60周年纪念。</div>
+                    <div style="margin-top:10px;">6月3日——尼日利亚一架客机在拉各斯机场附近坠毁，机上153人全部遇难，并造成地面至少40人死亡。</div>
+                    <div style="margin-top:10px;">6月4日——月偏食。</div>
+                    <div style="margin-top:10px;">6月5日——人类首艘商业飞船“龙”返回地球。</div>
+                    <div style="margin-top:10px;">6月6日——金星凌日。这是继2004年之后21世纪第二次也是最后一次金星凌日，下一次则在2117年。</div>
+                    <div style="margin-top:10px;">6月6日～7日——上海合作组织成员国元首理事会第十二次会议在北京举行。成员国元首签署《关于构建持久和平、共同繁荣地区的宣言》等文件。</div>
+                    <div style="margin-top:10px;">6月9日——2012年欧洲国家杯足球赛开幕。本届欧洲杯在波兰和乌克兰举行。</div>
+                    <div style="margin-top:10px;">6月9日——中国诗歌会，诗歌王子陈昂成功夺冠。</div>
+                    <div style="margin-top:10px;">6月11日——《央视财经评论》在CCTV-2开播。</div>
+                    <div style="margin-top:10px;">6月16日～22日——第三届亚洲沙滩运动会在中国山东省烟台市海阳市举行。这是山东省首次承办洲际体育赛事，也是中国首次由县级市承办洲际体育赛事。</div>
+                    <div style="margin-top:10px;">6月16日——18时37分21秒，载有景海鹏、刘旺、刘洋三位宇航员的神舟九号飞船成功发射。</div>
+                    <div style="margin-top:10px;">6月18日——中国神舟九号与天宫一号自首次交会对接成功，航天员，景海鹏，刘旺，刘洋进入天宫一号。</div>
+                    <div style="margin-top:10px;">6月18日——美国国会众议院全票通过一项法案，为19世纪末、20世纪初的《排华法案》等歧视华人的法律表示歉意。</div>
+                    <div style="margin-top:10px;">6月21日——中国国务院批准撤销海南省西沙群岛、南沙群岛、中沙群岛办事处，设立地级三沙市，管辖西沙群岛、中沙群岛、南沙群岛的岛礁及其海域。三沙市人民政府驻西沙永兴岛。</div>
+                    <div style="margin-top:10px;">6月22日——2011—12赛季NBA总决赛结束，迈阿密热火队4-1击败俄克拉荷马雷霆队，夺得总冠军，这也是热火三巨头之中的勒布朗·詹姆斯与克里斯·波什职业生涯首夺总冠军。</div>
+                    <div style="margin-top:10px;">6月27日——中国蛟龙号7000米级海试第五次下潜深度达7062米，创造中国载人深潜器新纪录。</div>
+                    <div style="margin-top:10px;">6月28日——由乌尔善执导，周迅、赵薇、陈坤等主演的古装魔幻片《画皮Ⅱ》在中国大陆上映。</div>
+                    <div style="margin-top:10px;">6月29日——中国神舟九号返回舱成功着陆内蒙古四子王旗主着陆场。航天员：景海鹏，刘旺，刘洋，依次出舱。</div>
+                    <div style="margin-top:10px;">6月29日——中华人民共和国主席胡锦涛抵达香港出席香港回归15周年大会。</div>
+                    <div style="margin-top:10px;">6月30日——在2012年温布尔登网球锦标赛第六个比赛日中，持外卡参赛的哈萨克斯坦选手舍夫多娃发挥极佳，在与法网亚军埃拉尼的首盘比赛中连下24分，未丢一分送出Golden Set(黄金一·盘)，创造纪录成为公开赛时代做到这一点的女子第一人。</div>
                 </el-collapse-item>
                 <el-collapse-item title="7月" name="7">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">7月1日——为能让世界时与原子时平衡，在格林尼治时间零点（北京时间早晨八点）增加一秒，出现闰秒现象。</div>
+                    <div style="margin-top:10px;">7月1日——时任国家主席胡锦涛出席庆祝香港回归祖国15周年大会暨香港特别行政区第四届政府就职典礼并发表重要讲话。</div>
+                    <div style="margin-top:10px;">7月1日——2012年欧洲杯决赛，西班牙队在基辅奥林匹克球场以4-0的悬殊比分完胜意大利队，追平了德国队3次夺冠的纪录，成为首支蝉联欧洲杯冠军的球队和首支4年内连夺3届大赛冠军的球队，创造了欧洲杯决赛历史上最悬殊的比分。</div>
+                    <div style="margin-top:10px;">7月2日——韩国新首都世宗正式开都。</div>
+                    <div style="margin-top:10px;">7月7日——七七事变75周年。</div>
+                    <div style="margin-top:10px;">7月11日——国务院批准，唐山市撤销唐海县设立曹妃甸区，将唐山市丰南区滨海镇划归曹妃甸区管辖。</div>
+                    <div style="margin-top:10px;">7月12日——明星模仿秀节目《百变大咖秀第一季》在湖南卫视黄金时段首播。</div>
+                    <div style="margin-top:10px;">7月13日——音乐真人秀节目《中国好声音第一季》在浙江卫视黄金时段首播。</div>
+                    <div style="margin-top:10px;">7月15日——韩国歌手朴载相（艺名PSY，昵称鸟叔）发行其第六张原创专辑《PSY 6甲 PART1》，收录于其中的单曲《江南style》随后在全世界风靡一时。</div>
+                    <div style="margin-top:10px;">7月21日——北京发生61年来最强降雨，暴雨引发房山地区山洪暴发，拒马河上游洪峰下泄。最终，北京“7·21”特大自然灾害已造成77人遇难。</div>
+                    <div style="margin-top:10px;">7月21日——俄罗斯总统普京签署有关批准俄加入世界贸易组织协议的联邦法案。</div>
+                    <div style="margin-top:10px;">7月24日——三沙市成立大会暨揭牌仪式在三沙市驻地永兴岛举行。</div>
+                    <div style="margin-top:10px;">7月27日～8月12日——2012年伦敦奥运会在英国首都伦敦举行。</div>
+                    <div style="margin-top:10px;">7月30日——《爱情公寓3》于安徽卫视，湖北卫视，陕西卫视首播。</div>
                 </el-collapse-item>
                 <el-collapse-item title="8月" name="8">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">8月1日——中国人民解放军建军85周年。</div>
+                    <div style="margin-top:10px;">8月1日——8·1山西洪洞矿难事故。</div>
+                    <div style="margin-top:10px;">8月6日——美国好奇号火星探测器成功登陆火星，开展为期两年的火星探测任务。</div>
+                    <div style="margin-top:10px;">8月6日——中共中央办公厅印发《关于进一步加强党管人才工作的意见》。</div>
+                    <div style="margin-top:10px;">8月7日——在2012年伦敦奥运会110米栏预赛中，中国选手刘翔在起跑跨过第一个栏后就摔倒在地。随后，刘翔的右脚无法落地，用一只左脚跑到了终点，最终被淘汰出局。</div>
+                    <div style="margin-top:10px;">8月8日——日本著名女歌手滨崎步的个人第六张精选专辑《A SUMMER BEST》（中文译名《A 滨纷夏日精选》）发行，首周卖出8万张，这也令她的唱片销量突破5000万张，成为最高销量的日本独唱（Solo）歌手，是继B’z、Mr.Children后第三位有此佳绩的日本歌手。在女性歌手方面，则是史上第一人。</div>
+                    <div style="margin-top:10px;">8月8日——中国第四个“全民健身日”（纪念2008年北京奥运会四周年）。</div>
+                    <div style="margin-top:10px;">8月9日——西北地区首家专业的私家车广播电台《896汽车调频》正式开播，前身为1992年10月1日开播的陕西经济广播。</div>
+                    <div style="margin-top:10px;">8月10日——韩国总统李明博10日下午搭乘直升机登临韩国与日本存在主权争议的独岛（日本称竹岛），以宣示韩国对这一岛屿拥有主权。李明博亦成为首位登上独岛的韩国国家元首。</div>
+                    <div style="margin-top:10px;">8月12日——2012年韩国丽水世博会闭幕、2012年伦敦奥运会闭幕。</div>
+                    <div style="margin-top:10px;">8月12日——“启丰二号”离开香港前往中国钓鱼岛海域。</div>
+                    <div style="margin-top:10px;">8月14日——苏湘渝系列抢劫抢劫杀人案通缉犯周克华被警方击毙。</div>
+                    <div style="margin-top:10px;">8月15日——“启丰二号”成功抵达钓鱼岛，7位人员涉海登岛成功，并且将五星红旗插上钓鱼岛，随后被日方拘留。</div>
+                    <div style="margin-top:10px;">8月17日——经国务院批准，调整苏州市行政区划：（一）撤销平江区、沧浪区、金阊区，合并设立姑苏区；（二）撤销吴江市设立吴江区（10月26日姑苏区挂牌成立，10月29日吴江区挂牌成立）。</div>
+                    <div style="margin-top:10px;">8月20日—— 国务院印发《关于加强教师队伍建设的意见》。</div>
+                    <div style="margin-top:10px;">8月22日——“启丰二号”顺利返回香港。</div>
+                    <div style="margin-top:10px;">8月27日——Animelo Summer Live 2012 -INFINITY∞-第二日μ's出演，但是仅仅演唱了一首曲目《夏色えがおで1,2,Jump!》。</div>
+                    <div style="margin-top:10px;">8月29日～9月9日——2012年伦敦残奥会在英国首都伦敦举行。</div>
+                    <div style="margin-top:10px;">8月30日——国务院办公厅转发《关于做好进城务工人员随迁子女接受义务教育后在当地参加升学考试工作的意见》</div>
                 </el-collapse-item>
                 <el-collapse-item title="9月" name="9">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">9月1日——国务院印发《关于进一步加强和改进最低生活保障工作的意见》、《关于促进企业技术改造的指导意见》。</div>
+                    <div style="margin-top:10px;">9月1日——江苏省苏州市金阊区、平江区、沧浪区3区合并，设立姑苏区；撤销吴江市，设立吴江区。</div>
+                    <div style="margin-top:10px;">9月2日——《中国大舞台》在中央人民广播电台中国之声开播。</div>
+                    <div style="margin-top:10px;">9月7日——11时19分，云南省昭通市彝良县与贵州省毕节市威宁彝族回族苗族自治县交界发生5.7级地震，震源深度14公里。12时16分，昭通市彝良县又发生5.6级地震，震源深度10公里。</div>
+                    <div style="margin-top:10px;">9月9日——2012年伦敦残奥会在伦敦闭幕。</div>
+                    <div style="margin-top:10px;">9月10日——日本内阁官房长官藤村修宣布，日本政府已经决定由政府购买“尖阁诸岛”（即中国钓鱼岛及其附属岛屿）中的钓鱼岛、北小岛和南小岛,将这三个岛“收归国有”。</div>
+                    <div style="margin-top:10px;">9月10日——针对日本政府非法的钓鱼岛“国有化”行径，中国政府依据《中华人民共和国领海及毗连区法》划定并公布钓鱼岛及其附属岛屿的领海基点基线。随后中国公务船开始在钓鱼岛海域常态巡航。</div>
+                    <div style="margin-top:10px;">9月11日——美国驻利比亚大使克里斯·斯蒂文斯与另外3名工作人员在当地时间11日晚发生的反美抗议活动中身亡。</div>
+                    <div style="margin-top:10px;">9月11日——日本正式签订非法购买钓鱼岛的协议，中国一些地方爆发反日游行，抵制日货、砸日系车抗议日本非法购买钓鱼岛。</div>
+                    <div style="margin-top:10px;">9月11日——中国国家男子足球队在友谊赛中以0-8惨败于对手巴西队，创造国际A级比赛历史最差纪录。</div>
+                    <div style="margin-top:10px;">9月15日——中国公布钓鱼岛及其部分附属岛屿地理坐标。</div>
+                    <div style="margin-top:10px;">9月15日——中国各地爆发反日游行，抵制日货，砸日系车事件频发。</div>
+                    <div style="margin-top:10px;">9月16日——第七届全国农民运动会（简称南阳农运会），在河南省南阳市开幕。</div>
+                    <div style="margin-top:10px;">9月17日、18日——四川省成都市中级人民法院一审开庭审理了重庆市原副市长、公安局原局长王立军徇私枉法、叛逃、滥用职权、受贿案。</div>
+                    <div style="margin-top:10px;">9月18日——纪念9.18事变，中国各地爆发反日游行示威，沈阳等城市拉响防空警报。</div>
+                    <div style="margin-top:10px;">9月19日——中国成功发射第十四、十五颗北斗导航系统组网卫星。</div>
+                    <div style="margin-top:10px;">9月21日——中国公布钓鱼岛海域部分地理实体标准名称。</div>
+                    <div style="margin-top:10px;">9月25日——国务院新闻办公室发表《钓鱼岛是中国的固有领土》白皮书。同日，中国首艘航空母舰“辽宁舰”交付海军，中国从此跻身航母大国。</div>
+                    <div style="margin-top:10px;">9月28日——京广高铁郑州至武汉段开通。</div>
+                    <div style="margin-top:10px;">9月28日——中共中央政治局召开会议，研究中国共产党第十八次全国代表大会筹备工作，确定中共十八大将于2012年11月8日召开。中央确定，党的十八大代表名额共2270名，由全国40个选举单位选举产生。</div>
+                    <div style="margin-top:10px;">9月28日——广电总局批准，中央电视台3、5、6、8等频道实现高清化播出。</div>
                 </el-collapse-item>
                 <el-collapse-item title="10月" name="10">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">成功升级为国家级经济技术开发区。</div>
+                    <div style="margin-top:10px;">10月25日——浙江温岭幼师颜艳红虐童事件被曝光，全国各地新闻对此事火爆热播。</div>
+                    <div style="margin-top:10px;">10月25日——中国成功发射第十六颗北斗导航卫星。</div>
+                    <div style="margin-top:10px;">10月26日——微软公司发布Windows 8，系统独特的metro开始界面和触控式交互系统，旨在让人们的日常电脑操作更加简单和快捷，为人们提供高效易行的工作环境。</div>
+                    <div style="margin-top:10px;">10月31日——中国第二款第五代隐形战斗机——歼31试飞成功。</div>
+                    <div style="margin-top:10px;">10月31日——第十二届中国（铜陵）青铜文化博览会在安徽铜陵开幕。</div>
                 </el-collapse-item>
                 <el-collapse-item title="11月" name="11">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">11月1日——央视《非常6+1》节目年度总决赛在北京录制。经过三轮投票，年仅11岁的李泽维击败两名成人选手获得年度总冠军，在音乐界引起了一定程度的轰动。</div>
+                    <div style="margin-top:10px;">11月6日——美国第57届总统大选，现任总统奥巴马击败共和党候选人罗姆尼，成功连任。</div>
+                    <div style="margin-top:10px;">11月6日——湄公河惨案一审宣判，糯康，伊莱，桑康，扎西卡被判处死刑，扎波被判死缓，扎拖波被判有期徒刑8年。</div>
+                    <div style="margin-top:10px;">11月7日——时任国家主席胡锦涛向美国当选连任总统奥巴马致贺电。</div>
+                    <div style="margin-top:10px;">11月8日～14日——中国共产党第十八次全国代表大会举行。大会正式代表2268人，特邀代表57人，代表全国8200多万党员。胡锦涛作《坚定不移沿着中国特色社会主义道路前进，为全面建成小康社会而奋斗》的报告。</div>
+                    <div style="margin-top:10px;">11月8日——日本著名女歌手滨崎步的个人第三张迷你专辑《LOVE》（中文译名《致爱》）发行。</div>
+                    <div style="margin-top:10px;">11月12日——由刘光、王响伟执导，唐国强、孙维民、卢奇、马晓伟等主演的革命史诗剧《五星红旗迎风飘扬2》在央视八套黄金时段首播。</div>
+                    <div style="margin-top:10px;">11月13日——第九届珠海航展在广东省珠海市开幕。</div>
+                    <div style="margin-top:10px;">11月14日——澳大利亚北部出现日全食，大洋洲大部分、印尼东半部、东帝汶、南美洲南部、南极洲部分区域都能看到日偏食。其中国际日期变更线以东在11月13日，以西在11月14日。自2003年11月23日只经过了南极洲的日全食之后，这是首次全食带经过的陆地均属一个国家的日全食，下一次只经过一个国家的日全食则是2017年8月21日的美国。</div>
+                    <div style="margin-top:10px;">11月14日——中共十八大于2012年11月14日在北京闭幕，会上选举出了中国共产党第十八届中央委员会委员。</div>
+                    <div style="margin-top:10px;">11月15日——中国共产党第十八届中央委员会第一次全体会议在北京人民大会堂举行，习近平当选中共中央总书记、中央军委主席；李克强、张德江、俞正声、刘云山、王岐山、张高丽当选中共中央政治局常委。</div>
+                    <div style="margin-top:10px;">11月16日——十八届中央政治局召开第一次会议，对学习宣传贯彻党的十八大精神进行研究部署，要求把全党全国各族人民的思想统一到党的十八大精神上来，把力量凝聚到实现党的十八大确定的各项任务上来，为实现党的十八大确定的奋斗目标和工作任务而奋斗。</div>
+                    <div style="margin-top:10px;">11月16日——日本首相野田佳彦宣布解散日本众议院，将在40天之内提前举行大选。</div>
+                    <div style="margin-top:10px;">11月17日——《百家讲坛》主讲人于丹被轰下台。</div>
+                    <div style="margin-top:10px;">11月23日——山西寿阳火锅店爆炸致14人死亡。</div>
+                    <div style="margin-top:10px;">11月24日——熊朝忠在昆明举行的WBC世界职业拳王争霸赛中战胜墨西哥拳手哈维尔·马丁内斯，成为中国首位男子职业拳王。同日，杭州地铁1号线湘湖----临平/文泽路段正式开通运营。</div>
+                    <div style="margin-top:10px;">11月29日——习近平、李克强、张德江、俞正声、刘云山、王岐山、张高丽等在国家博物馆参观《复兴之路》展览。习近平提出并阐述“中国梦”，强调实现中华民族伟大复兴，就是中华民族近代以来最伟大的梦想，坚信到中国共产党成立100年时全面建成小康社会的目标一定能实现，到新中国成立100年时建成富强民主文明和谐的社会主义现代化国家的目标一定能实现，中华民族伟大复兴的梦想一定能实现。</div>
+                    <div style="margin-top:10px;">11月29日——由冯小刚执导，张国立、陈道明、李雪健、张涵予等主演的历史灾难片《一九四二》在中国大陆上映。</div>
                 </el-collapse-item>
                 <el-collapse-item title="12月" name="12">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">12月1日——世界上第一艘核动力航空母舰“企业号”正式退役。</div>
+                    <div style="margin-top:10px;">12月1日——世界上第一条高寒地区的长大高速铁路——哈大高铁正式开通运营。</div>
+                    <div style="margin-top:10px;">12月3日——由李翰韬执导，赵文瑄、陈冲、刘晓庆、余少群、孙耀琦、杜志国、张卫健、蒲巴甲等古装历史剧《隋唐英雄》在湖南卫视黄金时段首播。</div>
+                    <div style="margin-top:10px;">12月3日——木星合冲。</div>
+                    <div style="margin-top:10px;">12月3日——上海获得2010年世博会举办权10周年纪念日。</div>
+                    <div style="margin-top:10px;">12月4日——中共中央政治局会议审议通过《十八届中央政治局关于改进工作作风、密切联系群众的八项规定》。</div>
+                    <div style="margin-top:10px;">12月4日——首都各界在北京人民大会堂集会，隆重纪念现行宪法公布施行三十周年。中共中央总书记、中央军委主席习近平在大会上发表重要讲话。</div>
+                    <div style="margin-top:10px;">12月4日～8日——王岐山出席在俄罗斯莫斯科举行的中俄总理定期会晤委员会第十六次会议和中俄能源谈判代表第九次会晤，在哈萨克斯坦阿斯塔纳举行的中哈合作委员会第六次会议。</div>
+                    <div style="margin-top:10px;">12月6日——中共中央纪委公布四川省委副书记李春城涉嫌严重违纪接受组织调查，拉开了党的十八大以来查处腐败大案要案的序幕。</div>
+                    <div style="margin-top:10px;">12月7日～11日——习近平在广东深圳、珠海、佛山、广州等地考察，强调党的十八大向全党全国发出了深化改革开放新的宣言书、新的动员令，要增强改革的系统性、整体性、协同性，做到改革不停顿、开放不止步。</div>
+                    <div style="margin-top:10px;">12月8日——安徽省合肥市固定电话号码7位升8位，原合肥地区号码前加6，县级巢湖市，庐江县原号码前加8，并统一使用0551区号。</div>
+                    <div style="margin-top:10px;">12月8日——日本著名女歌手滨崎步的个人第四张迷你专辑《again》（中文译名《再献》）发行。</div>
+                    <div style="margin-top:10px;">12月12日——由徐峥执导并主演的贺岁喜剧电影《人再囧途之泰囧》在中国大陆上映，上映首日即斩获3650万票房（含零点场），创下历年12月电影最高上映首日纪录、首日票房最高的国产喜剧片纪录。</div>
+                    <div style="margin-top:10px;">12月12日——朝鲜于当地时间9点51分进行了第4次火箭发射，朝中社报道称， 朝鲜“光明星3号”卫星发射成功，卫星进入预定轨道。</div>
+                    <div style="margin-top:10px;">12月13日——纪念南京大屠杀75周年，南京市拉响防空警报。</div>
+                    <div style="margin-top:10px;">12月13日——嫦娥2号飞抵距地球700万公里的深空，并近距离观测了战神图塔蒂斯小行星，这是地球上首次近距离观察“战神”。</div>
+                    <div style="margin-top:10px;">12月14日——iPhone 5在中国大陆开始发售。</div>
+                    <div style="margin-top:10px;">12月15日～16日——中央经济工作会议举行。习近平分析国际国内经济形势，提出2013年经济工作总体要求和主要任务。温家宝总结2012年经济工作，对2013年经济工作作出部署。李克强作总结讲话。</div>
+                    <div style="margin-top:10px;">12月16日——安倍晋三领导的日本自由民主党时隔3年之后，重新成为日本执政党，安倍晋三也将成为日本新一任首相。</div>
+                    <div style="margin-top:10px;">12月16日——云南省昆明市固定电话号码7位升8位。</div>
+                    <div style="margin-top:10px;">12月19日——韩国时间下午6时结束，执政党新世界党总统候选人朴槿惠获得1100万票，得票率达51.6%，已确定当选总统。由此她也开创历史，成为韩国首位女总统。</div>
+                    <div style="margin-top:10px;">12月20日——由成龙执导并主演的电影《十二生肖》上映。</div>
+                    <div style="margin-top:10px;">12月21日——玛雅历法迎来新纪元，并引发1999年以来最大的末日谣言热潮。</div>
+                    <div style="margin-top:10px;">12月21日——美国总统奥巴马提名参议院外交关系委员会主席、民主党人约翰·克里出任下任国务卿。</div>
+                    <div style="margin-top:10px;">12月22日——一架隶属于中国国家海洋局的飞机中午飞行至钓鱼岛以北约100公里处，日本航空自卫队的F-15战斗机紧急升空应对。</div>
+                    <div style="margin-top:10px;">12月22日——玛雅文化的世界末日假说。</div>
+                    <div style="margin-top:10px;">12月22日——在2012-13赛季西甲联赛第17轮巴塞罗那客场3-1战胜巴拉多利德的比赛中，阿根廷著名球员梅西打进一球，将自己2012年度的进球数锁定在91球，这也打破了德国传奇球员盖德·穆勒的自然年85球的纪录。</div>
+                    <div style="margin-top:10px;">12月24日～25日——习近平、俞正声走访各民主党派中央和全国工商联。习近平强调，要坚定不移坚持和完善中国共产党领导的多党合作和政治协商制度，支持民主党派更好履行参政党职能，为实现中共十八大确定的目标任务而奋斗。</div>
+                    <div style="margin-top:10px;">12月25日——《小崔说事》正式停播，撤出CCTV-1。</div>
+                    <div style="margin-top:10px;">12月26日——世界上里程最长的高铁——京广高铁全线开通运营。</div>
+                    <div style="margin-top:10px;">12月26日——日本第182届特别国会在当地时间26日下午在国会举行。日本自民党总裁安倍晋三被众议院选为新一任首相。正式成为日本第96任、第63位首相，成为日本二战结束以来继前首相吉田茂后两度当选首相第二人。</div>
+                    <div style="margin-top:10px;">12月27日——我国自主建设、独立运行的全球卫星导航系统——北斗卫星导航系统正式提供区域服务，范围覆盖包括我国及周边地区在内的亚太大部分地区。</div>
+                    <div style="margin-top:10px;">12月28日——十一届全国人大常委会第三十次会议通过修订后的《中华人民共和国证券投资基金法》和《中华人民共和国老年人权益保障法》。</div>
+                    <div style="margin-top:10px;">12月28日——中国首条穿越长江的地铁线路武汉轨道交通2号线(金银潭--光谷广场)通车。</div>
+                    <div style="margin-top:10px;">12月28日——汉高祖刘邦诞辰2268周年，80集古装历史剧《楚汉传奇》（陈道明扮演刘邦）浙江卫视、安徽卫视、北京卫视、天津卫视开始同步首播，于2013年2月5日首播至大结局。</div>
+                    <div style="margin-top:10px;">12月28日——中国台湾男歌手周杰伦的个人第十二张原创专辑《12新作》发行。</div>
+                    <div style="margin-top:10px;">12月28日——俄罗斯总统普京签署包含禁止美国公民收养俄罗斯儿童条款的“反马格尼茨基法案”。</div>
+                    <div style="margin-top:10px;">12月29日——习近平在河北考察时指出，全面建成小康社会，最艰巨最繁重的任务在农村、特别是在贫困地区。没有农村的小康，特别是没有贫困地区的小康，就没有全面建成小康社会。</div>
+                    <div style="margin-top:10px;">12月30日——北京地铁10号线二期、6号线、8号线南段、9号线北段及上海地铁13号线一期、9号线南延伸段开通。</div>
+                    <div style="margin-top:10px;">12月31日——中共中央、国务院印发《关于加快发展现代农业进一步增强农村发展活力的若干意见》。</div>
+                    <div style="margin-top:10px;">12月——预计台湾台北捷运信义线的中正纪念堂—象山路段将于12月底完工通车，预定随着高铁“南港－台北”段正式通车而启用。</div>
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2013">2013年
+        <el-tab-pane label="2013">
+            <img src="../assets/zodiac/snake.svg" class="zodiac">
+            <span class="year">2013年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
-                    <div>1月1日——被瑞士选民于1999年投票表决通过的新《瑞士宪法》正式实施。</div>
-                    <div>1月1日——汉中音乐广播正式开播。</div>
+                    <div style="margin-top:10px;">1月1日——凌晨，中国杭州萧山区瓜沥镇临港工业园区一家公司发生火灾，过火面积约为12104平方米。火灾过程中，三名消防员——尹进良（河北赵县），陈伟（上海闵行），尹智慧（浙江丽水）不幸牺牲。</div>
+                    <div style="margin-top:10px;">1月4日——中国河南兰考县袁厉害的私人弃婴收养所发生火灾事故，致7名被收养者罹难，1名受伤。</div>
+                    <div style="margin-top:10px;">1月4日——中国中东部出现大范围雾霾天气，多地环境“严重污染”PM2.5濒临“爆表”。</div>
+                    <div style="margin-top:10px;">1月5日——中国人民解放军航天员大队15周年。</div>
+                    <div style="margin-top:10px;">1月5日～7日——新进中央委员会的委员、候补委员学习贯彻党的十八大精神研讨班举行。习近平强调，全党同志必须毫不动摇坚持和发展中国特色社会主义，永远要有逢山开路、遇河架桥的精神，在实践中不断有所发现、有所创造、有所前进。刘云山、张高丽作辅导报告。</div>
+                    <div style="margin-top:10px;">1月8日——由王家卫执导，梁朝伟、章子怡等主演的功夫片《一代宗师》在中国大陆上映。</div>
+                    <div style="margin-top:10px;">1月11日——中国云南昭通镇雄县发生泥石流，致46人死亡。</div>
+                    <div style="margin-top:10px;">1月12日——美国流感疫情已经扩展到47个州，部分地区出现疫苗短缺。美国疾病控制中心数据显示，全美因流感入院治疗的病人至少有3700人，流感致20名儿童丧生。</div>
+                    <div style="margin-top:10px;">1月14日——由钟少雄执导，严屹宽、张翰、姜武、杜淳、王宝强等主演的古装历史剧《隋唐演义》在东方卫视、山东卫视、深圳卫视三家卫视黄金时段首播。</div>
+                    <div style="margin-top:10px;">1月15日——中国湖南省娄底市新化县上梅镇北渡中心小学校长杨建一为保护学生安全，与进入校园行凶的歹徒殊死博斗，不幸以身殉职（1·15湖南新化校园惨案）。</div>
+                    <div style="margin-top:10px;">1月15日～18日——日本前首相鸠山由纪夫对中国进行访问，对中日关系来讲是一个平衡之举，意义不能小视。1月17日鸠山由纪夫来到侵华日军南京大屠杀遇难同胞纪念馆参观，在刻有30万遇难同胞字样的石碑前低首默哀。</div>
+                    <div style="margin-top:10px;">1月16日——极端组织武装人员袭击并占领阿尔及利亚东南部一座天然气站，打死2人，打伤6人，声称挟持41名外籍人质，包括7名美国人，震惊世界。</div>
+                    <div style="margin-top:10px;">1月17日——习近平在新华社《网民呼吁遏制餐饮环节“舌尖上的浪费”》材料上作出批示，要求厉行节约、反对浪费。</div>
+                    <div style="margin-top:10px;">1月18日——中共中央、国务院举行国家科学技术奖励大会。</div>
+                    <div style="margin-top:10px;">1月20日——著名影星，奥斯卡影后，世人敬仰的“人间天使”——奥黛丽·赫本逝世20周年。</div>
+                    <div style="margin-top:10px;">1月21日～22日——十八届中央纪委二次全会举行。习近平强调，要更加科学有效地防治腐败，坚定不移把党风廉政建设和反腐败斗争引向深入，形成不敢腐的惩戒机制、不能腐的防范机制、不易腐的保障机制。王岐山作工作报告。</div>
+                    <div style="margin-top:10px;">1月22日——菲律宾共和国时任政府单方面就中菲在南海的有关争议提起仲裁。</div>
+                    <div style="margin-top:10px;">1月23日——联合国通过第2087号决议，谴责朝鲜发射卫星，中国投赞成票。邹市明签约美国顶级拳击推广公司，成为中国第一位成为职业拳击手的奥运会拳击冠军。</div>
+                    <div style="margin-top:10px;">1月24日——诺基亚发布第四季度财报，并正式证实放弃塞班系统。</div>
+                    <div style="margin-top:10px;">1月25日——中国人民银行与中国银行台北分行签订《关于人民币业务的清算协议》。海峡两岸的金融机构除可通过代理行渠道为客户办理跨境人民币结算业务外，也可通过清算行渠道为客户办理跨境人民币结算业务。</div>
+                    <div style="margin-top:10px;">1月25日——美国中央密苏里大学数学教授柯蒂斯·库珀发现第48个梅森素数。</div>
+                    <div style="margin-top:10px;">1月26日——2013年全国春运开始。</div>
+                    <div style="margin-top:10px;">1月26日——中国自主研制的运－20大型运输机首次试飞成功。</div>
+                    <div style="margin-top:10px;">1月27日——巴西南部城市圣玛丽亚一家夜总会27日凌晨发生火灾，至少236人在大火中丧生，另外还有数百名伤者被送入医院救治，巴西将于28日举行全国哀悼，这是十几年来世界上死伤人数最多的夜总会大火事件。</div>
+                    <div style="margin-top:10px;">1月30日——韩国罗老号火箭发射成功。</div>
+                    <div style="margin-top:10px;">1月30日——中国著名笑星赵本山在新脱口秀节目《郭的秀》中，对外宣布退出小品界，从此封山小品舞台。从2014开始，不再上任何电视台春晚，包括央视。</div>
+                    <div style="margin-top:10px;">1月31日——墨西哥国家石油公司位于墨西哥城的总部大楼发生爆炸，19时事故已造成至少25人死亡，80人受伤，仍有至少30人被埋在废墟下。</div>
                 </el-collapse-item>
                 <el-collapse-item title="2月" name="2">
-                    <div>控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；</div>
-                    <div>页面反馈：操作后，通过页面元素的变化清晰地展现当前状态。</div>
+                    <div style="margin-top:10px;">2月——中国南京市原秦淮区、白下区合并，成立新的秦淮区，新秦淮区政府驻南京市太平南路69号。</div>
+                    <div style="margin-top:10px;">2月1日——上午9点左右，一辆装载烟花爆竹的货车在G30连霍高速公路河南省三门峡段义昌大桥发生爆炸导致义昌大桥南半幅被全部炸毁，造成至少25辆车辆坠落桥底，共计13人身亡（河南义昌大桥坍塌事故）。</div>
+                    <div style="margin-top:10px;">2月2日——美军史上头号狙击手克里斯·凯尔遭枪杀，生前曾射杀255人（其中166人获得美国国防部正式确认）。</div>
+                    <div style="margin-top:10px;">2月3日——国务院批转国家发展改革委、财政部、人力资源社会保障部《关于深化收入分配制度改革的若干意见》。</div>
+                    <div style="margin-top:10px;">2月8日——日本著名女歌手滨崎步的个人第十四张原创专辑《LOVE again》（中文译名《致爱再献》）发行，首周的销售量高达5.3万张，成功夺得日本公信榜的冠军位置，亦是滨崎步第二十张专辑夺得公信榜冠军。</div>
+                    <div style="margin-top:10px;">2月8日——由深圳华强数字动漫有限公司出品的春节贺岁动画片《熊出没之过年》在中央电视台少儿频道首播，其收视率突破3.85，并打破该频道的收视纪录。</div>
+                    <div style="margin-top:10px;">2月9日——“马肉风波”爆发席卷欧洲多国，欧盟拟订方案，要求所有成员国对加工牛肉开展脱氧核糖核酸（DNA）抽检。</div>
+                    <div style="margin-top:10px;">2月10日——由周星驰执导，文章、舒淇、黄渤、罗志祥等主演的古装神话片《西游·降魔篇》在中国大陆上映，随后创下多项纪录。</div>
+                    <div style="margin-top:10px;">2月11日——《军情时间到》在CCTV-13开播。</div>
+                    <div style="margin-top:10px;">2月11日——罗马教皇本笃十六世在梵蒂冈宣布将辞职，成为近600年来首位在有生之年主动退位的教皇。</div>
+                    <div style="margin-top:10px;">2月12日——朝鲜进行第三次核试验。</div>
+                    <div style="margin-top:10px;">2月12日——香港发生20名大陆游客夜宿大巴事件，涉及旅行社于2月22日被香港旅游业议会吊销执照。</div>
+                    <div style="margin-top:10px;">2月12日——俄罗斯图-95飞机飞过关岛上空，美国紧急派2架F-15拦截。</div>
+                    <div style="margin-top:10px;">2月15日——俄罗斯车里雅宾斯克州发生陨石坠落地球事件，致1500多人受伤。</div>
+                    <div style="margin-top:10px;">2月17日——杰出男高音歌唱家李双江之子李天一（已改名李冠丰）因涉嫌与5男子在北京海淀区湖北大厦轮奸受害女子杨某，已于2月21日晚被北京海淀警方刑拘。2月24日李双江被证实被儿子气病送医（李天一案）。</div>
+                    <div style="margin-top:10px;">2月19日——失踪三周的华裔女生蓝可儿的尸体被发现在她所住的洛杉矶酒店Cecil顶楼的水箱中。</div>
+                    <div style="margin-top:10px;">2月20日——“鱼肉风波”再次爆发。国务院办公厅颁布“新国五条”。</div>
+                    <div style="margin-top:10px;">2月21日——叙利亚首都大马士革市中心发生自杀式汽车炸弹爆炸袭击事件，已导致超过53人死亡，250人受伤。美国拉斯维加斯大道发生枪击、撞车事故，已导致3人死亡。日本首相安倍晋三在美国发表涉及钓鱼岛和教育的反华言论，中国强烈反对。</div>
+                    <div style="margin-top:10px;">2月21日——《NBA最前线》在CCTV-5开播。</div>
+                    <div style="margin-top:10px;">2月22日——韩国民众在日本驻首尔大使馆外举行游行，抗议日本举办“竹岛日”。当日，日本内阁府政务岛尻安伊子出席在岛根县松江市举办的“竹岛日”。</div>
+                    <div style="margin-top:10px;">2月23日——国务院印发《国家重大科技基础设施建设中长期规划（2012－2030年）》。</div>
+                    <div style="margin-top:10px;">2月23日——2013年第二十六届大学生冬季运动会在斯洛文尼亚·马里博尔（Maribor）闭幕。</div>
+                    <div style="margin-top:10px;">2月24日——中国国民党荣誉主席连战访问大陆，随同连战访问的还有岛内30余位各界人士，包括国民党副主席林丰正、蒋孝严，新党主席郁慕明，国民党智库执行长蔡政文，润泰集团总裁尹衍梁等人。</div>
+                    <div style="margin-top:10px;">2月25日——韩国候任总统朴槿惠正式宣誓就任第18任韩国总统。</div>
+                    <div style="margin-top:10px;">2月26日——埃及卢克索发生热气球爆炸事件，致26人死亡，其中包括9名中国香港游客。前NBA球星丹尼斯·罗德曼和美国哈林篮球队访问朝鲜，金正恩设宴欢迎。</div>
+                    <div style="margin-top:10px;">2月26日～28日——中国共产党十八届二中全会召开。会上将讨论有关国务院改革以及《政府工作报告》等内容。</div>
+                    <div style="margin-top:10px;">2月27日——十一届全国人大常委会第三十一次会议通过全国人大常委会代表资格审查委员会关于十二届全国人大代表的代表资格的审查报告。十二届全国人大代表选举是2010年修改选举法后，首次实行城乡按相同人口比例进行的选举。</div>
+                    <div style="margin-top:10px;">2月27日——湖北襄阳老河口市一小学27日晨发生一起踩踏事故，致4人死亡、7人受伤，2月28日，老河口市教育局长等6名干部被停职接受调查，该校校长等2人被行政撤职，并和其余4人移送司法机关。美国第24任国防部长查克·哈格尔宣誓就职。</div>
+                    <div style="margin-top:10px;">2月28日——国务院发出通知，决定以2015年6月30日为标准时点，开展第一次全国地理国情普查。</div>
+                    <div style="margin-top:10px;">2月28日——美国第76任财政部长雅各布·卢宣誓就职。罗马教皇本笃十六世正式离任，新任教皇将在2013年3月31日的复活节前产生。</div>
                 </el-collapse-item>
                 <el-collapse-item title="3月" name="3">
-                    <div>简化流程：设计简洁直观的操作流程；</div>
-                    <div>清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；</div>
-                    <div>帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</div>
+                    <div style="margin-top:10px;">3月——根据国务院、江苏省政府批复同意的方案，撤销鼓楼区、下关区，以原两区所辖区域设立新的鼓楼区。</div>
+                    <div style="margin-top:10px;">3月1日——习近平出席中共中央党校建校80周年庆祝大会暨2013年春季学期开学典礼，强调要在全党大兴学习之风，依靠学习和实践走向未来，全党同志特别是各级领导干部都要有加强学习的紧迫感，都要一刻不停地增强本领。</div>
+                    <div style="margin-top:10px;">3月1日——经最高人民法院核准，“10.5”湄公河惨案四名案犯糯康、桑康·乍萨、依莱、扎西卡，在昆明被依法执行注射死刑。</div>
+                    <div style="margin-top:10px;">3月3日～12日——全国政协十二届一次会议举行。贾庆林作全国政协常委会工作报告。会议选举俞正声为全国政协主席。</div>
+                    <div style="margin-top:10px;">3月4日——2013年非洲航空福克50坠机事件。</div>
+                    <div style="margin-top:10px;">3月5日～17日——十二届全国人大一次会议举行。温家宝作政府工作报告。吴邦国作全国人大常委会工作报告。会议选举习近平为国家主席、国家中央军委主席，张德江为全国人大常委会委员长，李源潮为国家副主席；决定李克强为国务院总理；批准《国务院机构改革和职能转变方案》。</div>
+                    <div style="margin-top:10px;">3月5日——委内瑞拉总统查韦斯逝世。中华人民共和国第十二届全国人民代表大会第一次会议开幕。联合国安理会就朝鲜第三次核试验问题进行闭门磋商，并于本周内对制裁朝鲜的决议草案进行表决。</div>
+                    <div style="margin-top:10px;">3月8日——2013年全国春运结束。</div>
+                    <div style="margin-top:10px;">3月10日——铁道部实行铁路政企分开，组建国家铁路局，由交通运输部管理，承担铁道部的其他行政职责；组建中国铁路总公司，承担铁道部的企业职责；不再保留铁道部。国务院重新组建国家海洋局，以中国海警局名义开展海上维权执法，接受公安部业务指导。</div>
+                    <div style="margin-top:10px;">3月11日——习近平出席十二届全国人大一次会议解放军代表团全体会议，指出建设一支听党指挥、能打胜仗、作风优良的人民军队，是党在新形势下的强军目标。</div>
+                    <div style="margin-top:10px;">3月11日——利比亚发生假酒中毒事件，已造成79人死亡，709人有中毒症状。</div>
+                    <div style="margin-top:10px;">3月12日～13日——全国政协十二届常委会第一次会议举行。俞正声主持并讲话，强调要切实增强做好政协工作的责任感和使命感，在全面建成小康社会的伟大实践和伟大征程中发挥更大作用。</div>
+                    <div style="margin-top:10px;">3月13日——阿根廷主教豪尔赫·马里奥·贝尔高利奥，当选梵蒂冈266任教皇，称为弗朗西斯，他是首位来自非欧洲地区的教皇。</div>
+                    <div style="margin-top:10px;">3月14日——中国铁路总公司正式成立。</div>
+                    <div style="margin-top:10px;">3月14日——十二届全国人大一次会议14日上午在人民大会堂举行第四次全体会议，以无记名投票方式，选举习近平为中华人民共和国主席、中华人民共和国中央军事委员会主席，选举张德江为第十二届全国人民代表大会常务委员会委员长，选举李源潮为中华人民共和国副主席。会议经过表决，批准了国务院机构改革和职能转变方案。</div>
+                    <div style="margin-top:10px;">3月15日——十二届全国人大一次会议15日上午举行第五次全体会议，决定国务院总理的人选。会议经过投票表决，决定李克强为中华人民共和国国务院总理。</div>
+                    <div style="margin-top:10px;">3月15日——粤港合作第十八次工作会议在广州举行，广东省副省长招玉芳与香港特别行政区政府政务司司长林郑月娥共同签署《实施粤港合作框架协议2013年重点工作》。</div>
+                    <div style="margin-top:10px;">3月17日——十二届全国人大一次会议在北京人民大会堂举行第五次全体会议。习近平全票当选为国家主席、中央军委主席。</div>
+                    <div style="margin-top:10px;">3月17日——中华人民共和国第十二届全国人民代表大会第一次会议闭幕。</div>
+                    <div style="margin-top:10px;">3月18日——下午4时25分左右，云南省楚雄州汽车运输公司一辆大客车行驶至大（理）保（山）高速保山市老营乡境内时冲出高速公路，翻下山沟。截至发稿时，已致13人死亡，15人受伤，其中2人危重，9人重伤。</div>
+                    <div style="margin-top:10px;">3月19日——中国海军南海舰队赴南海西太平洋进行战备巡逻和远海训练。</div>
+                    <div style="margin-top:10px;">3月22日——国家主席习近平抵达莫斯科，对俄罗斯进行国事访问，夫人彭丽媛陪同。这是其作为国家主席的首次出访。俄罗斯“中国旅游年”在克里姆林宫大剧院开幕，习近平与普京共同出席。</div>
+                    <div style="margin-top:10px;">3月23日——国家主席习近平在莫斯科国际关系学院发表演讲，阐述中国对当前国际形势的看法、中国的外交方针和发展中俄关系的主张。同日，习近平会见俄罗斯总理梅德韦杰夫、俄罗斯国家杜马主席纳雷什金。俄罗斯流亡大亨别列佐夫斯基被发现死在伦敦居所的浴室内。别列佐夫斯基曾被称为俄罗斯第一亿万富翁，并开启了俄罗斯寡头政治时代。</div>
+                    <div style="margin-top:10px;">3月24日——习近平参观俄罗斯国防部，成首位参观俄军最高指挥部的外国元首。同日，国家主席习近平结束了对俄罗斯的国事访问，离开莫斯科前往南非。中非共和国反政府组织“塞雷卡”攻入首都班吉。</div>
+                    <div style="margin-top:10px;">3月25日——习近平抵达南非比勒陀利亚，开始对南非进行国事访问，并出席在南非德班举行的金砖国家领导人第五次会晤。越南抗议中国海军追逐“枪击”越渔船致其起火。兰州再次遭遇大风扬沙天气侵袭。</div>
+                    <div style="margin-top:10px;">3月26日——朝鲜人民军再次发表声明，号召军民进行“复仇圣战”，表示将不再只喊口号，要以实际行动，消灭仇敌。对此，韩军紧急指令进入紧急战斗准备状态。叙利亚首都大马士革当天发生一起自杀式汽车炸弹袭击，造成人员伤亡，但具体伤亡人数不详。多枚迫击炮弹击中叙利亚首都大马士革市中心地带，造成至少两人死亡，多人受伤。</div>
+                    <div style="margin-top:10px;">3月26日至27日——金砖国家领导人第五次会晤在南非德班举行。</div>
+                    <div style="margin-top:10px;">3月27日——中国海军否认枪击越南渔船。阿盟峰会授予叙利亚反对派成员资格。</div>
+                    <div style="margin-top:10px;">3月28日——叙利亚大马士革大学遭到恐怖分子袭击，致12人死亡、20人受伤。俄罗斯总统普京从南非金砖峰会返回并前往索契的途中，凌晨4点从飞机上下达命令，在黑海地区启动突发性大规模演习。美国空军B—2型隐形轰炸机当天在代号“秃鹫”的韩美联合军事演习中进行射击训练，是这种可携带核武器的战机首次在朝鲜半岛进行类似演习。这一举动被外界视作韩美对朝鲜发出的又一强硬警告。</div>
+                    <div style="margin-top:10px;">3月29日——国家主席习近平抵达布拉柴维尔，开始对刚果共和国进行国事访问。新疆昌吉回族自治州昌吉市与乌鲁木齐市乌鲁木齐县交界处发生里氏5.6级地震。朝鲜最高领导人金正恩紧急召开人民军最高司令部作战会议，并下达了有关部队进入攻击待命状态的指示。成千上万的朝鲜民众在位于平壤的金日成广场举行大规模集会，响应朝鲜最高领导人金正恩的号召。凌晨6时左右，位于中国黄金集团华泰龙公司甲玛矿区内的西藏自治区拉萨市墨竹工卡县扎西岗乡斯布村普朗沟泽日山发生山体塌方，塌方长3公里，塌方量约200余万方。据初步统计，83名工人被埋。伊拉克发生多起针对什叶派清真寺的汽车炸弹爆炸事件，4枚炸弹爆炸导致至少15人死亡，95人受伤。坦桑尼亚一座在建中的大楼倒塌，至少60人死亡。</div>
+                    <div style="margin-top:10px;">3月30日——中华人民共和国和刚果共和国发表联合公报。同日，国家主席习近平结束了对刚果共和国的国事访问，离开布拉柴维尔回国。朝鲜宣布，朝韩关系已进入战争状态，两国之间的一切事务将按照战时状态处理。</div>
+                    <div style="margin-top:10px;">3月31日——中国空军一架苏27战斗机在山东荣成海域坠毁，飞行员武勇明、喻亮当场牺牲。</div>
                 </el-collapse-item>
                 <el-collapse-item title="4月" name="4">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">4月1日——4·1中美南海撞机事件12周年。韩国军队重装加群在朝鲜边境附近坡州集结，进行大规模实战演习。5辆运送北约装备撤离阿富汗的卡车在巴基斯坦俾路支省遭枪手袭击，被放火烧毁。伙武装人员当天在黎巴嫩北部劫持了一辆叙利亚汽车，绑架了车上9名叙利亚人。</div>
+                    <div style="margin-top:10px;">4月1日，香港著名歌手、演员张国荣逝世十周年。</div>
+                    <div style="margin-top:10px;">4月2日——数十名枪手（约50人）连夜袭击巴基斯坦北部城市白沙瓦一座发电站，已造成7人身亡，并摧毁了数台设备，造成多处停电。缅甸仰光一穆斯林学校凌晨发生一起火灾，致13名住宿生死亡。朝鲜宣布将重启宁边石墨减速反应堆，韩国政府表示遗憾。中华人民共和国新任驻美利坚合众国特命全权大使崔天凯抵达华盛顿履新，成为第十任中国驻美国大使。H7N9禽流感继续在华东地区蔓延，已有7宗确诊和死亡个案。该流感病毒于2013年3月底在上海和安徽两地率先发现，是全球首次发现的新亚型流感病毒。</div>
+                    <div style="margin-top:10px;">4月3日——中国海军南海舰队联合机动编队完成历时16天的战备巡逻远海训练任务，返回三亚。</div>
+                    <div style="margin-top:10px;">4月4日——中共中央办公厅、国务院办公厅、中央军委办公厅印发《关于进一步加强烈士纪念工作的意见》。</div>
+                    <div style="margin-top:10px;">4月6日～8日——博鳌亚洲论坛2013年年会在海南博鳌举行。习近平出席开幕式并发表《共同创造亚洲和世界的美好未来》的主旨演讲。</div>
+                    <div style="margin-top:10px;">4月6日——中国拳击运动员邹市明在澳门迎来自己进入职业拳坛的首场比赛，对阵墨西哥拳手伊莱扎·瓦雷祖拉，经过四回合激战，最终凭借点数击败对手，拿到职业拳击生涯的首胜。</div>
+                    <div style="margin-top:10px;">4月8日——朝鲜宣布暂时关闭开城工业园区。世界上最伟大的女首相，英国首位女首相撒切尔夫人病逝，终年87岁。</div>
+                    <div style="margin-top:10px;">4月15日——美国波士顿马拉松赛终点处发生两起爆炸，已有4人不幸遇难。</div>
+                    <div style="margin-top:10px;">4月20日——北京时间2013年4月20日8时02分，四川省雅安市芦山县（北纬30.3，东经103.0）发生7.0级地震。震源深度13公里。震中距成都约100公里。成都、重庆及陕西的宝鸡、汉中、安康等地均有较强震感。据雅安市政府应急办通报，震中芦山县龙门乡99%以上房屋垮塌，卫生院、住院部停止工作，停水停电。截至2013年4月24日10时，共发生余震4045次，3级以上余震103次，最大余震5.7级。受灾人口152万，受灾面积12500平方公里。截至4月24日14时30分，地震共造成200人死亡，失踪21人，11470人受伤。</div>
+                    <div style="margin-top:10px;">4月23日——日本政党日本维新会党首桥下彻发表“慰安妇必要论”遭到中国，韩国等国战争受害者的强烈反对。</div>
+                    <div style="margin-top:10px;">4月24日——孟加拉国发生一起严重塌楼事故，致1127人遇难（4·24孟加拉塌楼事故）。</div>
+                    <div style="margin-top:10px;">4月25日～26日——法国总统奥朗德对中国进行国事访问。习近平同奥朗德会谈，双方决定进一步深化中法新型全面战略伙伴关系。李克强、张德江分别会见奥朗德。</div>
+                    <div style="margin-top:10px;">4月26日——由赵薇执导，杨子姗、赵又廷等主演的青春爱情片《致我们终将逝去的青春》（简称《致青春》）在中国大陆上映，该片亦是赵薇担任导演的处女作。</div>
+                    <div style="margin-top:10px;">4月26日——我国成功发射高分辨率对地观测系统首星高分一号 。</div>
+                    <div style="margin-top:10px;">4月27日——为表达全省各族人民对“4·20”芦山7.0级地震遇难同胞的深切哀悼，四川省政府决定，2013年4月27日为全省哀悼日。</div>
                 </el-collapse-item>
                 <el-collapse-item title="5月" name="5">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">5月1日——解放军新式军车号牌正式启用。泰国南部北大年府发生一起枪击事件，导致6人死亡，1人受伤。</div>
+                    <div style="margin-top:10px;">5月2日——阿富汗一所女子高中遭到毒气袭击，导致200多名学生中毒。此毒气是在学生们开始上课之前就已喷洒的。受到毒气影响的学生已被送往医院治疗。</div>
+                    <div style="margin-top:10px;">5月4日——菲律宾共产党游击队发动伏击，5名政府军士兵死亡，两名政府军士兵负伤。</div>
+                    <div style="margin-top:10px;">5月5日——以色列对3处叙利亚军事场所进行空袭，造成平民伤亡和大规模破坏，空袭威胁到周边的居民区。</div>
+                    <div style="margin-top:10px;">5月6日——美国国防部发布《2013年度中国军事与安全态势发展报告》。</div>
+                    <div style="margin-top:10px;">5月7日——巴基斯坦右翼宗教政党的集会遭遇自杀性爆炸袭击，导致至少25人死亡，65人受伤。塔利班声称对此次袭击负责。</div>
+                    <div style="margin-top:10px;">5月8日——英超曼联俱乐部在其官方网站上宣布，执教球队长达26年、一手缔造一个王朝的主教练弗格森将在本赛季末退休。</div>
+                    <div style="margin-top:10px;">5月9日——中共中央印发《关于在全党深入开展党的群众路线教育实践活动的意见》。</div>
+                    <div style="margin-top:10px;">5月9日——台湾渔船“广大兴28号”遭菲律宾公务船开枪射击，当场造成一名船员死亡，菲船追击射击达1小时左右，导致船只漏油，丧失动力。</div>
+                    <div style="margin-top:10px;">5月10日——中国海军正式组建首支舰载航空兵部队。</div>
+                    <div style="margin-top:10px;">5月10日——马英九接获菲方确认袭击者为菲公务船定升高因应态度，指示“外交部”立即向菲方表达强烈抗议及谴责。马英九表示，一定要追究到底，办出一个结果来，要求菲律宾政府缉凶、道歉、赔偿。菲律宾海岸警卫队表示承认其内部人员向台湾渔船射击，但拒绝就此事道歉。中国海军首支舰载航空兵部队正式组建，中央军委委员、海军司令员吴胜利出席组建大会并授予军旗。</div>
+                    <div style="margin-top:10px;">5月10日——澳大利亚、巴布亚新几内亚、所罗门群岛、基里巴斯出现日环食，第二次世界大战太平洋战争的塔拉瓦战役遗址、今基里巴斯首都附近也因此迎来了较多游客，大洋洲大部、马来群岛、南沙群岛南部可见日偏食。</div>
+                    <div style="margin-top:10px;">5月11日——台湾当局领导人马英九召开高层会议，向菲律宾提出道歉、赔偿、惩凶、谈判四要求，促菲方72小时内回应，否则将采取冻结菲劳等措施。</div>
+                    <div style="margin-top:10px;">5月12日——中国海军南海舰队赴南沙展开常态化战备巡逻。汶川大地震5周年祭。</div>
+                    <div style="margin-top:10px;">5月13日——解放军东海舰队开赴台湾与菲律宾之间的巴士海峡。</div>
+                    <div style="margin-top:10px;">5月14日——下午，一架直升飞机在山东省德州市被强行控制，有不明身份人员强迫飞行员启动飞机离开当地。</div>
+                    <div style="margin-top:10px;">5月15日——中国多个航空公司接连接到威胁信息，多架航班改飞行计划。冲绳独立组织“琉球民族独立综合研究学会”正式成立，欲寻求冲绳独立并组建“琉球自治联邦共和国”。台湾当局对菲律宾的第一阶段3项制裁已经生效，“驻菲律宾台北经济文化办事处”代表王乐生召回返台。18时，台湾当局采取第二波8项对菲制裁措施。台军一架F-16战机下午2点30分在台湾省嘉义县外海坠毁，驾驶该机的飞行员已经跳伞获救。该机原计划16日出动赴南海参加演习。阿盟公开证实未将叙利亚席位交予叙反对派。</div>
+                    <div style="margin-top:10px;">5月15日——切尔西在2012-13赛季欧联杯决赛中以2-1击败本菲卡夺冠。在夺得队史首个欧联杯冠军的同时，也创造了两项新的纪录：切尔西成为首支两年连夺欧冠和欧联杯冠军的球队，也成为继尤文图斯、阿贾克斯和拜仁慕尼黑之后第四支夺得欧洲三大杯的球队。</div>
+                    <div style="margin-top:10px;">5月16日——台湾海军与“海巡署”在菲律宾射杀台湾渔民的附近海域举行大规模联合护渔演习，以此展示台湾的护渔决心。同日，菲律宾司法部拒绝与台湾联合调查枪杀渔民事件。解放军南海舰队在南沙进行了导弹攻击演练。伊拉克首都巴格达一些以什叶派穆斯林为主的居民区当天傍晚接连发生9起汽车炸弹袭击事件，造成至少23人遇难、110人受伤。</div>
+                    <div style="margin-top:10px;">5月17日～18日——中央巡视工作动员暨培训会议举行。</div>
+                    <div style="margin-top:10px;">5月17日——伊拉克再次发生一系列暴力袭击事件，造成至少73人死亡、148人受伤。</div>
+                    <div style="margin-top:10px;">5月19日～27日——李克强对印度、巴基斯坦、瑞士、德国进行正式访问。</div>
+                    <div style="margin-top:10px;">5月20日——山东章丘一炸药生产企业发生爆炸，造成12人死亡，19人受伤，其中2人重伤，剩余11人失踪。</div>
+                    <div style="margin-top:10px;">5月22日——瑞典发生大规模移民骚乱事件。伦敦一皇家炮兵营发生恐怖袭击事件，致1名士兵死亡。</div>
+                    <div style="margin-top:10px;">5月22日——2013年伍尔维奇袭击。</div>
+                    <div style="margin-top:10px;">5月23日——京勒伊格松出任新一任冰岛总理。</div>
+                    <div style="margin-top:10px;">5月25日——欧冠决赛首次上演“德甲内战”。拜仁慕尼黑2:1绝杀多特蒙德，捧起队史第五座欧冠冠军奖杯。</div>
+                    <div style="margin-top:10px;">5月26日——察哈尔抗日同盟军（又称察哈尔民众抗日同盟军或察绥抗日同盟军）在张家口市组建80周年纪念。</div>
+                    <div style="margin-top:10px;">5月27日——全国纪检监察系统开展会员卡专项清退活动电视电话会议举行。王岐山讲话。</div>
+                    <div style="margin-top:10px;">5月28日——日本女子偶像组合AKB48单曲总销量已达2185.2万张，从而超过滨崎步的2141.6万张，成为日本历代最高销量女歌手。</div>
+                    <div style="margin-top:10px;">5月30日——上午10时许，北海舰队一架水上飞机，在青岛胶州湾海域进行飞行训练时失事坠海，没有造成其他附带损害。</div>
+                    <div style="margin-top:10px;">5月31日——国务院常务会议围绕转变政府职能通过一批法律修正案草案和废止、修改部分行政法规的决定。</div>
+                    <div style="margin-top:10px;">5月31日～6月8日——习近平对特立尼达和多巴哥、哥斯达黎加、墨西哥进行国事访问，在特多同加勒比9个建交国领导人举行会晤并在美国举行中美元首会晤 。</div>
                 </el-collapse-item>
                 <el-collapse-item title="6月" name="6">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">6月1日——土耳其伊斯坦布尔一公园改造计划引发大规模骚乱。</div>
+                    <div style="margin-top:10px;">6月2日～5日——英国女王伊丽莎白二世登基61周年纪念。</div>
+                    <div style="margin-top:10px;">6月2日——吉林宝源丰禽业公司由于氨气泄漏发生火灾发生火灾，致120人遇难，77人受伤。事故直接原因已初步查明，系配电室线路短路引燃可燃物。</div>
+                    <div style="margin-top:10px;">6月5日——教育部公布39所被撤销建制的成人高等学校名单。</div>
+                    <div style="margin-top:10px;">6月5日——加纳军警开始围堵中国籍非法采金人员。</div>
+                    <div style="margin-top:10px;">6月6日——中共中央总书记、国家主席、中央军委主席习近平就做好安全生产工作作出重要指示 。习近平指出，人命关天，发展决不能以牺牲人的生命为代价。这必须作为一条不可逾越的红线。</div>
+                    <div style="margin-top:10px;">6月6日——2013成都《财富》全球论坛开幕，习近平致信祝贺，张高丽出席开幕晚宴并发表演讲。</div>
+                    <div style="margin-top:10px;">6月8日~9日——美国总统奥巴马与中国国家主席习近平在美国加州安纳伯格庄园举行非正式会谈。</div>
+                    <div style="margin-top:10px;">6月7日——厦门发生公交车爆燃事件，造成47人死亡，37人受伤（详见6·7厦门公交起火案）。</div>
+                    <div style="margin-top:10px;">6月9日——北京市第二中级人民法院公开审理原铁道部长刘志军涉嫌受贿、滥用职权案。前美国中情局雇员爱德华·斯诺登在香港向英国卫报记者透露美国国家安全部（NSA）监听个人和主要大国机密，引发世界舆论震惊。</div>
+                    <div style="margin-top:10px;">6月11日～26日——搭载着聂海胜、张晓光、王亚平3位航天员的神舟十号载人飞船成功发射并顺利返回着陆。在轨飞行期间，神舟十号与天宫一号目标飞行器成功进行自动和手控交会对接，并首次开展中国航天员太空授课活动。</div>
+                    <div style="margin-top:10px;">6月12日～14日——国民党荣誉主席吴伯雄率代表团访问大陆。</div>
+                    <div style="margin-top:10px;">6月13日——习近平会见中国国民党荣誉主席吴伯雄，提出坚持从中华民族整体利益的高度把握两岸关系大局、坚持在认清历史发展趋势中把握两岸关系前途等4点意见。</div>
+                    <div style="margin-top:10px;">6月15日——中国国家男子足球队在合肥奥体中心1-5惨败于泰国青年队，创下国足有史以来与泰国比赛的最大输球比。史称“6.15惨案”。</div>
+                    <div style="margin-top:10px;">6月15日——哈桑·鲁哈尼当选伊朗新一任总统。</div>
+                    <div style="margin-top:10px;">6月21日——海峡两岸关系协会与台湾海峡交流基金会在上海签署《海峡两岸服务贸易协议》。</div>
+                    <div style="margin-top:10px;">6月15～30日——2013年国际足联联合会杯在在巴西举行。</div>
+                    <div style="margin-top:10px;">6月17日～20日——中国共产主义青年团第十七次全国代表大会举行。刘云山代表中共中央致祝词。20日，习近平同团中央新一届领导班子成员集体谈话，强调共青团要紧跟党走在时代前列、走在青年前列，团结带领广大青年在实现中华民族伟大复兴的征途中续写新的光荣。</div>
+                    <div style="margin-top:10px;">6月20日——中国首次，全球第二次太空授课由神舟十号航天员王亚平主讲顺利举行。</div>
+                    <div style="margin-top:10px;">6月21日——西班牙队在联合会杯小组赛中以10-0狂胜塔希提队，创造联合会杯单边进球纪录和国际足联大赛（世界杯和联合会杯）净胜球纪录。</div>
+                    <div style="margin-top:10px;">6月23日——巴基斯坦发生绑架事件，造成11名登山者死亡，包括2名中国人和一名美籍华人。</div>
+                    <div style="margin-top:10px;">6月26日——新疆发生暴乱事件，造成27人死亡。</div>
+                    <div style="margin-top:10px;">6月28日——神舟十号飞船返回舱成功开启。</div>
+                    <div style="margin-top:10px;">6月29日——十二届全国人大常委会第三次会议通过《中华人民共和国特种设备安全法》。</div>
+                    <div style="margin-top:10px;">6月29日～7月6日——2013年仁川亚室武会在韩国仁川举行。</div>
+                    <div style="margin-top:10px;">6月30日——中国香港殿堂级摇滚乐队Beyond的主唱兼节奏吉他手黄家驹逝世20周年纪念日。</div>
+                    <div style="margin-top:10px;">6月30日——巴西队在本土进行的联合会杯足球赛决赛中以3-0完胜西班牙队，连续第三次获得联合会杯冠军。</div>
                 </el-collapse-item>
                 <el-collapse-item title="7月" name="7">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">7月——厦漳大桥通车。</div>
+                    <div style="margin-top:10px;">7月1日——中国共产建党92周年、香港回归祖国16周年</div>
+                    <div style="margin-top:10px;">7月2日——中国人民银行发布〔2013〕第8号公告，要求银行间市场全部债券交易通过全国银行间同业拆借中心系统达成，交易一旦达成不可撤销和变更，进一步规范银行间债券市场交易结算行为，维护市场参与者合法权益，促进市场健康规范发展。</div>
+                    <div style="margin-top:10px;">7月4日——北京时间2013年7月4日凌晨三点，埃及总统穆尔西被军方罢黜，由最高宪法法院院长代行总统职权。</div>
+                    <div style="margin-top:10px;">7月4日——由鞠觉亮执导，黄晓明主演的古装历史剧《精忠岳飞》在浙江卫视、山东卫视、安徽卫视、天津卫视四家卫视黄金时段首播 。</div>
+                    <div style="margin-top:10px;">7月5日～12日——“海上联合—2013”中俄联合军演在俄罗斯日本海彼得大帝湾附近海空域举行。</div>
+                    <div style="margin-top:10px;">7月6日——2013年梅干提克湖火车事故。</div>
+                    <div style="margin-top:10px;">7月6日——韩亚航空一架波音777班机，在美国旧金山国际机场降落过程中发生事故，燃起大火，造成江山中学学生叶梦圆、王琳佳、刘易芃死亡，181人受伤。</div>
+                    <div style="margin-top:10px;">7月6日~17日——喀山大运会在俄罗斯喀山举行。</div>
+                    <div style="margin-top:10px;">7月7日～11日——四川省成都、德阳、绵阳、阿坝、雅安多地遭遇特大暴雨，引发滑坡、泥石流、城市内涝、农田渍害等次生灾害，截至7月16日，暴雨已造成全省死亡58人，失踪175人，倒塌房屋1.34万间，346.89万人受灾。其中，都江堰市中兴镇特大地质灾害初步核实造成44人死亡、117人失踪。</div>
+                    <div style="margin-top:10px;">7月10日～11日——第五轮中美战略与经济对话在美国华盛顿举行。</div>
+                    <div style="margin-top:10px;">7月12日——音乐真人秀节目《中国好声音第二季》在浙江卫视黄金时段首播。</div>
+                    <div style="margin-top:10px;">7月19日～8月4日——第15届国际泳联世界锦标赛在西班牙巴塞罗那举行。</div>
+                    <div style="margin-top:10px;">7月22日——北京时间2013年7月22日7时45分55秒，定西市岷县梅川镇、漳县石川乡交界（北纬34.5度、东经104.2度）发生6.6级地震，震源深度20公里，震中距岷县县城约17公里，距漳县县城约46公里，甘肃定西市，陇南市，天水市，兰州市，陕西西安市，四川成都市以及宁夏等地震感都十分明显，截至2013年7月25日18时50分，岷县、漳县地震灾区已经发生余震711次，最大余震5.6级，此次灾害共造成定西、陇南、天水、白银、临夏、甘南6个市（州）的18个县（区）、119个乡（镇）、79896人受灾；因灾死亡95人，因灾受伤412人，因灾失踪人员已全部找到；紧急转移安置27540人；倒塌房屋802户2162间，损坏房屋10197户31152间</div>
+                    <div style="margin-top:10px;">7月25日～8月4日——第九届世界运动会在哥伦比亚卡利举行。</div>
+                    <div style="margin-top:10px;">7月27日——朝鲜战争停战60周年，朝鲜庆祝祖国解放战争胜利60周年大阅兵和群众游行在平壤金日成广场举行。朝鲜领导人金正恩和中国国家副主席李源潮一同出席阅兵式（朝鲜战争停战60周年阅兵式）。</div>
                 </el-collapse-item>
                 <el-collapse-item title="8月" name="8">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">8月2日——美国“棱镜门”揭秘者斯诺登获得俄罗斯政府一年的庇护。</div>
+                    <div style="margin-top:10px;">8月2日~8月13日——2013中国国际太阳能十项全能竞赛在山西省大同市成功举办。</div>
+                    <div style="margin-top:10px;">8月6日——由王俊凯作为队长带领王源、易烊千玺以TFBOYS组合出道。</div>
+                    <div style="margin-top:10px;">8月7日——8·7甘肃舟曲特大泥石流3周年祭。</div>
+                    <div style="margin-top:10px;">8月8日——北京奥运会举行五周年纪念日。</div>
+                    <div style="margin-top:10px;">8日~9日——四川遭受暴雨袭击，出现严重洪涝灾害，冲垮三座大桥，北川“5·12”地震遗址因暴雨淹没。</div>
+                    <div style="margin-top:10px;">8月9日——宋祖英升任海政文工团团长。知名网络爆料人周禄宝因涉嫌敲诈勒索在苏州昆山被批准逮捕。</div>
+                    <div style="margin-top:10px;">8月10日～18日——2013年莫斯科世界田径锦标赛在俄罗斯莫斯科举行。</div>
+                    <div style="margin-top:10px;">8月14日——埃及当局对前总统穆尔西支持者两处示威营地的清场行动引发冲突，已造成至少638人死亡，近4000人受伤。凌晨，停靠在印度孟买雄狮门一带海军码头的印度海军“辛杜拉克沙克”号潜艇爆炸起火，随后沉没。</div>
+                    <div style="margin-top:10px;">8月15日——日本宣布无条件投降68周年纪念日，日本190名议员参拜“靖国神社”招致各方强烈谴责，首相安倍晋三讲话中20年来首次未提及“永不再战”。</div>
+                    <div style="margin-top:10px;">8月15日——国务院以国函〔2013〕91号文批复建立由中国人民银行牵头，银监会、证监会、保监会和外汇局参加的金融监管协调部际联席会议制度。</div>
+                    <div style="margin-top:10px;">8月16日——辽宁抚顺清原满族自治县发生“8·16”特大洪灾，截止8月18日，抚顺市清原县共有43个乡镇街道受灾，共54人死亡，97人失踪，抚顺全县共204个人受灾，全市受灾人口36.43万人，直接经济损失超过17亿元，8月24日定为抚顺全市哀悼日。</div>
+                    <div style="margin-top:10px;">8月16日~8月24日——2013年南京亚青会在中国南京举行。</div>
+                    <div style="margin-top:10px;">8月18日——中央电视台体育赛事频道(CCTV-5+)正式开播，取代原高清综合频道。</div>
+                    <div style="margin-top:10px;">8月20日——全国公安机关集中打击网络有组织制造传播谣言等违法犯罪专项行动拉开序幕。“秦火火”（真名秦志晖）、“立二拆四”（真名杨秀宇）等人，因涉嫌寻衅滋事罪和非法经营罪被北京警方刑事拘留。网络“大谣”傅学胜被被上海警方依法刑事拘留。</div>
+                    <div style="margin-top:10px;">8月23日——10时29分左右，中国沈阳空军某部一架强-5飞机在飞行训练中失事，1名飞行员不幸牺牲，微博大V薛蛮子(真名薛必群)嫖娼已被行政拘留。按照我国法律，薛蛮子有可能会被驱逐出境。羊城晚报集团《新快报》记者刘虎因涉嫌制造传播谣言被北京警方刑事拘留。新华网发布消息称，近日，国务院正式批准设立中国（上海）自由贸易试验区。试验区范围涵盖上海市外高桥保税区、外高桥保税物流园区、洋山保税港区和上海浦东机场综合保税区等4个海关特殊监管区域，总面积为28.78平方公里。</div>
+                    <div style="margin-top:10px;">8月31日～9月12日——中华人民共和国第十二届运动会在辽宁举行。这是全运会首次在东北地区举办。</div>
+                    <div style="margin-top:10px;">8月31日——上海地铁11号线二期开通。</div>
                 </el-collapse-item>
                 <el-collapse-item title="9月" name="9">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">9月——厦深高铁完工开通；计划广州地铁6号线一期（浔峰岗-长涉）开通。</div>
+                    <div style="margin-top:10px;">9月3日～13日——习近平对土库曼斯坦、哈萨克斯坦、乌兹别克斯坦、吉尔吉斯斯坦进行国事访问，并出席在俄罗斯圣彼得堡举行的二十国集团领导人第八次峰会、在吉尔吉斯斯坦比什凯克举行的上海合作组织成员国元首理事会第十三次会议。5日，在二十国集团领导人峰会上发表《共同维护和发展开放型世界经济》的主旨讲话。7日，在哈萨克斯坦纳扎尔巴耶夫大学发表演讲，提出共同建设“丝绸之路经济带”的倡议。</div>
+                    <div style="margin-top:10px;">9月7日——第三十二届夏季奥林匹克运动会主办城市在阿根廷首都布宜诺斯艾利斯确定，为日本东京。</div>
+                    <div style="margin-top:10px;">9月9日——朝鲜在首都平壤的金日成广场上举行工农赤卫军阅兵式和群众游行，庆祝朝鲜民主主义人民共和国成立65周年（朝鲜国庆65周年阅兵）。</div>
+                    <div style="margin-top:10px;">9月9日——中国广西桂林市灵川县八里街学校门口发生一起爆炸事故。据桂林市委宣传部通报，该事故致2人遇难，17人不同程度受伤，已确认伤者中包括9名小学生、3名家长和5名路人（9·9广西桂林爆炸事故）；毛泽东主席逝世37周年。</div>
+                    <div style="margin-top:10px;">9月10日——中国第29个教师节；北京市第二中级人民法院在第三法庭公开开庭审理原铁道部运输局局长、副总工程师张曙光涉嫌受贿案。德国人托马斯·巴赫当选为国际奥委会第九任主席，接替原主席雅克·罗格。</div>
+                    <div style="margin-top:10px;">9月12日——广州市海珠区人民法院对“房叔”蔡彬贪腐案进行一审宣判。蔡彬在任广州市城市管理综合执法局番禺分局政委等职务期间，收受他人财物共计275万元，被法院判处有期徒刑11年6个月，并处没收财产人民币60万元。</div>
+                    <div style="margin-top:10px;">9月14日——叙利亚与美国、俄罗斯达成框架协议，制定计划在2014年内销毁叙利亚全部化学武器。</div>
+                    <div style="margin-top:10px;">9月17日——重庆市高级人民法院9月17日上午11时对涉不雅视频官员雷政富受贿上诉案作出二审判决，维持一审判决，雷政富因受贿316万余元被判处有期徒刑十三年，剥夺政治权利三年，并处没收个人财产30万元。“首都机场7·20爆炸案”在北京市朝阳区人民法院开庭审理，检方以涉嫌爆炸罪对被告人冀中星提起公诉。</div>
+                    <div style="margin-top:10px;">9月18日——九一八事变82周年纪念日。震惊全国的南京江宁饿死女童案在南京市中级人民法院公开审理，两名饿死女童的母亲乐燕被公诉机关控以涉嫌故意杀人罪，被判处无期徒刑，剥夺政治权利终身。托尼·阿博特就任澳大利亚第29任总理。</div>
+                    <div style="margin-top:10px;">9月20日——苹果公司首发iPhone 5s，首周销量突破900万部，因为搭载指纹识别而被美国知名科技媒体《商业内幕》评为了本年度最具创新力的十大设备之一。</div>
+                    <div style="margin-top:10px;">9月21日——中共中央、全国政协举行庆祝中国人民政治协商会议成立65周年大会。习近平强调，人民政协要发挥专门协商机构的作用，把协商民主贯穿履行职责全过程；同时深入阐述社会主义协商民主的性质和作用，强调要推进社会主义协商民主广泛多层制度化发展。</div>
+                    <div style="margin-top:10px;">9月22日——济南中院对中共中央政治局原委员、重庆市委原书记薄熙来受贿、贪污、滥用职权案作出一审判决，认定薄熙来犯受贿罪，判处无期徒刑，剥夺政治权利终身，并处没收个人全部财产。</div>
+                    <div style="margin-top:10px;">9月24日——丁羽心涉嫌行贿、非法经营案在北京市第二中级人民法院开庭审理。</div>
+                    <div style="margin-top:10px;">9月24日~9月26日——第12届世界华商大会在成都举行。</div>
+                    <div style="margin-top:10px;">9月24日——巴基斯坦发生7.8级地震，至少359人遇难。</div>
+                    <div style="margin-top:10px;">9月25日——共中央、国务院印发《关于地方政府职能转变和机构改革的意见》。</div>
+                    <div style="margin-top:10px;">9月25日～28日——第22届金鸡百花电影节暨第29届中国电影金鸡奖在中国武汉举行。</div>
+                    <div style="margin-top:10px;">9月25日——北京大兴摔死女童案主犯韩磊一审被判死刑：备受关注的北京大兴摔死女童案一审宣判，北京市第一中级人民法院以故意杀人罪判处该案主犯韩磊死刑，剥夺政治权利终身。夏俊峰在沈阳被执行死刑。</div>
+                    <div style="margin-top:10px;">9月26日——向莆铁路正式开通运营，从福建到江西、湖北实现动车贯通。北京市海淀区法院对被告人李天一等5人强奸一案作出一审判决，以强奸罪分别判处被告人李天一有期徒刑10年；王某（成年人）有期徒刑12年，剥夺政治权利2年；魏某某（兄）有期徒刑4年；张某某有期徒刑3年，缓刑5年；魏某某（弟）有期徒刑3年，缓刑3年。</div>
+                    <div style="margin-top:10px;">9月27日——河北省高级人民法院在邯郸市中级人民法院审判庭公开宣判上诉人王书金强奸、故意杀人一案。被告人王书金犯故意杀人强奸罪，被判处死刑，剥夺政治权利终身 。</div>
+                    <div style="margin-top:10px;">9月29日——上午10时中国（上海）自由贸易试验区正式开始运行。</div>
                 </el-collapse-item>
                 <el-collapse-item title="10月" name="10">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">10月1日——中华人民共和国成立64周年；中国石油大学60周年校庆。美国政府关门危机：美国参议院、众议院为美国医疗保险改革无法达成协议。《旅游法》正式实施。</div>
+                    <div style="margin-top:10px;">10月2日～8日——习近平对印度尼西亚、马来西亚进行国事访问，并出席在印度尼西亚巴厘岛举行的亚太经合组织第二十一次领导人非正式会议。2日，在雅加达同印度尼西亚总统苏西洛会谈，倡议筹建亚洲基础设施投资银行。3日，在印度尼西亚国会发表演讲，提出共同建设“21世纪海上丝绸之路”的倡议。</div>
+                    <div style="margin-top:10px;">10月6日～15日——2013年天津东亚运动会在中国天津举行。</div>
+                    <div style="margin-top:10px;">10月11日——大型亲子户外真人秀节目《爸爸去哪儿》在湖南卫视开播，该节目参考自MBC电视台节目《爸爸！我们去哪儿？》，创造了中国综艺节目史上多项纪录。</div>
+                    <div style="margin-top:10px;">10月11日~11月初——第十届中华人民共和国艺术节在中国山东举行。</div>
+                    <div style="margin-top:10px;">10月16日——国内首条跨省地铁—上海地铁11号线花桥延伸段开通。</div>
+                    <div style="margin-top:10px;">10月17日——美国微软公司正式发布Windows 8.1操作系统。</div>
+                    <div style="margin-top:10px;">10月18日~10月19日——第六届中国邮文化节在江苏高邮市举办。</div>
+                    <div style="margin-top:10px;">10月23日~10月27日——第14届中国西部国际博览会（“西博会”）在成都举行。</div>
+                    <div style="margin-top:10px;">10月28日——中午，一辆吉普车在天安门东闯入长安街便道，撞向金水桥护栏后起火，事件造成5人死亡（吉普车司机及车内人员、2名游客），40人受伤。详见（10·28暴力恐怖袭击案）。</div>
                 </el-collapse-item>
                 <el-collapse-item title="11月" name="11">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">11月3日——全环食，西北大西洋先出现日环食，然后转变为日全食，经过加蓬、刚果（布）、刚果（金）、乌干达、肯尼亚、埃塞俄比亚、索马里部分地区。美洲东海岸、非洲大部、欧洲南部、亚洲西南部可见日偏食。阿布扎比在日落前也能看到日偏食，2013年阿布扎比大奖赛直播中，在F1比赛进行过程中也出现了日偏食画面。</div>
+                    <div style="margin-top:10px;">11月8日——超强台风海燕袭击菲律宾致6000多人死亡。</div>
+                    <div style="margin-top:10px;">11月9日——十八届三中全会。</div>
+                    <div style="margin-top:10px;">11月9日——广州恒大历史性夺得亚冠联赛冠军。</div>
+                    <div style="margin-top:10px;">11月18日——中共中央、国务院印发《党政机关厉行节约反对浪费条例》。</div>
+                    <div style="margin-top:10px;">11月12日——孙中山诞辰147周年。</div>
+                    <div style="margin-top:10px;">11月22日——山东省青岛市发生“11·22”中石化东黄输油管道泄漏爆炸特别重大事故。</div>
+                    <div style="margin-top:10px;">11月22日——2013年京哈铁路列车撞人事故。</div>
+                    <div style="margin-top:10px;">11月23日——中国政府发表声明，宣布划设东海防空识别区，并发布航空器识别规则公告和识别区示意图。</div>
                 </el-collapse-item>
                 <el-collapse-item title="12月" name="12">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">12月2日——中国首个地外天体软着陆器嫦娥三号成功发射。</div>
+                    <div style="margin-top:10px;">12月3日——由宁浩执导，徐峥主演的公路片《无人区》在中国大陆上映。</div>
+                    <div style="margin-top:10px;">12月5日——央行等五部门发布《关于防范比特币风险的通知》，明确要求各金融机构和支付机构不得开展与比特币的任何的业务。</div>
+                    <div style="margin-top:10px;">12月6日——日本特定秘密保护法案通过，该法案被指出会使得回到军国主义时代。</div>
+                    <div style="margin-top:10px;">12月5日（南非当地时间20:50）——南非前总统曼德拉在约翰内斯堡住所去世，享年95岁。南非为曼德拉举行国葬，全国降半旗。</div>
+                    <div style="margin-top:10px;">12月9日——朝鲜中央电视台公布了前任朝鲜国防委员会副委员长张成泽在劳动党政治扩大会议上被当众逮捕的画面。</div>
+                    <div style="margin-top:10px;">12月10日——习近平在中央经济工作会议上提出“新常态”。</div>
+                    <div style="margin-top:10px;">12月11日～21日——2013年特伦蒂诺世界大学生冬季运动会在意大利特伦蒂诺举行。</div>
+                    <div style="margin-top:10px;">12月14日——中国嫦娥三号月球探测器于北京时间21时11分成功软着陆月球。</div>
+                    <div style="margin-top:10px;">12月18日凌晨3点——2013年国际足联世俱杯展开半决赛焦点对决，亚冠冠军广州恒大挑战欧冠冠军拜仁慕尼黑，这是两队首次参加世俱杯，最终，恒大0-3不敌拜仁。</div>
+                    <div style="margin-top:10px;">12月18日——改革开放35周年。</div>
+                    <div style="margin-top:10px;">12月20日——澳门回归祖国14周年。</div>
+                    <div style="margin-top:10px;">12月26日——毛泽东同志诞辰120周年。</div>
+                    <div style="margin-top:10px;">12月26日——日本首相安倍晋三参拜靖国神社。</div>
+                    <div style="margin-top:10px;">12月26日——香港4名“港独”分子闯入中国人民解放军驻港部队中环总部，并发表“驱逐内地人”的言论。</div>
+                    <div style="margin-top:10px;">12月26日——《看见》正式停播，撤出CCTV-1。</div>
+                    <div style="margin-top:10px;">12月26日——2013年伊尔库次克坠毁事故。</div>
+                    <div style="margin-top:10px;">12月28日——劳动教养制度被正式废除。</div>
+                    <div style="margin-top:10px;">12月28日——全国人大公布允许“单独”子女生二胎的政策。</div>
+                    <div style="margin-top:10px;">12月28日——郑州地铁1号线一期工程开通运营。</div>
+                    <div style="margin-top:10px;">12月29日——上海地铁12号线、16号线开通。</div>
+                    <div style="margin-top:10px;">12月30日——俄罗斯伏尔加格勒市有轨电车发生爆炸，致34人死亡。</div>
+                    <div style="margin-top:10px;">12月30日——香港歌手梅艳芳逝世10周年。</div>
+                    <div style="margin-top:10px;">12月30日——长沙地铁2号线一期工程（望城坡站至光达站）通车试运行。</div>
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2014">2014年
+        <el-tab-pane label="2014">
+            <img src="../assets/zodiac/horse.svg" class="zodiac">
+            <span class="year">2014年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
-                    <div>1月1日——被瑞士选民于1999年投票表决通过的新《瑞士宪法》正式实施。</div>
-                    <div>1月1日——汉中音乐广播正式开播。</div>
+                    <div style="margin-top:10px;">1月1日：中国固原地区在建的六盘山特长大隧道建设工程，突破了掘进万米大关。</div>
+                    <div style="margin-top:10px;">1月1日：《中华人民共和国特种设备安全法》开始施行。</div>
+                    <div style="margin-top:10px;">1月1日：1·1中国驻旧金山领事馆遭纵火事件</div>
+                    <div style="margin-top:10px;">1月1日：中国中央电视台2、7、9、10、12、14共6套的高清同播频道实现高清化播出</div>
+                    <div style="margin-top:10px;">1月2日：1·3雪龙号营救被困南极乘客</div>
+                    <div style="margin-top:10px;">1月3日：音乐真人秀节目《中国好歌曲第一季》在央视三套黄金时段首播。</div>
+                    <div style="margin-top:10px;">1月3日：中国首档科学竞技真人秀节目《最强大脑第一季》在江苏卫视黄金时段首播。</div>
+                    <div style="margin-top:10px;">1月5日：中国宁夏固原市西吉县北大寺发生踩踏事故，事故造成14人死亡，其余受伤人员10人（其中4人重伤）在医院救治。（1·5宁夏西吉北大寺踩踏事故）</div>
+                    <div style="margin-top:10px;">1月6日：国务院批复同意设立陕西西咸新区，西咸新区是中国第7个国家级新区，规划控制面积882平方公里。</div>
+                    <div style="margin-top:10px;">1月6日：国务院批复同意设立贵州贵安新区，贵安新区是中国第8个国家级新区，规划控制面积1795平方公里。</div>
+                    <div style="margin-top:10px;">1月7日：日本国家安全保障局成立。</div>
+                    <div style="margin-top:10px;">1月8日：中国惠州音乐广播正式开播。</div>
+                    <div style="margin-top:10px;">1月10日：原中非共和国第七任总统米歇尔·乔托迪亚宣布辞职。</div>
+                    <div style="margin-top:10px;">1月11日：中国香格里拉独克宗古城火灾事故</div>
+                    <div style="margin-top:10px;">1月14日：1·14浙江温岭鞋厂火灾</div>
+                    <div style="margin-top:10px;">1月16日：2014年春运开始，将运输旅客1.6亿人次</div>
+                    <div style="margin-top:10px;">1月17日：《爱情公寓4》在安徽卫视，东方卫视，黑龙江卫视，与湖北卫视首次播放</div>
+                    <div style="margin-top:10px;">1月18日：埃及新宪法草案公投以100%的票数通过，投票率为40%</div>
+                    <div style="margin-top:10px;">1月19日：位于哈尔滨火车站的安重根义士纪念馆竣工并开馆。</div>
+                    <div style="margin-top:10px;">1月21日：中国遭到DNS入侵，中国红客联盟（王子）当晚组织反击</div>
+                    <div style="margin-top:10px;">1月22日：2014年冬季达沃斯论坛举行。</div>
+                    <div style="margin-top:10px;">中共中央全面深化改革领导小组首次会议召开。</div>
+                    <div style="margin-top:10px;">叙利亚国际和平会议在瑞士举行。</div>
+                    <div style="margin-top:10px;">1月23日：中吉边境遭武装分子袭击事件</div>
+                    <div style="margin-top:10px;">1月24日：1·24新疆爆炸案</div>
+                    <div style="margin-top:10px;">1月25日：达沃斯论坛闭幕。</div>
+                    <div style="margin-top:10px;">1月25日：台湾一男子驾驶沙土车冲击马英九办公室。</div>
+                    <div style="margin-top:10px;">1月25日：澳网女单决赛，李娜2-0战胜齐布尔科娃，夺得个人第二个大满贯冠军，成为百年澳网史上首位夺冠的亚洲人。</div>
+                    <div style="margin-top:10px;">1月25日：1·25贵州省镇远县报京大寨火灾事故</div>
+                    <div style="margin-top:10px;">1月28日：日本文部科学大臣下村博文正式宣布，已经决定修订初高中“学习指导要领”解说书，写明尖阁诸岛（中国称“钓鱼岛”）和竹岛（韩国称“独岛”）是日本“固有领土”，中方提出严正抗议。</div>
+                    <div style="margin-top:10px;">1月31日：中国中央电视台马年春节联欢晚会开幕。</div>
                 </el-collapse-item>
                 <el-collapse-item title="2月" name="2">
-                    <div>控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；</div>
-                    <div>页面反馈：操作后，通过页面元素的变化清晰地展现当前状态。</div>
+                    <div style="margin-top:10px;">2月1日：日本不明身份飞机进入中国防空识别区，中方战斗机挂弹驱逐该飞机。中国男篮申请男篮世界杯外卡失败，无缘西班牙男篮世界杯。</div>
+                    <div style="margin-top:10px;">2月2日：大卫斯特恩卸任担任39年的NBA总裁职务，亚当萧华接任NBA总裁一职。</div>
+                    <div style="margin-top:10px;">2月4日：上海市宝山区环震包装制品有限公司发生火灾，两名宝山消防支队罗店中队的消防员陆晨（23岁）、孙络络（19岁）不幸牺牲。</div>
+                    <div style="margin-top:10px;">：比尔·盖茨卸任微软公司董事长，但在新任CEO萨提亚·纳德拉的要求下，盖茨将以创始人和技术顾问的角色在董事会任职。</div>
+                    <div style="margin-top:10px;">2月7日~2月23日：2014年索契冬季奥运会在俄罗斯索契举行。中国国家主席习近平在访问俄罗斯期间出席了开幕式，这是中国领导人首次在境外出席国际体育赛事开幕式。</div>
+                    <div style="margin-top:10px;">2月7日：2·7浙江渔船日本海域火灾事故</div>
+                    <div style="margin-top:10px;">2月8日：北京和张家口宣布联合申办2022年第24届冬季奥林匹克运动会。</div>
+                    <div style="margin-top:10px;">2月9日：伊朗海军舰艇前往大西洋，靠近美国海上边界。</div>
+                    <div style="margin-top:10px;">2月9日：（2·9东莞娱乐场所查处事件）</div>
+                    <div style="margin-top:10px;">2月11日：国务院台湾事务办公室主任张志军与台湾方面陆委会主委”王郁琦在南京会面。这是双方两岸事务主管部门负责人第一次正式会面并交换意见。</div>
+                    <div style="margin-top:10px;">：阿尔及利亚一架军用运输机在阿东部乌姆布瓦吉省境内坠毁，阿尔及利亚国防部12日证实,事故共造成77人遇难。（2·11阿尔及利亚军机坠毁事故）</div>
+                    <div style="margin-top:10px;">2月12日：北京时间17时19分，新疆维吾尔自治区和田地区于田县发生里氏7.3级地震，周围50~100千米均有敏感，暂无人员伤亡报告；发生地在于田县南，北纬36.1°，东经82.5°，震源12千米；已造成67间房屋垮塌，同时造成新疆兵团6800多人受灾，400余间房屋受损，地震发生后仍有5.7级的余震。（2·12于田地震）</div>
+                    <div style="margin-top:10px;">：美国共和党参议员兰德·保罗12日在美国首都华盛顿就美国国家安全局违法采集公民个人通讯信息的行为对奥巴马政府正式提出起诉。</div>
+                    <div style="margin-top:10px;">：加拿大联邦政府在2014-2015年新预算中即将停止联邦投资移民项目，约有5万中国移民者受到影响。</div>
+                    <div style="margin-top:10px;">2月13日：意大利总理莱塔宣布辞职。</div>
+                    <div style="margin-top:10px;">2月16日：香港“港独”组织“反殖民，反赤化”在香港广东道发动驱逐内地人的行动，并与内地游客发生冲突。遭到爱港团体及特首梁振英的严厉谴责。</div>
+                    <div style="margin-top:10px;">2月17日：联合国首次发表朝鲜人权报告，朝鲜严厉谴责。</div>
+                    <div style="margin-top:10px;">2月18日：中国国家主席习近平在北京钓鱼台国宾馆会见国民党荣誉主席连战。</div>
+                    <div style="margin-top:10px;">2月20日~2月25日：朝鲜与韩国时隔3年4个月再次举行离散家属团聚活动。</div>
+                    <div style="margin-top:10px;">2月21日：乌克兰反对派与总统亚努科维奇签署和解协议，结束持续进3个月的政治危机。</div>
+                    <div style="margin-top:10px;">2月22日：“台独”分子拉倒台南汤德章纪念公园内重达600多公斤的孙中山铜像，引发舆论哗然。（2·22台南孙中山铜像被拉到事件）</div>
+                    <div style="margin-top:10px;">2月25日：全球最大的比特币交易平台Mt.Gox关闭交易。</div>
+                    <div style="margin-top:10px;">2月26日：37名原中国劳工及遗属的代表向北京一中院递交起诉状，状告日本焦炭工业株式会社（原三井矿山）和三菱综合材料株式会社（原三菱矿业株式会社），要求二被告就二战期间掳走中国劳工在媒体上公开谢罪，同时赔偿每位劳工100万元人民币。</div>
+                    <div style="margin-top:10px;">2月27日：中国全国人大常委会通过决定，将12月13日设立为南京大屠杀死难者国家公祭日。</div>
                 </el-collapse-item>
                 <el-collapse-item title="3月" name="3">
-                    <div>简化流程：设计简洁直观的操作流程；</div>
-                    <div>清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；</div>
-                    <div>帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</div>
+                    <div style="margin-top:10px;">3月1日：全球最大的比特币交易平台Mt.Gox向日本法院宣布破产保护。</div>
+                    <div style="margin-top:10px;">21时许，昆明火车站发生多名歹徒恶性砍人袭击事件。事件共造成29人死亡，143人受伤。（云南昆明火车站暴力恐怖案件）</div>
+                    <div style="margin-top:10px;">3月3日：泰国反政府组织决定结束“封锁曼谷”的行动。中国人民政治协商会议第十二届全国委员会第二次会议在北京召开。</div>
+                    <div style="margin-top:10px;">3月5日：第十二届全国人民代表大会第二次会议在北京召开。</div>
+                    <div style="margin-top:10px;">3月7日：俄罗斯宣布与乌克兰断绝外交关系。《新闻周刊》印刷版本开始在美国和欧洲发行，首期发行7万册。</div>
+                    <div style="margin-top:10px;">3月7日~3月16日：2014年索契冬季残奥会在俄罗斯索契举行。</div>
+                    <div style="margin-top:10px;">3月8日：凌晨2点40分，马来西亚航空公司称与一架载有239人的波音777-200飞机与管制中心失去联系的，该飞机航班号为MH370，原定由吉隆坡飞往北京。失去联络的客机上载有227名乘客（包括两名婴儿）和12名机组人员。其中有154名中国人。（3·8马来西亚航班失踪事件）</div>
+                    <div style="margin-top:10px;">3月10日：日本内阁官房长官菅义伟说，日本政府不打算修改为日军强征“慰安妇”道歉的“河野谈话”，但是将继续调查这一政府声明发表的背景。3月14日，首相安倍晋三又在国会答辩中表示同一立场。</div>
+                    <div style="margin-top:10px;">3月12日：纽约曼哈顿一建筑物发生爆炸并倒塌，事件至少已造成3人死亡，63人受伤。（3·12曼哈顿建筑物爆炸事件）</div>
+                    <div style="margin-top:10px;">3月14日：10:30左右，长沙市伍家岭辖区内发生一起恶性伤人事件，造成多人伤亡。地方政府及公安机关正在现场组织力量全力以赴处置事态。（3·14长沙五家岭砍人事件）</div>
+                    <div style="margin-top:10px;">3月15日：中共中央依照党的纪律条例，决定对徐才厚涉嫌违纪问题进行组织调查。</div>
+                    <div style="margin-top:10px;">3月16日：史诗长卷《小平颂》在北京京西宾馆发布。</div>
+                    <div style="margin-top:10px;">3月17日：新中国第一代西医、首届全国三八红旗手金学曙逝世。</div>
+                    <div style="margin-top:10px;">3月17日：乌克兰克里米亚地区17日公布公投最终结果，显示高达近97%的人支持加入俄罗斯。克里米亚议会随后宣布“独立”，并申请加入俄罗斯。</div>
+                    <div style="margin-top:10px;">3月18日：俄罗斯总统普京与克里米亚领导人签署克里米亚入俄条约，并在议会发表咨文，强调克里米亚在俄罗斯民众心目中是不可分割的一部分，对中国在克里米亚问题上的态度表示感谢。</div>
+                    <div style="margin-top:10px;">3月20日，乌鲁木齐地铁1号线开始建设。</div>
+                    <div style="margin-top:10px;">3月20日~3月26日：美国第一夫人米歇尔奥巴马和两个女儿以及她的母亲访问中国的北京、西安和成都，这是我国首次外国第一夫人访华。</div>
+                    <div style="margin-top:10px;">3月24日：马来西亚总理纳吉布在吉隆坡宣布，马航失联航班MH370在南印度洋坠毁，机上239名乘客全部死亡。</div>
+                    <div style="margin-top:10px;">3月26日：东风完成收购法国标致雪铁龙的所有手续，正式签订合同。国务院批复《河北省委、省政府关于推进新型城镇化的意见》明确河北保定、廊坊将作为将作为建设集中承接首都行政事业等功能疏解的服务区，与京津形成京津冀城市群的核心区。</div>
+                    <div style="margin-top:10px;">3月27日：第68届联合国大会27日投票通过有关乌克兰问题决议，申明其对乌克兰在其国际公认边界内的主权、独立和领土完整的承诺，认定克里米亚自治共和国和塞瓦斯托波尔市举行的全民公投“无效”，中国在投票中投弃权票。</div>
+                    <div style="margin-top:10px;">3月28日：中国人民志愿军烈士遗骸交接仪式在韩国仁川国际机场举行。（韩国交还志愿军遗骸仪式）</div>
+                    <div style="margin-top:10px;">3月31日：中国国家主席习近平对比利时进行国事访问并访问欧盟总部，成为中国与欧盟建交以来首位访问欧盟总部的中国国家元首</div>
                 </el-collapse-item>
                 <el-collapse-item title="4月" name="4">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">4月1日：日本内阁会议通过“防卫装备转移三原则”取代过去的“武器出口三原则，这意味着日本将大幅放宽向外输出日本武器装备和军事技术的条件</div>
+                    <div style="margin-top:10px;">4月2日：1名上海游客和1名菲律宾籍女服务员在马来西亚仙本那singamata酒店被武装分子绑架。（4·2马来西亚仙本那劫持事件）</div>
+                    <div style="margin-top:10px;">4月5日：海归华人陈恩田等人在北京中华世纪坛祭奠邓小平。</div>
+                    <div style="margin-top:10px;">4月7日： 卢旺达种族大屠杀20周年，同日美国国防部长哈格尔访问中国。</div>
+                    <div style="margin-top:10px;">4月7日：2014年4月7日4时50分，云南省曲靖市麒麟区东山镇下海子煤矿发生透水事故，当班入井工作人员26人中，4人安全升井，22人被困井下。（4.7云南曲靖煤矿透水事故）</div>
+                    <div style="margin-top:10px;">4月8日：微软公司正式停止为Windows XP用户提供热修复、产品更新以及安全补丁等服务。</div>
+                    <div style="margin-top:10px;">4月9日：openssl爆出漏洞，Yahoo，Facebook等网站受到影响。</div>
+                    <div style="margin-top:10px;">4月10日：中国证监会、香港证监会决定原则批准沪港股票市场交易互联互通机制试点。台湾“反服贸”学生正式退出台湾“台湾立法部门”。美国国防部长哈格尔结束对中国的访问。</div>
+                    <div style="margin-top:10px;">4月14日：4·14玉树地震4周年。</div>
+                    <div style="margin-top:10px;">4月15日：中国国家安全委员会首次会议召开。</div>
+                    <div style="margin-top:10px;">4月16日：韩国当地时间4月16日上午8时58分许，一艘载有470余名乘客的“岁月号”客轮在韩国西南海域发生浸水沉没，事故造成近300名乘客遇难，其中多数为韩国仁川檀园高中学生。（4·16韩国客轮沉没事件）《舌尖上的中国》第二季开播，共8集，创中国纪录片周播模式。</div>
+                    <div style="margin-top:10px;">4月17日：上午，备受社会关注的“秦火火”（实名秦志晖）因犯诽谤、寻衅滋事罪，朝阳法院，一审判其数罪并罚合并执行共3年刑期。</div>
+                    <div style="margin-top:10px;">4月20日：中国四川4·20雅安地震1周年。</div>
+                    <div style="margin-top:10px;">4月22日：菲律宾首都马尼拉市市长约瑟夫·埃斯特拉达22日飞往中国香港，将就2010年中国香港人质事件向8名遇难香港同胞的家属道歉。</div>
+                    <div style="margin-top:10px;">4月23日：中国人民解放军海军成立65周年。</div>
+                    <div style="margin-top:10px;">4月23日：中国“十三五”规划编制正式启动。</div>
+                    <div style="margin-top:10px;">4月24日~4月26日：日本东京都知事舛添要一访问北京，这是日本东京都知事时隔18年访问北京。</div>
+                    <div style="margin-top:10px;">4月24日：日本商船三井株式会社被扣商船在缴纳40亿日元赔偿金后被释放。</div>
+                    <div style="margin-top:10px;">4月25日~10月25日：2014青岛世界园艺博览会在中国青岛举行。</div>
+                    <div style="margin-top:10px;">4月25日：中国吉林省公布89件侵华日军档案。</div>
+                    <div style="margin-top:10px;">4月26日：《生活大爆炸》等美剧在中国视频网站下架，引发网友热议。</div>
+                    <div style="margin-top:10px;">4月27日：韩国总理郑烘原27日宣布就“岁月号“沉船事故引咎辞职，总统朴槿惠批准了郑烘原的辞职请求，将在沉船事故搜救工作收尾后受理辞呈。</div>
                 </el-collapse-item>
                 <el-collapse-item title="5月" name="5">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">5月1日：苏州电视台1套（新闻综合频道）正式开播《苏州今朝》和《看看12点》。</div>
+                    <div style="margin-top:10px;">：一伙暴徒在乌鲁木齐火车南站出站口接人处持刀砍杀群众，同时引爆爆炸装置，造成3人死亡，79人受伤，其中4人重伤。（4·30乌鲁木齐火车站恐怖袭击案）</div>
+                    <div style="margin-top:10px;">：（5.1上海徐汇区一高层居民住宅楼火灾）</div>
+                    <div style="margin-top:10px;">5月4日：习近平总书记在北京大学发表了《青年要自觉践行社会主义核心价值观—在北京大学师生座谈会上的讲话》，纪念“五四运动”九十五周年。（习近平在北京大学师生座谈会上的讲话）</div>
+                    <div style="margin-top:10px;">5月6日：广州火车站西广场发生砍人事件，有6名群众（3男3女）不同程度受伤，受伤群众与嫌疑人均已被及时送往医院进行救治，暂无生命危险。（5·6广州火车站暴力袭击事件）</div>
+                    <div style="margin-top:10px;">：中国两艘渔船在南沙半月礁遭遇菲律宾武装船只拦截。琼琼海03168渔船成功撤离，另一渔船及11名渔民被扣留。（5·6菲律宾扣押中国渔民事件）</div>
+                    <div style="margin-top:10px;">5月7日：瑞士宣布将公开外国存款人在瑞士银行的账户信息以打击逃税，瑞士传统“避税天堂“或将终结。</div>
+                    <div style="margin-top:10px;">同日——泰国宪法法院裁定英拉违宪，解除总理职务。（2014泰国军事政变）</div>
+                    <div style="margin-top:10px;">5月8日：14日越南共产党第十一届九中全会在河内召开。</div>
+                    <div style="margin-top:10px;">同日——新疆阿克苏市发生袭警事件，公安民警果断处置，击毙1人，抓获1人。处置过程中，造成一名协警受重伤。（5·8新疆阿克苏袭警案）</div>
+                    <div style="margin-top:10px;">5月12日——朔州交通音乐广播正式开播。</div>
+                    <div style="margin-top:10px;">同日——四川宜宾南门桥一辆14路公交车发生爆燃。事故造成1人死亡，77人受伤。经公安机关初步调查认定，事件是人为造成，现场死者余跃海系纵火犯罪嫌疑人。（5·12宜宾公交车爆燃事件）</div>
+                    <div style="margin-top:10px;">5月13日：土耳其索玛地区一煤矿发生的恶性矿井瓦斯爆炸事故，截至5月15日晚间，死亡人数已上升至283人，仍有90名矿工被困井下，生死不明。（5·13土耳其索玛矿难）</div>
+                    <div style="margin-top:10px;">5月16日：由张艺谋执导，陈道明、巩俐主演的剧情文艺电影《归来》在中国大陆上映。</div>
+                    <div style="margin-top:10px;">5月16日：印度人民院（议会下院）选举结果揭晓，印度人民党以压倒性优势赢得大选，将成为议会多数党，组建下届印度联邦政府，该党总理候选人莫迪将出任总理。</div>
+                    <div style="margin-top:10px;">5月17日：一架老挝空军飞机在该国北部坠毁。机上载有14人，其中包括老挝国防部长及妻子、公共安全部长和首都万象的市长。</div>
+                    <div style="margin-top:10px;">5月19日：国家主席习近平19日在上海会见联合国秘书长潘基文。习近平表示，2015年是世界反法西斯战争和中国人民抗日战争胜利70周年，也是联合国成立70周年。国际社会要利用好这个重要契机，重申对多边主义的承诺，捍卫联合国宪章宗旨和原则，致力于加强联合国的作用。</div>
+                    <div style="margin-top:10px;">5月20日~5月21日：第四次亚信峰会在上海举行。</div>
+                    <div style="margin-top:10px;">5月20日：尼日利亚乔斯一集市遭遇两次炸弹袭击，事件已导致118人死亡，56人受伤。（5·20尼日利亚集市炸弹袭击事件）</div>
+                    <div style="margin-top:10px;">5月21日：河南省平顶山鲁山县梁洼镇北店村发生一起持刀杀人案，截至5月21日中午12时，事件已造成8人死亡（3名小孩、2名老人和3名成年人）。（5·21平顶山杀人案）</div>
+                    <div style="margin-top:10px;">：台北捷运地铁板南线往板桥方向发生随机砍人事件，1名满身酒味男子，行经江子翠站时，突然拿起随身的刀子猛刺身边的乘客，造成3人当场死亡，1名伤者经抢救无效后身亡，另共有21人不同程度受伤。男子随即逃逸，后遭警方制伏。（5·21台北地铁砍人事件）</div>
+                    <div style="margin-top:10px;">5月22日：7时50分许，有2辆无牌汽车在新疆乌鲁木齐市沙依巴克区公园北街一早市冲撞群众，此后2辆车发生爆炸起火。事故共造成39人死亡，94人受伤。（5·22乌鲁木齐爆炸案）</div>
+                    <div style="margin-top:10px;">四川宜宾发生自焚事件，一李姓男子（75岁，翠屏区人）在宜宾市翠屏区中山广场自焚。</div>
+                    <div style="margin-top:10px;">5月23日：泰国军方宣布，泰国陆军司令巴育担任泰国代总理。（2014泰国军事政变）</div>
+                    <div style="margin-top:10px;">美国加州圣塔芭芭拉海岸边的一处学生社区，晚间传出枪击事件。当地警方表示，初步认定有一名歹徒乘车开枪扫射。事故造成包括枪手在内的7人死亡，另有7人受伤住院。（5.23美国南加州校园枪击案）</div>
+                    <div style="margin-top:10px;">四川宜宾市江安县五矿中学发生一起学生斗殴事件，造成1名学生当场死亡，另有2名学生经医院抢救无效死亡，还有1名学生受伤。（5·23宜宾江安斗殴事件）</div>
+                    <div style="margin-top:10px;">5月24日：欧冠决赛首次上演同城德比。皇马加时4-1击败马竞，夺得队史第10座欧冠冠军。</div>
+                    <div style="margin-top:10px;">5月25日：“2014年昆明高原国际半程马拉松赛”于上午九时举行，包括中国在内的19个国家共1480名选手将参加半程马拉松赛。赛中，10名参赛运动员出现身体不适，其中，1人经全力抢救无效死亡。</div>
+                    <div style="margin-top:10px;">5月26日：印度新任联邦总理莫迪26日在新德里正式宣誓就职。国务院总理李克强26日致电纳伦德拉·莫迪，祝贺其就任印度共和国总理。</div>
+                    <div style="margin-top:10px;">孝感安陆市发展二路北延工程（徐岗村1组）建设工地发生坍塌，1名民工被困。接救援中现场发生二次坍塌，参与救援的孙雨豪等3名官兵不幸被埋压，经抢救无效壮烈牺牲。</div>
+                    <div style="margin-top:10px;">5月28日：（5·28山东省招远市“麦当劳”快餐店命案）。</div>
+                    <div style="margin-top:10px;">5月29日：新一代神曲《小苹果》诞生。</div>
+                    <div style="margin-top:10px;">5月30日：上午10点，宁波轨道交通1号线开通，宁波成为第四个开通地铁的计划单列市，浙江省第二个开通地铁的城市。</div>
+                    <div style="margin-top:10px;">上午9时20分，云南省德宏州盈江县卡场镇再次发生里氏6.1级地震，这是继5月24日凌晨4时49分发生5.6级地震后再次发生地震。（5·30云南盈江县地震）</div>
+                    <div style="margin-top:10px;">5月31日：（5·31廊坊停电事件）</div>
                 </el-collapse-item>
                 <el-collapse-item title="6月" name="6">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">6月3日经国务院批复同意设立青岛西海岸新区，成为中国第九个国家级新区，范围包括青岛市黄岛区全部行政区域</div>
+                    <div style="margin-top:10px;">6月13日~7月14日：2014年巴西世界杯在巴西举行。</div>
+                    <div style="margin-top:10px;">6月13日，西班牙队在2014年巴西世界杯小组赛首轮以1-5惨败于荷兰队，刷新了卫冕冠军在世界杯赛上单场最大比分的失利记录。</div>
+                    <div style="margin-top:10px;">6月13日，美国梦工厂上映动画电影《驯龙高手》二</div>
+                    <div style="margin-top:10px;">6月17日：位于湖南衡阳市的某军械仓库发生一起爆炸事故，造成正在进行弹药入库堆垛作业的17名官兵遇难。（6·17衡阳军械仓库爆炸事故）</div>
+                    <div style="margin-top:10px;">6月16日：上海电视台纪实频道正式上星播出。</div>
+                    <div style="margin-top:10px;">6月18日：西班牙队在2014年巴西世界杯小组赛第二轮中0-2不敌智利队，两战全败进1球丢7球后出局，西班牙队成为世界杯历史上第5支小组出局卫冕冠军，亦是历届小组赛阶段最快被淘汰的卫冕冠军。</div>
+                    <div style="margin-top:10px;">6月18日：浙江新闻广播（新锐988）正式开播。</div>
+                    <div style="margin-top:10px;">6月23日：《国务院关于同意设立大连金普新区的批复》（国函〔2014〕76号）决定，同意设立大连金普新区。</div>
+                    <div style="margin-top:10px;">6月24日：苏亚雷斯2014届世界杯咬人事件。</div>
+                    <div style="margin-top:10px;">6月26日：国务院批复同意撤销日喀则地区，设立地级日喀则市，原日喀则市改为桑珠孜区（同年12月19日正式挂牌）。</div>
+                    <div style="margin-top:10px;">6月29日：极端恐怖组织“伊斯兰国”（英语：Islamic State，缩写：IS）建立。</div>
+                    <div style="margin-top:10px;">6月30日：习近平总书记2014年6月30日主持召开中央政治局会议，决定给予徐才厚开除党籍处分，对其涉嫌受贿犯罪问题及问题线索移送最高人民检察院授权军事检察机关依法处理</div>
                 </el-collapse-item>
                 <el-collapse-item title="7月" name="7">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">7月1日：无锡新闻综合频道正式开播《早安无锡》和《新闻午间道》</div>
+                    <div style="margin-top:10px;">7月1日：无锡地铁1号线正式开通运营</div>
+                    <div style="margin-top:10px;">7月1日：香港回归祖国17周年，中国共产党成立纪念93周年。</div>
+                    <div style="margin-top:10px;">7月1日：日本内阁修改宪法解释正式解禁集体自卫权。</div>
+                    <div style="margin-top:10px;">7月1日：南京地铁S1号线、南京地铁10号线开通运营。</div>
+                    <div style="margin-top:10px;">7月2日：日本著名女歌手滨崎步的个人第十五张原创专辑《Colours》（中文译名《滨纷》）发行。</div>
+                    <div style="margin-top:10px;">7月3日～4日：国家主席习近平对韩国进行国事访问。</div>
+                    <div style="margin-top:10px;">7月4日：微软宣布关闭Games for Windows LIVE服务</div>
+                    <div style="margin-top:10px;">7月5日：杭州市公安局110报警台接群众报警：一辆7路公交车途经东坡路与庆春路交叉口时车内起火燃烧，医院就诊的受伤乘客32人，无人员死亡。（7·5杭州公交车纵火案）一辆旅游大巴车在重庆武隆县仙女镇杨叉岭路段爆胎翻车。事故已致6人死亡，36人受伤。（7·5重庆一旅游大巴侧翻案）</div>
+                    <div style="margin-top:10px;">7月7日：习近平在中国抗战纪念馆发表讲话，各界青年、学生代表宣誓。</div>
+                    <div style="margin-top:10px;">7月8日：2014年巴西世界杯首场半决赛在东道主巴西队与德国队之间展开，最终德国队7-1狂胜巴西队，德国队球员克洛泽在比赛中打进一球，以16球打破巴西著名球员罗纳尔多保持的世界杯进球纪录，成为世界杯历史上的第一射手。巴西队此前从未在世界杯上丢7球，因此创造了巴西队在世界杯上最惨痛的失利，亦追平了巴西队历史上最大差距输球纪录。</div>
+                    <div style="margin-top:10px;">7月9日：习近平出席在北京举行的第六轮中美战略与经济对话和第五轮中美人文交流高层磋商联合开幕式，并发表《努力构建中美新型大国关系》的致辞。</div>
+                    <div style="margin-top:10px;">7月10日：湖南湘潭一幼儿园校车翻入水库，造成11人遇难。</div>
+                    <div style="margin-top:10px;">7月11日：霍尔果斯市成立（县级市）。</div>
+                    <div style="margin-top:10px;">7月14日：巴西世界杯闭幕式，德国加时1-0击败阿根廷夺得世界杯冠军。自此德国队的夺冠史上，再加了一枚金星，也因此被称作：四星德国。</div>
+                    <div style="margin-top:10px;">7月15日：广州市海珠区广州大道附近一辆公交车爆炸起火，已致2人遇难多人伤。</div>
+                    <div style="margin-top:10px;">7月15日～23日：习近平出席在巴西福塔莱萨举行的金砖国家领导人第六次会晤，对巴西、阿根廷、委内瑞拉和古巴进行国事访问，并出席中国－拉美和加勒比国家领导人会晤。15日，在金砖国家领导人会晤时决定成立金砖国家新开发银行并将总部设在上海，建立金砖国家应急储备安排。17日，在中国－拉美和加勒比国家领导人会晤时决定成立中国－拉美和加勒比国家共同体论坛。</div>
+                    <div style="margin-top:10px;">7月17日：马来西亚一架载有298人（包括3名婴儿）的波音777客机17日在靠近俄罗斯的乌克兰边境地区坠毁，已造成300多人死亡。 [92]  （7·17马航客机坠毁事件）</div>
+                    <div style="margin-top:10px;">7月17日：四川茂县国道S213县塌方</div>
+                    <div style="margin-top:10px;">7月18日：超强台风“威马逊”在海南文昌登陆，强度超过“桑美”，成为继1973年登陆琼海的7314号强台风之后，40年来登陆中国的最强台风。</div>
+                    <div style="margin-top:10px;">7月18日：音乐真人秀节目《中国好声音第三季》在浙江卫视黄金时段首播。</div>
+                    <div style="margin-top:10px;">7月19日：沪昆高速公路湖南境内邵怀段（隆回到洞口段）1309千米处发生的两车相撞引发爆燃。事故共造成5台车辆烧毁，54人死亡、6人受伤，直接经济损失5300余万元。（7·19沪昆高速客货车相撞事故）</div>
+                    <div style="margin-top:10px;">7月22日：在广西防城港市防城区中山路发生一起凶杀案，当场死2人，1人送往医院抢救无效死亡，另外受伤的2人经医院抢救，暂时脱离生命危险。经初步调查，5名死伤者疑为越南籍妇女。（7·22广西恶性凶杀案）</div>
+                    <div style="margin-top:10px;">7月23日：台湾复兴航空一架从高雄飞马公的客机在澎湖发生紧急迫降失败，意外坠毁，事故已造成48人遇难。（7·23台湾复兴航空空难）</div>
+                    <div style="margin-top:10px;">7月24日：阿尔及利亚民航客机AH5017从布基纳法索首都瓦加杜古起飞50分钟后坠毁，残骸在马里加奥的Gossi附近发现，该机乘客112名。（7·24阿尔及利亚客机坠毁事件）</div>
+                    <div style="margin-top:10px;">7月25日：“我们风雨同行”海南省7.18超强台风赈灾义演晚会在海口举行，晚会现场募集的2.4亿元善款，社会各界以实际行动支持海南人民重建美丽家园。</div>
+                    <div style="margin-top:10px;">7月26日：根据习近平回忆文章创作的群众路线主题歌《我是黄土地的儿子》由中宣部学习出版社正式出版。7月27日：菲律宾第1亿人出生，菲律宾成为第12个人口过亿的国家。</div>
+                    <div style="margin-top:10px;">7月28日~8月2日：中华人民共和国第十二届学生运动会在上海举行。</div>
+                    <div style="margin-top:10px;">7月29日：鉴于周永康涉嫌严重违纪，中共中央决定，依据《中国共产党章程》和《中国共产党纪律检查机关案件检查工作条例》的有关规定，由中共中央纪律检查委员会对其立案审查。周永康也成为新中国建国以来首位由中纪委立案调查的正国级官员。</div>
+                    <div style="margin-top:10px;">7月31日：由张之亮执导、黄晓明、范冰冰主演的3D魔幻武侠电影《白发魔女传之明月天国》上映。</div>
                 </el-collapse-item>
                 <el-collapse-item title="8月" name="8">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">8月1日：台湾高雄凌晨发生连环燃气爆炸事件，爆炸已造成25人死亡、267人受伤。（8·1台湾高雄燃气爆炸事件）</div>
+                    <div style="margin-top:10px;">8月1日：南京地铁S8号线、南京河西有轨电车开通运营。</div>
+                    <div style="margin-top:10px;">8月1日：2014年8月1日，Red Velvet公开首张数位单曲《Happiness》正式出道。</div>
+                    <div style="margin-top:10px;">8月2日：昆山市中荣2014年8月1日，金属制品有限公司抛光车间发生粉尘爆炸特别重大事故，已造成75人死亡，185人受伤。（8·2昆山工厂爆炸事故）</div>
+                    <div style="margin-top:10px;">8月3日：北京时间2014年8月3日16:30许，云南省昭通市鲁甸县境内发生6.5级强烈地震。截至8月8日15时，地震造成昭通市鲁甸县、巧家县、昭阳区、永善县和曲靖市会泽县108.84万人受灾，617人死亡、9人失踪、2373人受伤，22.97万人紧急转移安置 。（8·3鲁甸地震）</div>
+                    <div style="margin-top:10px;">8月4日：8:39，兰州石化公司炼油厂30万吨/年气体分馏装置泄漏着火。随后，兰石化启动事故和环保应急预案，全力进行事故控制。通过工艺处置，消防扑救，防爆管控，截至上午11时，火情得到有效控制。当日，甘肃省长刘伟平亲赴事故现场指挥救援，并对事故处置作出批示。（8·4中国石油兰州石化公司泄漏着火事件）</div>
+                    <div style="margin-top:10px;">8月7日：8·7甘肃舟曲特大泥石流4周年祭。</div>
+                    <div style="margin-top:10px;">8月8日：由吴子牛执导，马少骅主演的纪念邓小平诞辰110周年的历史题材电视剧《历史转折中的邓小平》在央视一套黄金时段首播。</div>
+                    <div style="margin-top:10px;">8月10日：为表达全省各族人民对“8·03”鲁甸6.5级地震遇难同胞的深切哀悼，云南省政府决定，2014年8月10日10时起，全省在各条战线上工作的人员及在广场、商场、公园、车站、码头、机场等公共场所的人员就地驻足默哀3分钟，届时全省防空警报鸣响，汽车、火车、船舶鸣笛志哀3分钟。</div>
+                    <div style="margin-top:10px;">8月16日：拉日铁路通车。</div>
+                    <div style="margin-top:10px;">8月16日~8月28日：2014年南京青奥会在中国南京举行，南京青奥会是继北京奥运会后中国的又一个重大奥运赛事，是中国首次举办的青奥会，也是中国第二次举办的奥运赛事。</div>
+                    <div style="margin-top:10px;">8月17日：香港“占中”事件爆发。</div>
+                    <div style="margin-top:10px;">8月18日：艺人柯震东和房祖名因吸食大麻在北京被捕。</div>
+                    <div style="margin-top:10px;">8月19日，中国“高分二号”卫星发射成功。</div>
+                    <div style="margin-top:10px;">8月21日至22日，应蒙古国总统额勒贝格道尔吉邀请，国家主席习近平对蒙古国进行国事访问。</div>
+                    <div style="margin-top:10px;">8月22日，邓小平同志诞辰110周年。</div>
+                    <div style="margin-top:10px;">8月28日，天津地铁2号线机场延伸线正式开通。</div>
                 </el-collapse-item>
                 <el-collapse-item title="9月" name="9">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">9月1日：无锡梁溪之声广播正式开播。</div>
+                    <div style="margin-top:10px;">9月2日：3名在押犯人（王大民、高玉伦、李海伟）在哈尔滨市延寿县公安局看守所将1名当班狱警杀死后抢走手机逃走。哈市警方已经下发协查通报，部署警力进行武装巡逻和搜捕，省厅悬赏15万追逃（9·2哈尔滨在押犯人越狱事件）。</div>
+                    <div style="margin-top:10px;">9月3日：国务院印发《关于深化考试招生制度改革的实施意见》，提出到2020年基本建立中国特色现代教育考试招生制度，形成分类考试、综合评价、多元录取的考试招生模式。</div>
+                    <div style="margin-top:10px;">9月4日，教育部公布中国恢复高考以来最大力度的改革方案。</div>
+                    <div style="margin-top:10px;">9月8日，我国成功发射遥感卫星二十一号。</div>
+                    <div style="margin-top:10px;">9月17日~9月19日：第五届中国国际版权博览会在成都举行。</div>
+                    <div style="margin-top:10px;">9月19日~9月27日：2014WTA超五巡回赛（武汉网球公开赛）在武汉举行。</div>
+                    <div style="margin-top:10px;">9月19日~10月4日：2014年仁川亚运会在韩国仁川举行。</div>
+                    <div style="margin-top:10px;">9月21日：亚洲首位网球大满贯得主李娜召开新闻发布会，正式宣布退役。</div>
+                    <div style="margin-top:10px;">9月19日~9月22日：第十一届中国东盟博览会在广西南宁举行。</div>
+                    <div style="margin-top:10px;">9月24日~9月27日：第23届金鸡百花电影节暨第32届大众电影百花奖在甘肃兰州举行。</div>
+                    <div style="margin-top:10px;">9月26日：《中国人民解放军赋》诞辰5周年。</div>
+                    <div style="margin-top:10px;">9月27日：位于日本中部的御岳山火山突然喷发，造成50多名登山者死亡或失踪。</div>
+                    <div style="margin-top:10px;">9月28日：香港“占中三子”启动非法集会“占领中环”运动。</div>
+                    <div style="margin-top:10px;">9月30日：首个烈士纪念日仪式在北京天安门广场举行。</div>
                 </el-collapse-item>
                 <el-collapse-item title="10月" name="10">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">10月1日：中华人民共和国建国65周年。</div>
+                    <div style="margin-top:10px;">10月2日：美国微软公司发布新一版操作系统：Windows 10。</div>
+                    <div style="margin-top:10px;">：国家级四川天府新区成立，天府新区是中国第11个国家级新区。</div>
+                    <div style="margin-top:10px;">10月3日至12日：第45届世界体操锦标赛在广西南宁举行。</div>
+                    <div style="margin-top:10px;">10月9日至18日：中国国务院总理李克强应邀出访德国、俄罗斯和意大利，访问联合国粮农组织总部，并出席第十届亚欧首脑会议。</div>
+                    <div style="margin-top:10px;">10月11日：2014年南美超级德比杯在北京国家体育场“鸟巢”举行，巴西队最终以2-0战胜阿根廷队。</div>
+                    <div style="margin-top:10px;">10月13日：中国少年先锋队成立65周年。</div>
+                    <div style="margin-top:10px;">10月15日：中共领导人习近平在人民大会堂东大厅召开北京文艺座谈会。当天首都师范大学悦林相声社成立。</div>
+                    <div style="margin-top:10px;">10月16日：海外华人发表《中共重拾文艺法宝》，高度评价北京文艺座谈会。</div>
+                    <div style="margin-top:10px;">10月17日：我国将10月17日设为“扶贫日”。</div>
+                    <div style="margin-top:10px;">10月18日：嘉兴学院建校100周年。</div>
+                    <div style="margin-top:10px;">10月18日~10月24日：2014年仁川亚残会在韩国仁川举行。</div>
+                    <div style="margin-top:10px;">10月20日：国务院批复同意撤销昌都地区设立地级昌都市，原昌都县改为卡若区（同年12月17日挂牌成立）。</div>
+                    <div style="margin-top:10px;">10月20日至23日：中共十八届四中全会在北京召开。</div>
+                    <div style="margin-top:10px;">10月23日~11月3日：第十五届中国西部国际博览会在成都举行。</div>
+                    <div style="margin-top:10px;">10月31日：首届“世界城市日”活动在上海举行。</div>
+                    <div style="margin-top:10px;">10月31日：音乐真人秀节目《中国正在听》在央视三套黄金时段首播</div>
                 </el-collapse-item>
                 <el-collapse-item title="11月" name="11">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">11月：中华人民共和国国防动员委员会成立20周年。</div>
+                    <div style="margin-top:10px;">11月1日：十二届全国人大常委会第十一次会议通过《中华人民共和国反间谍法》；通过《关于设立国家宪法日的决定》，将12月4日设立为国家宪法日。</div>
+                    <div style="margin-top:10px;">11月5日：中共中央、国务院印发《关于深化中央管理企业负责人薪酬制度改革的意见》。</div>
+                    <div style="margin-top:10px;">11月5日：广州恒大淘宝足球俱乐部召开新闻发布会宣布新教练组成立，新教练组中里皮仍任球队主教练，法比奥·卡纳瓦罗加盟教练组担任球队执行主教练。</div>
+                    <div style="margin-top:10px;">11月10日：漫画《火影忍者NARUTO》于当日发售的JUMP第50号完结。</div>
+                    <div style="margin-top:10px;">11月10日～12日：美国总统奥巴马对中国进行国事访问。习近平同奥巴马会谈，强调把不冲突不对抗、相互尊重、合作共赢的原则落到实处，提出从6个重点方向进一步推进中美新型大国关系建设。李克强、张德江分别会见奥巴马。</div>
+                    <div style="margin-top:10px;">11月11日：亚太经合组织第二十二次领导人非正式会议在北京举行。习近平主持并讲话，倡导深入推进区域经济一体化，共建互信、包容、合作、共赢的亚太伙伴关系。会议发表《北京纲领：构建融合、创新、互联的亚太——亚太经合组织领导人宣言》和《共建面向未来的亚太伙伴关系——亚太经合组织成立25周年声明》，决定启动亚太自由贸易区进程。</div>
+                    <div style="margin-top:10px;">11月11日～16日：第10届中国航展在广东珠海举行。</div>
+                    <div style="margin-top:10px;">11月11日：中国人民解放军空军成立65周年。</div>
+                    <div style="margin-top:10px;">11月16日： 新疆首条高铁（兰新高速铁路）试验段正式运营</div>
+                    <div style="margin-top:10px;">11月19日：首届世界互联网大会在中国浙江桐乡乌镇西栅景区召开</div>
+                    <div style="margin-top:10px;">11月22日：16时55分，四川省甘孜藏族自治州康定县（北纬30.3度，东经101.7度）发生6.3级地震，震中塔公乡，震源深度18千米。成都、德阳、乐山等地都有明显震感。截至11月23日20时，地震已造成5人死亡，54人受伤。还造成康定等6个县、55个乡镇受灾严重，受灾群众7.9万余人（11·22康定地震）。</div>
+                    <div style="margin-top:10px;">11月26日：11·26辽宁矿难事故。</div>
+                    <div style="margin-top:10px;">11月28日：滨州市沾化区人民政府正式成立。</div>
+                    <div style="margin-top:10px;">11月30日:《环球记者连线》正式停播，撤出CCTV-13。</div>
                 </el-collapse-item>
                 <el-collapse-item title="12月" name="12">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">12月4日：国家宪法日</div>
+                    <div style="margin-top:10px;">12月5日：中共中央决定给予周永康开除党籍处分，将其涉嫌犯罪问题及线索移送司法机关依法处理。</div>
+                    <div style="margin-top:10px;">12月6日：《一步之遥》斩获“年度最具影响力电影”奖。</div>
+                    <div style="margin-top:10px;">12月7日：中国政府发表《中华人民共和国政府关于菲律宾共和国所提南海仲裁案管辖权问题的立场文件》，指出菲律宾提起仲裁违背中菲协议，违背《联合国海洋法公约》，违背国际仲裁一般实践，仲裁庭不具有管辖权。</div>
+                    <div style="margin-top:10px;">12月13日：首个“南京大屠杀死难者国家公祭日”。自该年起，每年12月13日，侵华日军南京大屠杀遇难同胞纪念馆下半旗志哀。</div>
+                    <div style="margin-top:10px;">12月13日：经国务院批准，调整部分行政区划：（一）西安市撤销高陵县设立高陵区 [133]  （次年8月4日高陵区正式挂牌成立 [134]  ）；（二）安顺市撤销平坝县设立平坝区（次年5月4日正式挂牌）；（三）龙岩市撤销永定县设立永定区（次年2月9日正式挂牌）</div>
+                    <div style="margin-top:10px;">12月15日：内蒙古自治区高院对再审判决宣告呼格吉勒图案（“4·09案”）原审被告人呼格吉勒图无罪。澳大利亚悉尼市中心马丁广场一咖啡馆发生人质劫持事件。警方与劫持者交火造成包括劫持者在内的3人死亡，多人受伤。</div>
+                    <div style="margin-top:10px;">12月15日：12·15济南李福煤矿事故。</div>
+                    <div style="margin-top:10px;">12月20日：庆祝澳门回归祖国15周年大会暨澳门特别行政区第四届政府就职典礼。人人影视通过其官方微博宣布正式关闭，并称“会继续为正版商提供翻译服务，也可能会转变为讨论社区的形式”。</div>
+                    <div style="margin-top:10px;">12月20日：贵州省贵阳市、遵义市、安顺市固定电话7位升8位，统一使用区号0851。</div>
+                    <div style="margin-top:10px;">12月21日：由高翊浚执导，范冰冰主演的古装历史剧《武媚娘传奇》在湖南卫视黄金时段首播。</div>
+                    <div style="margin-top:10px;">12月22日：中国人民政治协商会议第十二届全国委员会副主席、中共中央统战部部长令计划涉嫌严重违纪，接受组织调查，曾任中共中央办公厅主任，中央书记处书记。</div>
+                    <div style="margin-top:10px;">12月22日：由张新建执导，陈宝国、冯远征、牛莉、蒋欣等主演的农村题材剧《老农民》在北京卫视、山东卫视、河南卫视、黑龙江卫视四家卫视黄金时段首播。</div>
+                    <div style="margin-top:10px;">：由徐克执导，张涵予主演的3D电影《智取威虎山》在中国大陆上映。</div>
+                    <div style="margin-top:10px;">12月25日：马英九被曝私收2亿政治献金，台特侦组调查。</div>
+                    <div style="margin-top:10px;">12月26日：抗日战争最后一役纪念馆在江苏高邮市正式开馆。</div>
+                    <div style="margin-top:10px;">12月26日：2004年印度洋大地震10周年。</div>
+                    <div style="margin-top:10px;">12月26日：中国台湾男歌手周杰伦的个人第十三张原创专辑《哎呦，不错哦》发行，该专辑亦是周杰伦自出道以来发行的首张数字音乐专辑。</div>
+                    <div style="margin-top:10px;">12月28日：早上7点17分，亚洲航空一架印尼泗水飞往新加坡的空客A320客机飞行时失去联系，后确认失事。失事客机为QZ8501航班，机上共有155人。（12·28印度尼西亚航班失联事件）</div>
+                    <div style="margin-top:10px;">：京沪高速铁路江苏境内又一重要高速通道：连淮扬镇铁路开工建设。</div>
+                    <div style="margin-top:10px;">12月29日：辽河油田原书记周灏被查，疑为周永康侄子</div>
+                    <div style="margin-top:10px;">12月31日：广州海珠有轨电车试验段正式运营。</div>
+                    <div style="margin-top:10px;">：我国成功发射风云二号08星</div>
+                    <div style="margin-top:10px;">：上午9点30分左右，广东佛山工厂爆炸已致14人死亡19人受伤。</div>
+                    <div style="margin-top:10px;">：下午17点左右，日本东京都千代田区的靖国神社发生纵火事件，房顶等部分受损。</div>
+                    <div style="margin-top:10px;">：晚上23点35分左右上海外滩陈毅广场发生踩踏事故。</div>
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2015">2015年
+        <el-tab-pane label="2015">
+            <img src="../assets/zodiac/sheep.svg" class="zodiac">
+            <span class="year">2015年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
-                    <div>1月1日——被瑞士选民于1999年投票表决通过的新《瑞士宪法》正式实施。</div>
-                    <div>1月1日——汉中音乐广播正式开播。</div>
+                    <div style="margin-top:10px;">1月1日——滨洲铁路电气化改造正式开工。</div>
+                    <div style="margin-top:10px;">1月2日——黑龙江哈尔滨道外区太古街727号日杂仓库发生火灾。事故造成5名消防战士牺牲，13名消防干部战士和1名保安不同程度受伤（1·2哈尔滨仓库火灾事故）</div>
+                    <div style="margin-top:10px;">1月4日——江苏省委常委、南京市委书记杨卫泽涉嫌严重违纪违法，接受组织调查。</div>
+                    <div style="margin-top:10px;">1月5日——台湾省法务部门开会审核陈水扁保外就医案，批准台湾地区前领导人陈水扁保外就医。</div>
+                    <div style="margin-top:10px;">1月7日——法国巴黎讽刺杂志《沙尔利周刊》总部遭到武装分子袭击，导致12人死亡。</div>
+                    <div style="margin-top:10px;">1月14日——“基地”组织阿拉伯半岛分支发布视频称，该组织策划并发动了针对法国《沙尔利周刊》的袭击事件（1·7法国沙尔利周刊总部袭击事件）</div>
+                    <div style="margin-top:10px;">1月9日~1月31日——2015年澳大利亚亚洲杯在澳大利亚举行。</div>
+                    <div style="margin-top:10px;">1月14日——微软公司停止对操作系统Windows 7的主流服务支持。</div>
+                    <div style="margin-top:10px;">1月17日——日本阪神大地震20周年。</div>
+                    <div style="margin-top:10px;">1月22日——2015年世界大学生冬季运动会在西班牙格拉纳达举行。</div>
+                    <div style="margin-top:10px;">1月31日——《财经周刊》在CCTV-2开播。</div>
+                    <div style="margin-top:10px;">1月31日——《喜羊羊与灰太狼》的第七部大电影《喜羊羊与灰太狼之羊年喜羊羊》全国公映。</div>
                 </el-collapse-item>
                 <el-collapse-item title="2月" name="2">
-                    <div>控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；</div>
-                    <div>页面反馈：操作后，通过页面元素的变化清晰地展现当前状态。</div>
+                    <div style="margin-top:10px;">2月4日——台湾复兴航空一轻型民航机撞到高架桥坠落在台湾新北市南阳大桥下，事故共造成43人罹难，15人受伤（2·4台湾复兴航空客机坠河事件）</div>
+                    <div style="margin-top:10px;">2月11日——台湾高雄大寮监狱发生挟持事件，6名犯人挟持典狱长等人（2·11高雄监狱挟持事件）</div>
                 </el-collapse-item>
                 <el-collapse-item title="3月" name="3">
-                    <div>简化流程：设计简洁直观的操作流程；</div>
-                    <div>清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；</div>
-                    <div>帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</div>
+                    <div style="margin-top:10px;">3月1日——南京地铁3号线正式通车。</div>
+                    <div style="margin-top:10px;">3月1日——云南昆明火车站暴力恐怖案件1周年祭。</div>
+                    <div style="margin-top:10px;">3月8日——3·8马来西亚航班失踪事件发生1周年。</div>
+                    <div style="margin-top:10px;">3月12日——孙中山逝世90周年。</div>
+                    <div style="margin-top:10px;">3月13日——缅甸军机炸弹落入中方境内，造成云南省孟定镇大水桑树村无辜平民4死9伤。</div>
+                    <div style="margin-top:10px;">3月15日——云南省委副书记仇和涉嫌严重违纪违法，接受组织调查。</div>
+                    <div style="margin-top:10px;">3月20日——北大西洋、北冰洋部分海域可观测到日全食，全世界能看见全食的陆地只有法罗群岛和斯6月1日——21时30分，隶属于重庆东方轮船公司的东方之星轮，在从南京驶往重庆途中突遇龙卷风，在长江中游湖北监利水域沉没。客船上实有人员454名，其中游客403人、船员46人、旅行社工作人员5人。此次事件中，442人遇难、12人获救（6·1东方之星旅游客船倾覆事件）</div>
+                    <div style="margin-top:10px;">3月24日——一架航班号为4U9525的空客A-320客机在法国南部阿尔卑斯坠毁，飞机是由西班牙巴塞罗那飞往德国杜塞尔多夫，机上人员已全部遇难（3·24空客A320客机坠毁事件）</div>
                 </el-collapse-item>
                 <el-collapse-item title="4月" name="4">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">4月1日——南京地铁3号线正式开通运营。</div>
+                    <div style="margin-top:10px;">4月1日——81192中美南海撞机事件、王伟烈士牺牲14周年祭。张国荣忌日。</div>
+                    <div style="margin-top:10px;">4月4日——月全食，可见地区主要在太平洋及其沿岸。其中，中国东北、山东半岛、华东沿海一带可见全程，其余地区均带食月出，带食月出的区域中，新疆、西藏大部只能看见生光后的月偏食部分，剩余地区能看见的时长不等。</div>
+                    <div style="margin-top:10px;">4月5日——蒋介石逝世40周年。</div>
+                    <div style="margin-top:10px;">4月14日——2010年4·14玉树地震5周年祭。</div>
+                    <div style="margin-top:10px;">4月18日——万隆会议60周年纪念日。</div>
+                    <div style="margin-top:10px;">4月20日——2013年4·20雅安地震2周年祭。</div>
+                    <div style="margin-top:10px;">4月25日14时11分——在尼泊尔（北纬28.2度，东经84.7度）发生8.1级地震，震源深度20千米。地震造成珠穆朗玛峰发生雪崩。</div>
+                    <div style="margin-top:10px;">4月26日~5月3日——2015年世界乒乓球锦标赛在中国苏州举行。</div>
                 </el-collapse-item>
                 <el-collapse-item title="5月" name="5">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">5月——武汉市获得了2019年世界军人运动会的承办权。</div>
+                    <div style="margin-top:10px;">5月1日——上海世博会举办5周年纪念日。</div>
+                    <div style="margin-top:10px;">5月1日~10月31日——意大利2015年米兰世界博览会在意大利米兰举行。</div>
+                    <div style="margin-top:10px;">5月6日——英国大选。</div>
+                    <div style="margin-top:10px;">5月8日——台湾歌手邓丽君逝世20周年。</div>
+                    <div style="margin-top:10px;">5月12日——第七个中国防灾减灾日，以纪念2008年5-12四川汶川地震7周年。</div>
+                    <div style="margin-top:10px;">5月27日9时——经过中铁十四局集团等建设单位31个月的艰苦奋战，我国海拔2000米以上高原地区最长高速公路隧道六盘山隧道正式全线贯通。</div>
                 </el-collapse-item>
                 <el-collapse-item title="6月" name="6">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">6月1日——21时30分，隶属于重庆东方轮船公司的东方之星轮，在从南京驶往重庆途中突遇龙卷风，在长江中游湖北监利水域沉没。客船上实有人员454名，其中游客403人、船员46人、旅行社工作人员5人。此次事件中，442人遇难、12人获救（6·1东方之星旅游客船倾覆事件）</div>
+                    <div style="margin-top:10px;">6月7日——上午9时，为表达对“东方之星”沉船遇难者的尊重与哀悼，交通、海事、航道、公安、消防、武警、部队等现场全体搜救人员举行哀悼活动。全体人员面向遇难船舶肃立默哀3分钟，现场船舶同时鸣笛3分钟，向东方之星旅游客船倾覆事件遇难者致哀。</div>
+                    <div style="margin-top:10px;">6月8日——中华人民共和国文化部召开媒体通气会，通报了第二十三批违法违规互联网文化活动的查处工作情况，并发布了首批38部被列入“黑名单”的网络动漫产品（俗称 网络动漫黑名单）《东京食尸鬼（第二季）》、《Blood-C》、《学园默示录》、《暗杀教室（第一季）》等赫然在列。</div>
+                    <div style="margin-top:10px;">6月12日~6月28日——2015年巴库欧运会在阿塞拜疆巴库举行。</div>
+                    <div style="margin-top:10px;">6月18日——滑铁卢战役200周年。</div>
+                    <div style="margin-top:10px;">6月22日——《文化十分》在CCTV-3开播。</div>
+                    <div style="margin-top:10px;">6月25日——朝鲜战争爆发65周年。</div>
+                    <div style="margin-top:10px;">6月27日——国务院印发《关于同意设立南京江北新区的批复》，正式批复同意设立南京江北新区。自此，南京江北新区建设上升为国家战略，成为中国第十三个、江苏省唯一的国家级新区。</div>
                 </el-collapse-item>
                 <el-collapse-item title="7月" name="7">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">7月3日~7月14日——2015年第28届光州世界大学生运动会在韩国光州举行。</div>
+                    <div style="margin-top:10px;">7月3日——上午9:07分新疆维吾尔自治区和田皮山地区发生6.5级地震。</div>
+                    <div style="margin-top:10px;">7月10日~7月26日——2015年泛美运动会在加拿大多伦多举行。</div>
+                    <div style="margin-top:10px;">7月14日——新地平线号探测器抵达冥王星。</div>
+                    <div style="margin-top:10px;">7月17日——7·17马航客机坠毁事件发生1周年。</div>
+                    <div style="margin-top:10px;">7月23日——7·23甬温线特别重大铁路交通事故发生4周年。</div>
+                    <div style="margin-top:10px;">7月24日——美国宇航局宣布发现“另外一个地球”开普勒-452b</div>
+                    <div style="margin-top:10px;">7月24日~8月9日——第16届国际泳联世界锦标赛在俄罗斯喀山举行。</div>
+                    <div style="margin-top:10px;">7月29日——微软公司操作系统Windows 10正式版本将面向190个国家发布。</div>
+                    <div style="margin-top:10px;">7月31日——国际奥委会第128次全会在吉隆坡举行，中国北京、张家口获得2022年第24届冬季奥林匹克运动会主办权。</div>
                 </el-collapse-item>
                 <el-collapse-item title="8月" name="8">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">8月1日——中国人民解放军建军即八一南昌起义87周年。</div>
+                    <div style="margin-top:10px;">8月6日——广岛原子弹事件70周年。</div>
+                    <div style="margin-top:10px;">8月7日——舟曲特大泥石流5周年祭。</div>
+                    <div style="margin-top:10px;">8月9日——长崎原子弹事件70周年。</div>
+                    <div style="margin-top:10px;">8月8日——第七个中国全国健身日。</div>
+                    <div style="margin-top:10px;">8月12日——天津港危险品仓库爆炸事故，已造成139人遇难（139人已经确定身份）（8·12天津滨海新区爆炸事故）</div>
+                    <div style="margin-top:10px;">8月15日——日本宣布无条件投降70周年。</div>
+                    <div style="margin-top:10px;">8月17日——稻米节长白山十年之约。</div>
+                    <div style="margin-top:10px;">8月17日——泰国曼谷发生炸弹袭击事件，造成20人遇难，其中7名中国公民（包括5名大陆居民和2名香港居民），10名泰国人，2名马来西亚游客，1名菲律宾人，其他遇难者身份有待确认（8·17泰国曼谷炸弹袭击事件）</div>
+                    <div style="margin-top:10px;">8月22日~8月30日——2015年北京国际田联世界田径锦标赛在中国北京举行。</div>
+                    <div style="margin-top:10px;">8月23日~8月29日——第22届国际历史科学大会在中国济南举办。</div>
+                    <div style="margin-top:10px;">8月29日——毛泽东与蒋中正重庆谈判开始70周年纪念日。</div>
+                    <div style="margin-top:10px;">8月30日——国务院正式批复同意设立福州新区，福州新区是中国第十四个国家级新区。</div>
                 </el-collapse-item>
                 <el-collapse-item title="9月" name="9">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">9月3日——中国人民抗日战争暨世界反法西斯战争胜利70周年，中华人民共和国在北京天安门广场举行纪念活动，并进行阅兵式。中国举行阅兵式的目的是为了铭记历史、缅怀先烈、珍视和平、开创未来，显示中国和各国人民捍卫世界和平的决心和能力。这是中国首次在10月1日国庆节以外的日子举行阅兵式。</div>
+                    <div style="margin-top:10px;">9月12日~9月19日——第九届全国残疾人运动会在四川举行。</div>
+                    <div style="margin-top:10px;">9月13日——日偏食。可见范围主要在非洲南端、南印度洋、东南极洲，中国不可见。</div>
+                    <div style="margin-top:10px;">9月15日——中国政府网发布《国务院关于同意设立云南滇中新区的批复》（国函〔2015〕141号）称，同意设立国家级新区——云南滇中新区，滇中新区是中国第15个国家级新区。</div>
+                    <div style="margin-top:10px;">9月20日——中华人民共和国长征六号运载火箭发射首飞成功。</div>
+                    <div style="margin-top:10px;">9月25日——2015年成都IVV奥林匹克运动会开幕。</div>
+                    <div style="margin-top:10px;">9月28日——月全食。可见范围主要在美洲、欧洲、非洲和西亚部分地区，中国不可见。</div>
                 </el-collapse-item>
                 <el-collapse-item title="10月" name="10">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">10月1日——中华人民共和国成立66周年。</div>
+                    <div style="margin-top:10px;">10月5日——中国药学家屠呦呦获得2015年诺贝尔生理学或医学奖。中国第一个诺贝尔奖女性得主。</div>
+                    <div style="margin-top:10px;">10月10日——国共签订《双十协定》70周年纪念日。</div>
+                    <div style="margin-top:10px;">10月10日——土耳其安卡拉火车站附件发生爆炸，致多人伤亡。</div>
+                    <div style="margin-top:10px;">10月18日~10月27日——2015年全国青年运动会在福建举行。</div>
+                    <div style="margin-top:10px;">10月24日——联合国成立70周年。</div>
+                    <div style="margin-top:10px;">10月25日——中国人民志愿军抗美援朝出国作战65周年。</div>
+                    <div style="margin-top:10px;">10月26日——阿富汗发生7.6级地震，地震造成18人死亡69人受伤。</div>
                 </el-collapse-item>
                 <el-collapse-item title="11月" name="11">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">11月7日——两岸领导人习近平、马英九在新加坡进行历史性会面。这是66年以来两岸领导人的首次会面。</div>
+                    <div style="margin-top:10px;">11月12日——刘少奇逝世46周年纪念日。</div>
+                    <div style="margin-top:10px;">11月12日——第七届中国邮文化节在江苏高邮市举办。</div>
+                    <div style="margin-top:10px;">11月12日——中国人民银行正式全国发行2015年版第五套人民币100元纸币。</div>
+                    <div style="margin-top:10px;">11月13日——浙江省丽水市莲都区雅溪镇里东村发生山体滑坡，此次山体滑坡已造成38人死亡（11·13丽水山体滑坡）</div>
+                    <div style="margin-top:10px;">11月13日——巴黎发生6起枪击事件3场爆炸事件，事件造成128人死亡，99人受重伤（11·13巴黎恐怖袭击事件）</div>
+                    <div style="margin-top:10px;">11月27日：——重庆“11.27”大屠杀66周年纪念日。</div>
                 </el-collapse-item>
                 <el-collapse-item title="12月" name="12">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">12月16日——国务院批复同意设立哈尔滨新区，哈尔滨新区是中国第16个国家级新区。</div>
+                    <div style="margin-top:10px;">12月16日~18日——第二届世界互联网大会在浙江嘉兴市桐乡市乌镇举行。</div>
+                    <div style="margin-top:10px;">12月17日——中华人民共和国暗物质粒子探测卫星“悟空”发射任务圆满成功。</div>
+                    <div style="margin-top:10px;">12月20日——广东深圳市光明新区凤凰社区恒泰裕工业园附近西气东输管道发生爆炸。截止2016年1月12日，已造成69人遇难，另外还有8人失联（12·20深圳山体滑坡事故）</div>
+                    <div style="margin-top:10px;">12月20日——澳门回归祖国16周年。</div>
+                    <div style="margin-top:10px;">12月25日——亚洲基础设施投资银行成立。</div>
+                    <div style="margin-top:10px;">12月25日——圣诞节恰逢农历十一月十五（圣诞满月），前一次在1996年，后一次在2034年。</div>
+                    <div style="margin-top:10px;">12月26日——毛泽东同志诞辰122周年。</div>
+                    <div style="margin-top:10px;">12月31日——西安地铁3号线通车试运行，届时西安地铁将达到3条，同时南昌地铁1号线正式通车运营；同日为纪念上海外滩踩踏事故1周年</div>
+                    <div style="margin-top:10px;">12月31日——中国人民解放军陆军领导机关，火箭军，战略支援部队成立，习近平主席向陆军司令员和政委，火箭军司令员和政委，战略支援部队司令员和政委授予军旗并发布训令。</div>
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2016">2016年
+        <el-tab-pane label="2016">
+            <img src="../assets/zodiac/monkey.svg" class="zodiac">
+            <span class="year">2016年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
-                    <div>1月1日——被瑞士选民于1999年投票表决通过的新《瑞士宪法》正式实施。</div>
-                    <div>1月1日——汉中音乐广播正式开播。</div>
+                    <div style="margin-top:10px;">1月——中国人民解放军总装备部改为中央军委装备发展部。</div>
+                    <div style="margin-top:10px;">1月1日——《中国共产党纪律处分条例》、《居住证暂行条例》、《中华人民共和国反恐怖主义法》、《中华人民共和国国家勋章和国家荣誉称号法》、《全国人民代表大会常务委员会关于修改〈中华人民共和国人口与计划生育法〉的决定》5部法律法规开始施行。</div>
+                    <div style="margin-top:10px;">1月2日——1·2黑龙江省牡丹江市林口县地震。</div>
+                    <div style="margin-top:10px;">1月4日——沙特宣布与伊朗断绝外交关系。</div>
+                    <div style="margin-top:10px;">1月5日——1·5银川公交纵火案。</div>
+                    <div style="margin-top:10px;">1月6日——朝鲜首次成功进行氢弹试验。</div>
+                    <div style="margin-top:10px;">1月6日——中国南沙永暑礁新建机场试飞成功，中国民用航空客机载空姐登上南沙永暑礁。</div>
+                    <div style="margin-top:10px;">1月7日——美国中央密苏里大学数学教授柯蒂斯·库珀发现第49个梅森素数。</div>
+                    <div style="margin-top:10px;">1月7日——经国务院批准，撤销哈密地区设立地级哈密市，原哈密市改为伊州区。（2月18日正式撤地设市）</div>
+                    <div style="margin-top:10px;">1月9日——巴黎公社女英雄路易斯·米歇尔逝世110周年。</div>
+                    <div style="margin-top:10px;">1月12日——美国微软公司停止提供Windows 8技术支持。</div>
+                    <div style="margin-top:10px;">1月16日——中国台湾省第14任领导人选举，台湾民进党党主席蔡英文当选台湾地区最高领导人。</div>
+                    <div style="margin-top:10px;">1月16日——亚投行举行开业仪式，同时在亚投行理事会成立大会上楼继伟被选举为首届理事会主席，金立群当选亚投行首任行长。</div>
+                    <div style="margin-top:10px;">1月16日——中国白俄罗斯通信卫星一号发射成功。</div>
+                    <div style="margin-top:10px;">1月20日——1·20上饶烟花厂爆炸事故</div>
+                    <div style="margin-top:10px;">1月20日~1月30日——中华人民共和国第十三届冬季运动会在新疆维吾尔自治区举行。</div>
+                    <div style="margin-top:10px;">1月21日——1·21青海门源6.4级地震事件。</div>
+                    <div style="margin-top:10px;">1月24日——1·24阿拉斯加地震。</div>
+                    <div style="margin-top:10px;">1月28日——中国东北抗日联军成立80周年纪念日。</div>
+                    <div style="margin-top:10px;">1月30日――中华人民共和国第十三届冬季运动会宣布结束。</div>
                 </el-collapse-item>
                 <el-collapse-item title="2月" name="2">
-                    <div>控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；</div>
-                    <div>页面反馈：操作后，通过页面元素的变化清晰地展现当前状态。</div>
+                    <div style="margin-top:10px;">2月1日——中国人民解放军五大战区成立，习近平主席向五大战区授予军旗并发布训令。</div>
+                    <div style="margin-top:10px;">2月1日——2·1喀布尔爆炸袭击事件。</div>
+                    <div style="margin-top:10px;">2月1日——中国成功发射第二十一颗北斗导航卫星。</div>
+                    <div style="margin-top:10px;">2月1日——由高群书执导，赵本山、闫妮等主演的喜剧片《过年好》在中国大陆上映。</div>
+                    <div style="margin-top:10px;">2月3日——国务院批复同意设立长春新区，长春新区是中国第17个国家级新区。</div>
+                    <div style="margin-top:10px;">2月6日——2·6高雄地震。</div>
+                    <div style="margin-top:10px;">2月7日——朝鲜成功发射光明星四号卫星。</div>
+                    <div style="margin-top:10px;">2月9日:上海迎来1873年来最早入春。</div>
+                    <div style="margin-top:10px;">2月11日——LIGO宣布探测到引力波的存在。</div>
+                    <div style="margin-top:10px;">2月12日~2月21日——2016年利勒哈默尔冬季青年奥林匹克运动会在挪威利勒哈默尔举行。</div>
+                    <div style="margin-top:10px;">2月18日——中国台湾省台东市上午9时09分发生5起地震，最大5.1级，震中在台东海端乡地震深度16.7公里。</div>
+                    <div style="margin-top:10px;">2月19日~2月24日——2016年跳水世界杯在巴西里约热内卢举行。</div>
+                    <div style="margin-top:10px;">2月21日——2·21叙利亚连环爆炸事件。</div>
+                    <div style="margin-top:10px;">2月22日——2·22武汉小区火灾事故。</div>
+                    <div style="margin-top:10px;">2月24日——2·24尼泊尔飞机失踪事件。</div>
+                    <div style="margin-top:10px;">2月26日——2·26萍乡老楼坍塌事故。</div>
+                    <div style="margin-top:10px;">2月27日——2·27阿富汗炸弹袭击事件。</div>
                 </el-collapse-item>
                 <el-collapse-item title="3月" name="3">
-                    <div>简化流程：设计简洁直观的操作流程；</div>
-                    <div>清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；</div>
-                    <div>帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</div>
+                    <div style="margin-top:10px;">3月1日——《中华人民共和国反家庭暴力法》开始施行。</div>
+                    <div style="margin-top:10px;">3月1日——兰博基尼公司于瑞士日内瓦车展推出的全新车型Centenario为纪念兰博基尼创始人诞辰100周年。</div>
+                    <div style="margin-top:10px;">3月2日——3·2印尼苏门答腊岛海域7.8级地震。</div>
+                    <div style="margin-top:10px;">3月3日——中国人民政治协商会议第十二届全国委员会第四次会议在北京举行开幕式。</div>
+                    <div style="margin-top:10px;">3月4日——由叶伟信执导，甄子丹、泰森等主演的功夫动作片《叶问3》在中国大陆上映。</div>
+                    <div style="margin-top:10px;">3月5日——中华人民共和国第十二届全国人民代表大会第四次会议在北京举行开幕式。</div>
+                    <div style="margin-top:10px;">3月7日——《体育咖吧》在CCTV-5开播。</div>
+                    <div style="margin-top:10px;">3月9日——印尼、密克罗尼西亚联邦、太平洋中部的部分地区发生日全食，中国除北方地区外可见日偏食。</div>
+                    <div style="margin-top:10px;">3月10日——高分应用综合信息服务共享平台正式上线运行。</div>
+                    <div style="margin-top:10px;">3月11日——2011年东日本大地震发生5周年。</div>
+                    <div style="margin-top:10px;">3月12日——巴基斯坦西北部一煤矿夜间发生坍塌，造成至少7人死亡，10人受伤，45人被困。</div>
+                    <div style="margin-top:10px;">3月13日——3·13安卡拉炸弹袭击事件。</div>
+                    <div style="margin-top:10px;">3月14日——中国人民政治协商会议第十二届全国委员会第四次会议在北京举行闭幕式。</div>
+                    <div style="margin-top:10px;">3月15日——缅甸联邦总统选举会上，丁觉以360赞成票数当选新一任总统。</div>
+                    <div style="margin-top:10px;">3月16日——中华人民共和国第十二届全国人民代表大会第四次会议在北京举行闭幕式。</div>
+                    <div style="margin-top:10px;">3月16日——3·16昆明工地坍塌事故。</div>
+                    <div style="margin-top:10px;">3月17日——非洲国家冈比亚与中国大陆恢复大使级外交关系，承认只有一个中国，并承认台湾是中国领土的一部分。</div>
+                    <div style="margin-top:10px;">3月17日——由北京飞往海南博鳌的海南航空HU7777航班在海南博鳌成功降落，并在停机坪举行试运行仪式，博鳌机场于2016年3月11日取得民用机场使用许可证，具备运营条件，目前已开通北京、广州、深圳、重庆等试运行航线。</div>
+                    <div style="margin-top:10px;">3月18日——浙江电视台公共·新闻频道正式开播，取代原公共·新农村频道。</div>
+                    <div style="margin-top:10px;">3月19日——3·19阿联酋客机坠毁事故。</div>
+                    <div style="margin-top:10px;">3月19日——3·19汨罗油罐车爆炸事故。</div>
+                    <div style="margin-top:10px;">3月20日——沙盒游戏《迷你世界》正式公测。</div>
+                    <div style="margin-top:10px;">3月20日——《中国舆论场》在CCTV-4开播。</div>
+                    <div style="margin-top:10px;">3月20日——中国邮政纪念日，中国邮政开办120周年。</div>
+                    <div style="margin-top:10px;">3月20日——美国总统奥巴马开始对古巴历史性访问，成为88年来首位访问古巴的美国元首。</div>
+                    <div style="margin-top:10px;">3月21日——国务院批准将每年4月24日设立“中国航天日”，明确由工业和信息化部、国防科工局等部门组织实施具体工作。</div>
+                    <div style="margin-top:10px;">3月22日——比利时布鲁塞尔国际机场发生爆炸事件，截止23日，已造成34人死亡，170人受伤。</div>
+                    <div style="margin-top:10px;">3月22日~3月25日——博鳌亚洲论坛2016年年会在海南博鳌举行。</div>
+                    <div style="margin-top:10px;">3月26日——中国国民党主席补选，台湾立法机构前副负责人洪秀柱当选新一任中国国民党主席。</div>
+                    <div style="margin-top:10px;">3月28日——中国国家主席习近平对捷克进行国事访问并出席第四届华盛顿核安全峰会。</div>
+                    <div style="margin-top:10px;">3月28日——台北捷运通车20周年。</div>
+                    <div style="margin-top:10px;">3月29日——日本安保法正式实施日本民众在国会前静坐示威，抗议政府实施安保法。</div>
+                    <div style="margin-top:10px;">3月29日——2018俄罗斯世界杯亚洲区预选赛40强赛C组最后一轮，中国国家男子足球队2-0战胜卡塔尔队，惊险出线，时隔15年再次进军世预赛亚洲区最后阶段。</div>
+                    <div style="margin-top:10px;">3月29日——3·29埃及航空班机劫持事件。</div>
+                    <div style="margin-top:10px;">3月30日——中国成功发射第二十二颗北斗导航卫星。</div>
                 </el-collapse-item>
                 <el-collapse-item title="4月" name="4">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">4月2日——香港亚洲电视结束广播（后在2017年12月以网络电视形式恢复播出）。</div>
+                    <div style="margin-top:10px;">4月2日——越南第十三届国会第十一次会议河内举行，选举陈大光为新一任国家主席。</div>
+                    <div style="margin-top:10px;">4月3日——中国地震台网正式测定：当地时间16时23分在瓦努阿图群岛（南纬14.20度，东经166.80度）发生6.9级地震，震源深度30千米。</div>
+                    <div style="margin-top:10px;">4月3日早晨——日本著名歌手和田光司因咽喉癌医治无效逝世，享年42岁。</div>
+                    <div style="margin-top:10px;">4月8日——由财政部会同海关总署、国家税务总局发布的我国跨境电子商务零售进口税收新政策，并同步调整行邮税政策，这意味着淘免税时代结束了。</div>
+                    <div style="margin-top:10px;">4月9日——4·9沈海高速重大交通事故。</div>
+                    <div style="margin-top:10px;">4月10日——阿富汗发生7.1级地震，震源深度200千米，中国南疆铁路受到波及晚点。</div>
+                    <div style="margin-top:10px;">4月14日——篮球巨星科比退役。</div>
+                    <div style="margin-top:10px;">4月16日——4·16九州岛地震</div>
+                    <div style="margin-top:10px;">4月17日——4·17厄瓜多尔地震</div>
+                    <div style="margin-top:10px;">4月19日——阿富汗首都喀布尔市中心发生自杀式爆炸袭击，爆炸造成至少30人死亡，320多人受伤这是塔利班一周前宣布开启“春季攻势”后发动的第一起大规模爆炸袭击。</div>
+                    <div style="margin-top:10px;">4月29日~10月16日——2016唐山世界园艺博览会在河北唐山举行。</div>
                 </el-collapse-item>
                 <el-collapse-item title="5月" name="5">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">5月6日——朝鲜劳动党第七次全国代表大会在平壤召开。</div>
+                    <div style="margin-top:10px;">5月9日——水星凌日，欧洲西部、非洲西部、北美洲东部、南美洲大部及北冰洋大部可见全程俄罗斯极东端、太平洋中东部、北美洲西部、秘鲁沿海、智利和阿根廷南部在凌日开始后，日出欧洲东部、非洲除西部外的区域、亚洲除东部沿海外的区域（包括中国中西部）在凌日结束前日落东亚东部（包括中国东部）、马来群岛大部、大洋洲西部和南极洲完全不可见这是2006年后、2032年前中国可见的唯一一次水星凌日。</div>
+                    <div style="margin-top:10px;">5月12日——第八个中国防灾减灾日，四川汶川特大地震8周年祭；台湾宜兰地震。</div>
+                    <div style="margin-top:10px;">5月12日——5·12上海塑胶公司锅炉爆炸事故。</div>
+                    <div style="margin-top:10px;">5月16日——《新闻大数据》在广东新闻频道正式开播。</div>
+                    <div style="margin-top:10px;">5月16日——5·16美国私人飞机坠毁事故。</div>
+                    <div style="margin-top:10px;">5月18日——时任台湾地区最高领导人马英九在facebook上发布视频，表示感谢大家的点赞和评论。</div>
+                    <div style="margin-top:10px;">5月20日——民主进步党主席蔡英文就任台湾地区最高领导人，并发表就职演说，但演说中并未涉及“九二共识”。</div>
+                    <div style="margin-top:10px;">5月23日——5·23上海蜡业公司爆炸事故。</div>
+                    <div style="margin-top:10px;">5月27日——广东省东莞市首条地铁--东莞轨道交通2号线开通运营。</div>
+                    <div style="margin-top:10px;">5月29日——欧冠决赛第二次上演同城德比，皇马点杀马竞夺得队史第11座欧冠冠军。</div>
+                    <div style="margin-top:10px;">5月30日——全国科技创新大会、两院院士大会（中国科学院第十八次院士大会和中国工程院第十三次院士大会）、中国科学技术协会第九次全国代表大会在北京人民大会堂隆重召开。</div>
                 </el-collapse-item>
                 <el-collapse-item title="6月" name="6">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">6月1日——《全国人民代表大会常务委员会关于修改〈中华人民共和国教育法〉的决定》、《全国人民代表大会常务委员会关于修改〈中华人民共和国高等教育法〉的决定》开始施行。</div>
+                    <div style="margin-top:10px;">6月3日——6·3太长高速车祸事故。</div>
+                    <div style="margin-top:10px;">6月10日~7月10日——2016年法国欧洲杯在法国举行。</div>
+                    <div style="margin-top:10px;">6月12日——我国成功发射第二十三颗北斗导航卫星。</div>
+                    <div style="margin-top:10px;">6月12日——北京奥林匹克塔命名暨奥运五环标志落成仪式在京举行。北京也成为继加拿大蒙特利尔后第二个永久悬挂奥林匹克五环标志的城市。</div>
+                    <div style="margin-top:10px;">6月14日——国务院发布批复同意设立江西赣江新区，赣江新区是中国第18个国家级新区。</div>
+                    <div style="margin-top:10px;">6月15日——台湾前领导人马英九原定今晚在香港出席活动并发表专题演讲，但申请遭到蔡英文办公室拒绝，演讲只能以录影的方式在活动上播出马英九在演讲开始前因为无法出席活动向现场人士致歉。</div>
+                    <div style="margin-top:10px;">6月16日——上海迪士尼乐园正式开门迎客，并举办为期数日的盛大开幕庆典。</div>
+                    <div style="margin-top:10px;">6月17日——中国国家主席习近平离开北京对塞尔维亚共和国，波兰共和国，乌兹别克斯坦共和国进行国事访问并出席上合组织国家元首峰会。</div>
+                    <div style="margin-top:10px;">6月20日——2016年NBA总决赛，克利夫兰骑士队以总比分4-3获得队史首个NBA总冠军，成为了第一支以1-3落后情况下连扳3局逆转夺冠的球队，勒布朗·詹姆斯获得NBA总决赛MVP。</div>
+                    <div style="margin-top:10px;">6月22日——6·22中铝氧化铝厂槽顶坠落事故。</div>
+                    <div style="margin-top:10px;">6月23日——江苏省盐城市阜宁县遭遇强冰雹和龙卷风双重灾害，房屋受损严重，路边树木和电线杆倒塌，造成上百人伤亡。</div>
+                    <div style="margin-top:10px;">6月23日——英国脱欧公投决定脱离欧盟，首相卡梅伦宣布辞职。</div>
+                    <div style="margin-top:10px;">6月24日——中国台湾男歌手周杰伦的个人第十四张原创专辑《周杰伦的床边故事》发行。</div>
+                    <div style="margin-top:10px;">6月25日——国家主席习近平在北京人民大会堂同俄罗斯总统普京共同出席《中俄睦邻友好合作条约》签署15周年纪念大会。纪念大会开始前，两国元首共同出席2016年中俄主流媒体联合采访活动启动仪式。</div>
+                    <div style="margin-top:10px;">6月25日——长征七号运载火箭首发成功。</div>
+                    <div style="margin-top:10px;">6月26日——解放战争爆发70周年纪念日。</div>
+                    <div style="margin-top:10px;">6月26日——6·26宜凤高速特大交通事故。</div>
+                    <div style="margin-top:10px;">6月28日——南宁地铁1号线东段开通运营。</div>
+                    <div style="margin-top:10px;">6月28日——深圳地铁11号线投入运营。</div>
+                    <div style="margin-top:10px;">6月29日——日本著名女歌手滨崎步的个人第十七张原创专辑《M(A)DE IN JAPAN》（中文译名《日本制造》）发行。</div>
+                    <div style="margin-top:10px;">6月30日——受厄尔尼诺气候影响，长江中下游地区受到持续强降雨，多地发生地质洪涝灾害，已致170人死亡或失踪，直接经济损失达381.6亿元。</div>
                 </el-collapse-item>
                 <el-collapse-item title="7月" name="7">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">7月1日——中国共产党成立95周年。</div>
+                    <div style="margin-top:10px;">7月1日——第二炮兵成立50周年。</div>
+                    <div style="margin-top:10px;">7月1日——青藏铁路通车10周年。</div>
+                    <div style="margin-top:10px;">7月1日——孟加拉国首都达卡一家餐厅发生连环恐怖袭击事件，造成20人死亡。</div>
+                    <div style="margin-top:10px;">7月1日——台军海军131舰队所属金江舰，早上8时10分对台海方向误射一枚射程300公里的雄风-3超音速反舰导弹，导弹贯穿一艘渔船，造成正在澎湖一带捕鱼的渔民1死3伤。</div>
+                    <div style="margin-top:10px;">7月3日——位于中国贵州省内的500米口径球面射电望远镜（FAST），顺利安装最后一块反射面单元，标志着FAST主体工程完工，进入测试调试阶段。</div>
+                    <div style="margin-top:10px;">7月6日——朱德逝世40周年</div>
+                    <div style="margin-top:10px;">7月6日——“胖妞”运20正式列装空军部队。</div>
+                    <div style="margin-top:10px;">7月7日——七七事变爆发79周年。</div>
+                    <div style="margin-top:10px;">7月7日——台北松山火车站，一辆从台北开往基隆的列车第6节车厢发生爆炸起火。</div>
+                    <div style="margin-top:10px;">7月9日——北伐战争爆发90周年。</div>
+                    <div style="margin-top:10px;">7月9日~7月10日——在上海举办G20贸易部长会议，并在此前举行3次贸易投资工作组会议。</div>
+                    <div style="margin-top:10px;">7月10日——2016欧洲杯决赛，葡萄牙队1-0击败法国队，历史性夺得首个欧洲杯冠军。</div>
+                    <div style="margin-top:10px;">7月12日——菲律宾南海仲裁案仲裁庭作出非法无效的所谓最终裁决。</div>
+                    <div style="margin-top:10px;">7月13日——国务院发布《中国坚持通过谈判解决中国与菲律宾在南海的有关争议》白皮书。</div>
+                    <div style="margin-top:10px;">7月13日——特雷莎·梅接任卡梅伦，成为英国新一任首相，同时也是英国历史上第二位女首相。</div>
+                    <div style="margin-top:10px;">7月13日——北京申奥成功15周年。</div>
+                    <div style="margin-top:10px;">7月15日——7·15龙口升降机坠落事故。</div>
+                    <div style="margin-top:10px;">7月15日——法国尼斯国庆日庆祝活动遭遇恐袭。</div>
+                    <div style="margin-top:10px;">7月15日——音乐真人秀节目《中国新歌声第一季》在浙江卫视首播。</div>
+                    <div style="margin-top:10px;">7月17日——日本三大特摄之一《奥特曼》系列诞生50周年。</div>
+                    <div style="margin-top:10px;">7月18日——由陆剑青、梁乐民执导，郭富城、梁家辉等主演的剧情片《寒战2》在中国大陆正式上映。</div>
+                    <div style="margin-top:10px;">7月19日~7月21日——受黄淮气旋影响，湖北、河南、河北、山东、北京、辽宁等地普降大到暴雨，鄂、豫、冀等地部分地区遭遇有气象记录以来最强降雨，出现严重城市内涝，局地山洪暴发，造成重大人员伤亡和财产损失。</div>
+                    <div style="margin-top:10px;">7月28日——唐山大地震40周年祭。</div>
+                    <div style="margin-top:10px;">7月30日——中国大陆宣布暂停核试验20周年。</div>
+                    <div style="margin-top:10px;">7月31日——日本前防卫相小池百合子成功当选新任东京都知事，她也成为东京首位女性都知事。</div>
+                    <div style="margin-top:10px;">7月31日——《午夜体育报道》正式停播，撤出CCTV-5。</div>
                 </el-collapse-item>
                 <el-collapse-item title="8月" name="8">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">8月1日——西安市高陵区新设立姬家街道。</div>
+                    <div style="margin-top:10px;">8月2日——微软公司操作系统Windows 10一周年更新正式版发布。</div>
+                    <div style="margin-top:10px;">8月5日~8月21日——2016年里约热内卢奥运会在巴西里约热内卢举行</div>
+                    <div style="margin-top:10px;">8月6日——中国卫星移动通信系统首发星天通一号01星成功发射。</div>
+                    <div style="margin-top:10px;">8月7日——8·7甘肃舟曲特大泥石流6周年祭。</div>
+                    <div style="margin-top:10px;">8月8日——第八个中国全民健身日；2008年北京奥运会8周年。</div>
+                    <div style="margin-top:10px;">8月8日——《今日影评》在CCTV-6开播。</div>
+                    <div style="margin-top:10px;">8月10日——中国高分三号卫星发射成功。</div>
+                    <div style="margin-top:10px;">8月12日——8·12天津滨海新区爆炸事故发生1周年。</div>
+                    <div style="margin-top:10px;">8月14日——Wings战队赢得第六届DOTA2国际邀请赛（Ti6）的冠军。</div>
+                    <div style="margin-top:10px;">8月15日——日本宣布无条件投降71周年。</div>
+                    <div style="margin-top:10px;">8月15日——8·15山东能源煤矿事故。</div>
+                    <div style="margin-top:10px;">8月16日——中国墨子号量子科学实验卫星此次发射任务的圆满成功。</div>
+                    <div style="margin-top:10px;">8月22日——漫画《死神bleach》于当日发售的JUMP第38号完结。</div>
+                    <div style="margin-top:10px;">8月26日——由日本著名导演新海诚执导的动画电影《你的名字。》在日本本土正式上映。</div>
+                    <div style="margin-top:10px;">8月26日——曾于1988年至2002年在甘肃省白银市及内蒙古包头市连续犯下强奸残杀女性11人的犯罪嫌疑人高某落网。被称为“世纪悬案”的白银“8·05”系列强奸杀人案告破。</div>
+                    <div style="margin-top:10px;">8月28日——8·28天津居民楼爆炸事故。</div>
+                    <div style="margin-top:10px;">8月30日——中国驻吉尔吉斯斯坦大使馆遭遇炸弹袭击，造成一人死亡两人受伤。</div>
+                    <div style="margin-top:10px;">8月31日——中国再新增7个自贸试验区，分别在辽宁省、浙江省、重庆市、河南省、湖北省、四川省、陕西省。</div>
+                    <div style="margin-top:10px;">8月31日——巴西参议院通过总统弹劾案，迪尔玛·罗塞夫被解除总统职务，副总统米歇尔·特梅尔将接任总统直至2018年。</div>
                 </el-collapse-item>
                 <el-collapse-item title="9月" name="9">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">9月1日——日环食环食带穿过加蓬、刚果（布）、刚果（金）、坦桑尼亚、莫桑比克和马达加斯加，偏食覆盖了非洲大部、阿拉伯半岛南部、印度洋大部、印尼西南端和南极洲一角中国不可见。</div>
+                    <div style="margin-top:10px;">9月1日——《中华人民共和国慈善法》开始施行。</div>
+                    <div style="margin-top:10px;">9月3日——中国人民抗日战争胜利71周年。</div>
+                    <div style="margin-top:10px;">9月3日——国家主席习近平出席2016年二十国集团工商峰会开幕式，并发表题为《中国发展新起点　全球增长新蓝图》的主旨演讲。</div>
+                    <div style="margin-top:10px;">9月4日~9月5日——杭州举办二十国集团领导人十一次峰会中方将从创新增长方式、完善全球经济金融治理、促进国际贸易和投资、推动包容联动式发展等4个重点领域进行峰会筹备工作。</div>
+                    <div style="margin-top:10px;">9月7日~9月18日——2016年里约热内卢残奥会在巴西里约热内卢举行。</div>
+                    <div style="margin-top:10px;">9月9日——毛泽东主席逝世40周年。</div>
+                    <div style="margin-top:10px;">9月9日——朝鲜成功第五次进行地下核试验。</div>
+                    <div style="margin-top:10px;">9月11日——9·11事件爆发15周年。</div>
+                    <div style="margin-top:10px;">9月13日——中央军委联勤保障部队在北京成立，习近平主席向武汉联勤保障基地和无锡、桂林、西宁、沈阳联勤保障中心授予军旗并致训词。</div>
+                    <div style="margin-top:10px;">9月14日——经国务院批准，调整宁波市行政区划：（一）撤销江东区并入鄞州区；（二）将鄞州区的集士港镇、古林镇、高桥镇、横街镇、鄞江镇、洞桥镇、章水镇、龙观乡、石碶街道划归宁波市海曙区管辖； [25]  （三）撤销奉化市设立奉化区（同年11月17日奉化区正式挂牌成立，江东区同日正式撤销）。</div>
+                    <div style="margin-top:10px;">9月15日——天宫二号空间实验室在酒泉卫星发射中心发射成功。</div>
+                    <div style="margin-top:10px;">9月16日——中国杭州获得2022年第十九届亚洲运动会主办权1周年。</div>
+                    <div style="margin-top:10px;">9月17日——广西来宾市兴宾区发生4.1级地震（9.17来宾地震）。</div>
+                    <div style="margin-top:10px;">9月18日——九·一八事变爆发85周年纪念日。</div>
+                    <div style="margin-top:10px;">9月18日——中国国务院总理李克强离开北京对加拿大、古巴共和国正式访问并出席第71届联合国大会系列高级别会议。</div>
+                    <div style="margin-top:10px;">9月20日——首届丝绸之路（敦煌）国际文化博览会在甘肃敦煌举行。</div>
+                    <div style="margin-top:10px;">9月24日~10月3日——2016年亚洲沙滩运动会在越南岘港举行。</div>
+                    <div style="margin-top:10px;">9月27日——港珠澳大桥22.9公里主桥顺利贯通，其“中国结”“海豚”“风帆”成三大标志景观。</div>
+                    <div style="margin-top:10px;">9月30日——中国第三个烈士纪念日。</div>
                 </el-collapse-item>
                 <el-collapse-item title="10月" name="10">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">10月1日——人民币进入SDR正式生效标志着人民币成为第一个被纳入SDR篮子的新兴市场国家货币，成为继美元、欧元、日元和英镑后，特别提款权中的第五种货币。</div>
+                    <div style="margin-top:10px;">10月5日——苹果公司联合创始人史蒂夫·乔布斯逝世5周年。</div>
+                    <div style="margin-top:10px;">10月7日——刘伯承逝世30周年。</div>
+                    <div style="margin-top:10px;">10月8日——航天纪念日，中国航空航天事业创建60周年。</div>
+                    <div style="margin-top:10px;">10月10日——辛亥革命纪念日，武昌起义胜利105周年。</div>
+                    <div style="margin-top:10px;">10月10日——中国脉冲星导航试验卫星发射实验圆满成功。</div>
+                    <div style="margin-top:10px;">10月13日——中国国家主席习近平对柬埔寨王国、孟加拉人民共和国进行国事访问并出席印度果阿举行金砖国家领导人第八次会晤。</div>
+                    <div style="margin-top:10px;">10月13日——马尔代夫外交部发表声明表示，鉴于长期以来英联邦部长级行动小组及英联邦秘书处给予马尔代夫不公平、不公正待遇，马尔代夫政府决定脱离英联邦。</div>
+                    <div style="margin-top:10px;">10月13日——联合国大会正式任命前葡萄牙总理安东尼奥·古特雷斯为下任联合国秘书长。</div>
+                    <div style="margin-top:10px;">10月14日——《爸爸去哪儿第四季》正式在芒果TV开播。</div>
+                    <div style="margin-top:10px;">10月15日——10·15江苏盐城地震。</div>
+                    <div style="margin-top:10px;">10月16日——第二届南京国际马拉松在中国南京召开。</div>
+                    <div style="margin-top:10px;">10月16日——10·16巴厘岛桥梁垮塌事故。</div>
+                    <div style="margin-top:10px;">10月17日——发射神舟十一号飞船成功，搭乘2名航天员与天宫二号对接，进行人在太空中期（30天）驻留试验。</div>
+                    <div style="margin-top:10px;">10月17日至25日——由中央纪委宣传部、中央电视台联合制作的反腐纪录片《永远在路上》在央视一套黄金时段首播。</div>
+                    <div style="margin-top:10px;">10月18日——锤子科技发布新机Smartisan M1和Smartisan M1L。</div>
+                    <div style="margin-top:10px;">10月19日——鲁迅逝世80周年。</div>
+                    <div style="margin-top:10px;">10月20日——江苏盐城射阳再次发生地震，此次震级为4.4级，已发生余震5次。</div>
+                    <div style="margin-top:10px;">10月21日——10·21济南仓库爆炸事故。</div>
+                    <div style="margin-top:10px;">10月22日——红军长征胜利日，红军长征胜利80周年。</div>
+                    <div style="margin-top:10px;">10月22日——中国足协官网宣布，意大利名帅马塞洛·里皮就任中国男足国家队主教练。</div>
+                    <div style="margin-top:10px;">10月23日——上海工人第一次武装起义90周年。</div>
+                    <div style="margin-top:10px;">10月24日~10月27日——中国共产党第十八届中央委员会第六次全体会议在北京召开。</div>
+                    <div style="margin-top:10px;">10月28日——苹果2016年秋季MacBook发布会召开。</div>
+                    <div style="margin-top:10px;">10月28日——深圳地铁7号线，深圳地铁9号线投入运营</div>
+                    <div style="margin-top:10px;">10月30日——意大利中部发生6.6级左右地震。</div>
+                    <div style="margin-top:10px;">10月31日——重庆一煤矿发生瓦斯爆炸事故，33人被困井下。</div>
                 </el-collapse-item>
                 <el-collapse-item title="11月" name="11">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">11月1日——最高人民法院在深圳市、沈阳市设立第一、第二巡回法庭的基础上，在重庆市、西安市、南京市、郑州市增设巡回法庭。</div>
+                    <div style="margin-top:10px;">11月3日——长征五号运载火箭中国文昌航天发射场首飞圆满成功。</div>
+                    <div style="margin-top:10px;">11月7日——“习马会”一周年纪念日。</div>
+                    <div style="margin-top:10px;">11月8日——美国第58届总统大选。</div>
+                    <div style="margin-top:10px;">11月9日——唐纳德·特朗普击败希拉里·黛安·罗德姆·克林顿当选美国第58届总统。</div>
+                    <div style="margin-top:10px;">11月10日——中国湖南省第一颗人造卫星“潇湘一号”发射圆满成功。</div>
+                    <div style="margin-top:10px;">11月10日——中国首个全民营遥感星座“丽水一号”成功发射。</div>
+                    <div style="margin-top:10px;">11月12日——孙中山先生诞辰150周年。</div>
+                    <div style="margin-top:10px;">11月14日——反“港独”在添马公园举行集会。</div>
+                    <div style="margin-top:10px;">11月17日——中国国家主席习近平对厄瓜多尔共和国、智利共和国、秘鲁共和国进行国事访问并出席亚太经合组织第24次领导人非正式会议。</div>
+                    <div style="margin-top:10px;">11月18日——中国神舟十一号飞船返回舱在内蒙古中部预定区域成功着陆，执行飞行任务的航天员景海鹏、陈冬身体状态良好，天宫二号与神舟十一号载人飞行任务取得圆满成功。</div>
+                    <div style="margin-top:10px;">11月22日——日本福岛县凌晨发生7.3级地震。</div>
+                    <div style="margin-top:10px;">11月24日——经国务院批准，调整部分行政区划：（一）西安市撤销户县设立鄠邑区（次年9月9日鄠邑区正式撤县设区揭牌）；（二）成都市撤销郫县设立郫都区（次年1月22日，郫都区正式挂牌成立）；（三）许昌市撤销许昌县设立建安区（2月5日正式挂牌成立）（四）重庆市撤销梁平县设立梁平区（次年1月10日，梁平区正式挂牌成立）；（五）重庆市撤销武隆县设立武隆区（次年1月13日挂牌成立）。</div>
+                    <div style="margin-top:10px;">同日——江西省宜春市丰城电厂三期在建项目发生冷却塔施工平台倒塌事故，致73死2伤（11·24丰城电厂施工平台倒塌事故）。</div>
+                    <div style="margin-top:10px;">11月29日——11·29济南厂房爆炸事故。</div>
+                    <div style="margin-top:10px;">11月29日——11·29哥伦比亚机场飞机坠毁事故。</div>
+                    <div style="margin-top:10px;">11月30日——中国文学艺术界联合会第十次全国代表大会、中国作家协会第九次全国代表大会在北京人民大会堂召开。</div>
                 </el-collapse-item>
                 <el-collapse-item title="12月" name="12">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">12月1日——中国女作家林海音逝世15周年。</div>
+                    <div style="margin-top:10px;">12月1日——泰国玛哈·哇集拉隆功王储完成即位仪式，正式成为泰国新国王。</div>
+                    <div style="margin-top:10px;">12月1日——俄罗斯航天机构从哈萨克斯坦拜科努尔发射场发射的一枚“联盟-U”火箭，未能将其运载的“进步MS-04”货运飞船送入预定轨道，导致飞船从19万米高空坠毁。</div>
+                    <div style="margin-top:10px;">12月2日——第五个全国交通安全日。</div>
+                    <div style="margin-top:10px;">12月3日——12·3赤峰煤矿爆炸事故。</div>
+                    <div style="margin-top:10px;">12月6日~12月10日——2016年亚洲邮展在中国南宁举行。</div>
+                    <div style="margin-top:10px;">12月6日——南美足协宣布将2016年南美杯冠军授予此前遭遇重大空难事故的沙佩科恩斯，其决赛对手国民竞技俱乐部获得百年公平竞赛奖。</div>
+                    <div style="margin-top:10px;">12月8日——《如龙6命之诗》在日本发售。</div>
+                    <div style="margin-top:10px;">12月9日——韩国国会投票表决通过对总统朴槿惠的弹劾议案，今后由国务总理黄教安代行总统职务。</div>
+                    <div style="margin-top:10px;">12月11日——中国加入世界贸易组织15周年。</div>
+                    <div style="margin-top:10px;">12月11日——中国风云四号气象卫星发射成功。</div>
+                    <div style="margin-top:10px;">12月12日——西安事变爆发80周年。</div>
+                    <div style="margin-top:10px;">12月12日——江苏故事广播实现双频覆盖。</div>
+                    <div style="margin-top:10px;">12月13日——第三个南京大屠杀死难者国家公祭日</div>
+                    <div style="margin-top:10px;">12月16日——“一带一路”国际日，全球留学生庆祝，联合国总部降旗以示欢迎。</div>
+                    <div style="margin-top:10px;">12月19日——德国柏林一集市发生卡车袭击事件，造成12人遇难。</div>
+                    <div style="margin-top:10px;">12月20日——相声大师马季逝世10周年。</div>
+                    <div style="margin-top:10px;">12月21日——东帝汶帝力附近海域发生6.5级地震。</div>
+                    <div style="margin-top:10px;">12月22日——中国全球二氧化碳监测科学实验卫星发射成功。</div>
+                    <div style="margin-top:10px;">12月25日——苏联解体25周年。</div>
+                    <div style="margin-top:10px;">12月25日——12·25俄罗斯飞机坠毁事故。</div>
+                    <div style="margin-top:10px;">12月26日——2017年维加奖授予中国科学院青藏高原研究所姚檀栋教授，是首位获奖的中国科学家，也是获此殊荣的首位亚洲科学家。</div>
+                    <div style="margin-top:10px;">12月26日——中华人民共和国与圣多美和普林西比恢复外交关系。</div>
+                    <div style="margin-top:10px;">12月26日——合肥地铁1号线正式开通运营。</div>
+                    <div style="margin-top:10px;">12月28日——12·28墨玉县暴恐袭击事件。</div>
+                    <div style="margin-top:10px;">12月28日——南宁地铁1号线全线开通运营。</div>
+                    <div style="margin-top:10px;">12月29日——印度发生的露天煤矿坍塌事故，造成11人死亡。</div>
+                    <div style="margin-top:10px;">12月30日——印尼松巴哇岛地区附近发生6.6级左右地震。</div>
+                    <div style="margin-top:10px;">12月31日——中国人民解放军火箭军、战略支援部队成立1周年。</div>
+                    <div style="margin-top:10px;">12月31日——中央电视台旗下的中国国际电视台（中国环球电视网CGTN）正式开播。</div>
+                    <div style="margin-top:10px;">12月31日——国家主席习近平发表2017年新年贺词。</div>
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2017">2017年
+        <el-tab-pane label="2017">
+            <img src="../assets/zodiac/chook.svg" class="zodiac">
+            <span class="year">2017年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
-                    <div>1月1日——被瑞士选民于1999年投票表决通过的新《瑞士宪法》正式实施。</div>
-                    <div>1月1日——汉中音乐广播正式开播。</div>
+                    <div style="margin-top:10px;">1月1日——古特雷斯开始正式任职联合国秘书长。</div>
+                    <div style="margin-top:10px;">1月1日——1·1伊斯坦布尔恐怖袭击事件。</div>
+                    <div style="margin-top:10px;">1月1日——曼谷连环爆炸案发生10周年。</div>
+                    <div style="margin-top:10px;">1月1日——《中华人民共和国国防交通法》、《中华人民共和国境外非政府组织境内活动管理法》开始施行。</div>
+                    <div style="margin-top:10px;">1月1日——2017年维也纳新年音乐会。</div>
+                    <div style="margin-top:10px;">1月1日——《新闻地图》正式停播，撤出CCTV-13。</div>
+                    <div style="margin-top:10px;">1月2日——1·2斐济群岛地震。</div>
+                    <div style="margin-top:10px;">1月2日——1·2智利瓦尔帕莱索火灾事件。</div>
+                    <div style="margin-top:10px;">1月2日——1·2巴格达汽车爆炸事件。</div>
+                    <div style="margin-top:10px;">1月2日——1·2泰国汽车相撞事故。</div>
+                    <div style="margin-top:10px;">1月3日～5日——由中央纪委宣传部、中央电视台联合制作的反腐纪录片《打铁还需自身硬》在央视一套黄金时段首播。</div>
+                    <div style="margin-top:10px;">1月4日——1·4攀枝花枪击案。</div>
+                    <div style="margin-top:10px;">1月4日——1·4登封煤矿瓦斯突出事故。</div>
+                    <div style="margin-top:10px;">1月4日——1·4辉南县养老院火灾事故。</div>
+                    <div style="margin-top:10px;">1月4日——1·4菲律宾武装劫狱事件。</div>
+                    <div style="margin-top:10px;">1月4日——1·4斐济地震。</div>
+                    <div style="margin-top:10px;">1月5日——1·5通州小区火灾事故。</div>
+                    <div style="margin-top:10px;">1月5日——1·5陆丰枪战事件。</div>
+                    <div style="margin-top:10px;">1月5日——中国通信技术试验卫星二号发射成功。</div>
+                    <div style="margin-top:10px;">1月6日——福州地铁1号线一期全线运营。</div>
+                    <div style="margin-top:10px;">1月6日——1·6盐城恶性杀人案。</div>
+                    <div style="margin-top:10px;">1月6日——1·6佛罗里达州机场枪击事件。</div>
+                    <div style="margin-top:10px;">1月7日——1·7衡水居民楼爆炸事故。</div>
+                    <div style="margin-top:10px;">1月8日——1·8大马士革炸弹袭击事件。</div>
+                    <div style="margin-top:10px;">1月9日——2016年度国家科学技术奖励大会。</div>
+                    <div style="margin-top:10px;">1月9日——巴黎公社女英雄路易斯·米歇尔逝世111周年。</div>
+                    <div style="margin-top:10px;">1月9日——习近平会见津巴布韦总统穆加贝。</div>
+                    <div style="margin-top:10px;">1月10日——中国交通广播正式开播。</div>
+                    <div style="margin-top:10px;">1月10日～15日——2017年中国杯国际足球锦标赛在广西南宁举行。</div>
+                    <div style="margin-top:10px;">1月10日——国际足联正式宣布，从2026年世界杯开始，世界杯参赛球队将由目前的32支球队扩军至48支。</div>
+                    <div style="margin-top:10px;">1月12日——1·12郑州在建高架桥塌方事故。</div>
+                    <div style="margin-top:10px;">1月12日——郑州地铁1号线2期，郑州地铁9号线1期工程开通试运营。</div>
+                    <div style="margin-top:10px;">1月15日——中国国家主席习近平对瑞士进行国事访问并出席达沃斯世界经济论坛2017年年会。</div>
+                    <div style="margin-top:10px;">1月15日——全国科学技术名词审定委员会联合国家语言文字工作委员会组织化学、物理学、语言学界专家召开113号、115 号、117号、118号元素中文定名会，113号元素的中文名为鉨，第115号元素的中文名为镆，第117号元素的中文名为(石田)，第118号元素的中文名为(气奥) 。</div>
+                    <div style="margin-top:10px;">1月17日——1·17朔州煤矿冒顶事故。</div>
+                    <div style="margin-top:10px;">1月18日——中国国家主席习近平在洛桑国际奥林匹克博物馆会见国际奥委会主席巴赫。 [445]  这是中国国家领导人首次访问国际奥委会和奥林匹克博物馆。</div>
+                    <div style="margin-top:10px;">1月18日——1·18佛山小区煤气爆炸事故。</div>
+                    <div style="margin-top:10px;">1月18日——1·18新绛县粗苯泄露事故。</div>
+                    <div style="margin-top:10px;">1月18日——土耳其空军与俄罗斯联邦空天部队在叙利亚阿勒颇省首次共同进行打击恐怖组织“伊斯兰国”的空中军事行动。</div>
+                    <div style="margin-top:10px;">1月19日——1·19里约州飞机坠毁事故。</div>
+                    <div style="margin-top:10px;">1月20日——特朗普宣誓就任美国总统。</div>
+                    <div style="margin-top:10px;">1月20日——中国星地高速相干激光通信实验成功。</div>
+                    <div style="margin-top:10px;">1月21日——刚强和海霞搭档主持《新闻联播》，刚强也由此正式加入《新闻联播》的主播阵容。播音员王宁正式退居二线，1月8日是他最后一次出现于新闻联播的主播台上。</div>
+                    <div style="margin-top:10px;">1月26日——1·26哈大高速多车连环相撞事故。</div>
+                    <div style="margin-top:10px;">1月27日——2017年中央电视台春节联欢晚会面向全球现场直播，晚会主题为“大美中国梦，金鸡报春来”。晚会除在北京一号演播大厅设立主会场以外，还以自然界常见的水、火、冰、光等元素为主题，分别在广西桂林、四川凉山、黑龙江哈尔滨和上海设立分会场。</div>
+                    <div style="margin-top:10px;">1月28日——2017年春节（大年初一）《青蛙小王子艾克斯的电视》开播。</div>
+                    <div style="margin-top:10px;">1月28日——1·28马来西亚船只失联事件。</div>
+                    <div style="margin-top:10px;">1月28日——南京地铁4号线开通运营。</div>
+                    <div style="margin-top:10px;">1月29日至2月8日——第28届世界大学生冬季运动会在哈萨克斯坦的阿拉木图举办。这是哈萨克斯坦1991年独立建国以来承办的最大规模的国际体育赛事。</div>
+                    <div style="margin-top:10px;">1月30日——由林玉芬执导，杨幂、赵又廷主演的古装玄幻剧《三生三世十里桃花》在东方卫视、浙江卫视首播。</div>
                 </el-collapse-item>
                 <el-collapse-item title="2月" name="2">
-                    <div>控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；</div>
-                    <div>页面反馈：操作后，通过页面元素的变化清晰地展现当前状态。</div>
+                    <div style="margin-top:10px;">2月1日——西咸新区交由西安管理。</div>
+                    <div style="margin-top:10px;">2月1日——上海延安路中运量公交线71路开通。</div>
+                    <div style="margin-top:10px;">2月2日——2·2温州民房倒塌事故。</div>
+                    <div style="margin-top:10px;">2月3日——2·3重庆游乐园安全事故。</div>
+                    <div style="margin-top:10px;">2月4日——第44届安妮奖颁奖。</div>
+                    <div style="margin-top:10px;">2月4日——CCTV12 军旅文化大视野（军营文化）。</div>
+                    <div style="margin-top:10px;">2月8日——2·8安徽铜陵化工厂爆炸事故。</div>
+                    <div style="margin-top:10px;">2月12日——德国前外长、社民党人弗兰克-瓦尔特·施泰因迈尔在德国联邦总统选举中获胜，成为新任德国联邦总统。</div>
+                    <div style="margin-top:10px;">2月14日——2·14涟源煤矿爆炸事故。</div>
+                    <div style="margin-top:10px;">2月15日——2·15上海出租屋火灾事故。</div>
+                    <div style="margin-top:10px;">2月16日——2·16漳州火灾事故。</div>
+                    <div style="margin-top:10px;">2月19日——邓小平逝世20周年。</div>
+                    <div style="margin-top:10px;">2月19日至26日——2017年札幌亚洲冬季运动会在日本札幌举行。</div>
+                    <div style="margin-top:10px;">2月23日——梁启超诞辰144周年。</div>
+                    <div style="margin-top:10px;">2月26日——日环食智利、阿根廷、安哥拉、赞比亚、刚果（金）部分地区可见日环食，南美洲中南部、非洲中南部、南极洲部分地区可见日偏食中国不可见。</div>
+                    <div style="margin-top:10px;">2月28日——二·二八事件70周年。</div>
                 </el-collapse-item>
                 <el-collapse-item title="3月" name="3">
-                    <div>简化流程：设计简洁直观的操作流程；</div>
-                    <div>清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；</div>
-                    <div>帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</div>
+                    <div style="margin-top:10px;">3月1日——3.1云南昆明火车站暴力恐怖案件3周年。</div>
+                    <div style="margin-top:10px;">3月3日——中国人民政治协商会议第十二届全国委员会第五次会议在北京召开。</div>
+                    <div style="margin-top:10px;">3月5日——中华人民共和国第十二届全国人民代表大会第五次会议在北京召开。</div>
+                    <div style="margin-top:10px;">3月5日——梁武东诞辰生日58周年。</div>
+                    <div style="margin-top:10px;">3月3日至15日——全国两会实施改革。</div>
+                    <div style="margin-top:10px;">3月8日——3·8马来西亚航班失踪事件3周年。</div>
+                    <div style="margin-top:10px;">3月9日——巴塞罗那6-1逆转巴黎圣日耳曼，成为首支在欧战首回合4球落后下成功翻盘的球队。</div>
+                    <div style="margin-top:10px;">3月10日——韩国宪法法院通过对总统朴槿惠的弹劾案朴槿惠被免去总统职务，成为韩国历史上首位被成功弹劾下台的总统。</div>
+                    <div style="margin-top:10px;">3月15日——荷兰首相马克·吕特连任荷兰大选。</div>
+                    <div style="margin-top:10px;">3月17日至19日——国际滑联上海超级杯。</div>
+                    <div style="margin-top:10px;">3月22日——3·22英国议会大楼枪击事件。</div>
+                    <div style="margin-top:10px;">3月26日——林郑月娥当选香港特区第五任行政长官。</div>
+                    <div style="margin-top:10px;">3月28日——由李路执导，陆毅、张丰毅、吴刚、许亚军等主演的反腐题材剧《人民的名义》在湖南卫视黄金时段独家首播。</div>
+                    <div style="margin-top:10px;">3月31日——韩国法院签发对前总统朴槿惠的逮捕令，朴槿惠被移送至首尔看守所。</div>
                 </el-collapse-item>
                 <el-collapse-item title="4月" name="4">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">4月1日——中共中央、国务院决定设立河北雄安新区；河北大学文学院申请并获批设立“雄安传统文化研究中心”。</div>
+                    <div style="margin-top:10px;">4月1日——4·1泸县太伏中学学生死亡事件。</div>
+                    <div style="margin-top:10px;">4月2日——塞尔维亚总理、执政党进步党主席武契奇在总统选举中获胜。</div>
+                    <div style="margin-top:10px;">4月4日——中国国家主席习近平离京对芬兰进行国事访问并在美国弗罗里达州与美国总统特朗普举行中美元首会晤。</div>
+                    <div style="margin-top:10px;">4月11日——Windows Vista停止技术支持。</div>
+                    <div style="margin-top:10px;">4月12日——中国实践十三号卫星发射成功。</div>
+                    <div style="margin-top:10px;">4月15日——第二个全民国家安全教育日。</div>
+                    <div style="margin-top:10px;">4月20日——天舟一号货运飞船发射取得圆满成功。</div>
+                    <div style="margin-top:10px;">4月26日——中国第二艘航空母舰正式下水，中央军委副主席范长龙出席下水仪式。</div>
+                    <div style="margin-top:10px;">4月28日——李大钊逝世90周年。</div>
+                    <div style="margin-top:10px;">4月29日——4.29内蒙古阿荣旗交通事故。</div>
+                    <div style="margin-top:10px;">4月30日——中国台湾男歌手周杰伦在西安演唱会上怒斥安保人员引发舆论关注。</div>
                 </el-collapse-item>
                 <el-collapse-item title="5月" name="5">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">5月——中国共产主义青年团成立95周年。</div>
+                    <div style="margin-top:10px;">5月1日——上海世博会博物馆建成开放，纪念内蒙古成立70周年。</div>
+                    <div style="margin-top:10px;">5月2日——5·2成贵铁路隧道重大事故。</div>
+                    <div style="margin-top:10px;">5月3日——5·3阿富汗首都袭击事件。</div>
+                    <div style="margin-top:10px;">5月4日——五四运动爆发98周年。</div>
+                    <div style="margin-top:10px;">5月5日——中国国产大型客机C919首飞成功。</div>
+                    <div style="margin-top:10px;">5月6日——5·6坦桑尼亚校车事故。</div>
+                    <div style="margin-top:10px;">5月7日——法国总统选举，马克龙成功当选法国总统。</div>
+                    <div style="margin-top:10px;">5月8日——中国台湾女歌手邓丽君逝世22周年。</div>
+                    <div style="margin-top:10px;">5月9日——韩国总统选举，前共同民主党党首文在寅当选第19任韩国总统。</div>
+                    <div style="margin-top:10px;">5月9日——5·9威海重大交通事故。</div>
+                    <div style="margin-top:10px;">5月10日——5·10印度拉贾斯坦邦房屋倒塌事故。</div>
+                    <div style="margin-top:10px;">5月11日——5·11印度中央邦贾巴尔普尔重大交通事故。</div>
+                    <div style="margin-top:10px;">5月12日——全球突发WannaCry病毒袭击公共和商业系统事件，中国多个高校校园网沦陷，全球接近74个国家受到严重攻击安全业界暂未能有效破除该勒索软件的恶意加密行为。</div>
+                    <div style="margin-top:10px;">5月14日至15日——“一带一路”国际合作高峰论坛（BRF）于2017年5月14日至15日在北京举行，习近平主席出席高峰论坛开幕式 [35]  ，并主持领导人圆桌峰会，29位外国元首、政府首脑及联合国秘书长、红十字国际委员会主席等3位重要国际组织负责人出席领导人圆桌峰会等活动。</div>
+                    <div style="margin-top:10px;">5月19日——伊朗总统鲁哈尼连任大选。</div>
+                    <div style="margin-top:10px;">5月20日——中国国民党主席选举，前任台湾地区副领导人吴敦义当选下一任党主席。</div>
+                    <div style="margin-top:10px;">5月22日——5·22曼彻斯特恐怖袭击事件。</div>
+                    <div style="margin-top:10px;">5月25日——国家大数据专家咨询委员会成立。</div>
+                    <div style="margin-top:10px;">5月25日——5·25斯里兰卡地质灾害。</div>
+                    <div style="margin-top:10px;">5月26日——国家生态大数据研究院成立。</div>
+                    <div style="margin-top:10px;">5月26日——5·26埃及大巴枪击事件。</div>
+                    <div style="margin-top:10px;">5月27日——陈独秀逝世75周年。</div>
+                    <div style="margin-top:10px;">5月28日至29日——2017年国际青少年游泳冠军赛在中国杭州举行。</div>
+                    <div style="margin-top:10px;">5月30日——5·30巴格达汽车炸弹爆炸事件。</div>
+                    <div style="margin-top:10px;">5月31日——5·31阿富汗首都爆炸事件。</div>
+                    <div style="margin-top:10px;">5月31日——李洛渊当选韩国第45届国务总理。</div>
                 </el-collapse-item>
                 <el-collapse-item title="6月" name="6">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">——《中华人民共和国网络安全法》正式实行。</div>
+                    <div style="margin-top:10px;">6月1日——百度公司正式实行实名制，用户登录百度账号实行手机号强制验证，如不验证将无法登陆、发帖和评论。</div>
+                    <div style="margin-top:10px;">6月1日——中国首台泵后摆火箭发动机首次试车圆满成功，成为世界上第二个掌握泵后摆核心技术国家。</div>
+                    <div style="margin-top:10px;">6月4日——2017年欧洲冠军联赛决赛在加的夫千年球场举行，皇家马德里4:1击败尤文图斯，成为欧冠改制后首支卫冕欧冠冠军的球队。</div>
+                    <div style="margin-top:10px;">6月6日~6月7日——第七届法国中国电影节分别在戛纳和马赛两大法国南部城市举办开幕式。</div>
+                    <div style="margin-top:10px;">6月7日——中国国家主席习近平对哈萨克斯坦共和国进行国事访问并出席上合组织元首理事会第17次峰会和阿萨塔纳专项世博会。</div>
+                    <div style="margin-top:10px;">6月10日至9月10日——世界博览会在哈萨克斯坦的阿斯塔纳（今努尔苏丹）举办，这是世界博览会首次在中亚国家举办。</div>
+                    <div style="margin-top:10px;">6月12日——第五届慕尼黑华语电影节在德国南部城市慕尼黑开幕。</div>
+                    <div style="margin-top:10px;">6月13日——巴拿马总统巴雷拉宣布与中华人民共和国建交。</div>
+                    <div style="margin-top:10px;">6月14日——6·14伦敦公寓楼火灾事故。</div>
+                    <div style="margin-top:10px;">6月15日——中国首颗X射线空间天文卫星“慧眼”成功发射。</div>
+                    <div style="margin-top:10px;">6月15日——江苏省徐州市丰县“6.15”爆炸事件。</div>
+                    <div style="margin-top:10px;">6月17日——6·17葡萄牙森林火灾事件。</div>
+                    <div style="margin-top:10px;">6月17日——中国第一颗氢弹爆炸成功50周年。</div>
+                    <div style="margin-top:10px;">6月17日——6·17巴西重大交通事故。</div>
+                    <div style="margin-top:10px;">6月17日至21日——2017年金砖国家运动会在中国广州举行。</div>
+                    <div style="margin-top:10px;">6月17日~7月2日——2017年俄罗斯联合会杯在俄罗斯举行。</div>
+                    <div style="margin-top:10px;">6月19日~7月5日——中星9A广播电视直播卫星，发射火箭三级工作异常，卫星未进入预定轨道。</div>
+                    <div style="margin-top:10px;">6月20日——6·20危地马拉山体滑坡。</div>
+                    <div style="margin-top:10px;">6月21日——2017年俄罗斯联合会杯小组赛第二轮，葡萄牙队1-0战胜东道主俄罗斯队，克里斯蒂亚诺·罗纳尔多（简称C罗）打进了全场比赛唯一进球，此球也是其在联合会杯赛事中打进的首粒进球，自己也完成了连续8届成年队国际大赛都有进球的傲人纪录（如果算上2004年奥运会，则是连续9次国际大赛都有进球），成为历史第一人。</div>
+                    <div style="margin-top:10px;">6月22日——6·22杭州小区纵火案（杭州保姆纵火案）。</div>
+                    <div style="margin-top:10px;">6月22日——由张永新执导，吴秀波主演的古装历史剧《大军师司马懿之军师联盟》在江苏卫视、安徽卫视、优酷视频首播。</div>
+                    <div style="margin-top:10px;">6月24日——6·24茂县山体滑坡。</div>
+                    <div style="margin-top:10px;">6月25日——“流行音乐天王”迈克尔杰克逊逝世8周年。</div>
+                    <div style="margin-top:10px;">6月26日——完全自主知识产权的中国标准动车组“复兴号”在京沪高铁正式双向首发。</div>
+                    <div style="margin-top:10px;">6月29日——中国国家主席习近平抵达香港出席香港回归祖国20周年大会暨香港特区第五届政府宣誓就职仪式。</div>
                 </el-collapse-item>
                 <el-collapse-item title="7月" name="7">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">7月1日——中国共产党建党96周年；香港回归中国20周年，香港特区第五届政府正式履职。</div>
+                    <div style="margin-top:10px;">7月2日——长征五号火箭发射实践十八号卫星失败。</div>
+                    <div style="margin-top:10px;">7月2日——德国队在2017年俄罗斯联合会杯决赛中1-0战胜智利队，首夺联合会杯冠军，成为继丹麦队（1995年）和法国队（2003年）之后第三支夺冠的欧洲球队。</div>
+                    <div style="margin-top:10px;">7月3日——中国国家主席习近平离京对俄罗斯联邦、德意志联邦共和国进行国事访问并出席汉堡举行G20峰会。</div>
+                    <div style="margin-top:10px;">7月4日——朝鲜成功发射洲际弹道导弹。</div>
+                    <div style="margin-top:10px;">7月6日——7·6高邮化工厂锅炉爆炸事故。</div>
+                    <div style="margin-top:10px;">7月7日——七七事变80周年。</div>
+                    <div style="margin-top:10px;">7月9日——蒙古国总统选举第二轮投票，民主党候选人巴图勒嘎当选下一任蒙古国总统。</div>
+                    <div style="margin-top:10px;">7月9日——宝兰高铁正式通车运营，中国高铁实现“横贯东西”。</div>
+                    <div style="margin-top:10px;">7月13日——北京申奥成功16周年。</div>
+                    <div style="margin-top:10px;">7月14日至30日——第17届国际泳联世界锦标赛在匈牙利布达佩斯举行。</div>
+                    <div style="margin-top:10px;">7月18日——撤销县级即墨市，设立青岛市即墨区（10月30日正式挂牌）。</div>
+                    <div style="margin-top:10px;">7月20日~7月30日——第十届世界运动会在波兰弗罗茨瓦夫举行。</div>
+                    <div style="margin-top:10px;">7月20日——林肯公园主唱查斯特·贝宁顿逝世</div>
+                    <div style="margin-top:10px;">7月20日——印度总统选举，全国民主联盟候选人考文德当选下一任印度总统。</div>
+                    <div style="margin-top:10px;">7月23日——7·23甬温线特别重大铁路交通事故发生6周年。</div>
+                    <div style="margin-top:10px;">7月27日——由吴京执导并主演的军事题材动作电影《战狼Ⅱ》在中国大陆上映。</div>
+                    <div style="margin-top:10px;">7月27日——由刘伟强执导，刘烨、朱亚文、黄志忠、王景春等主演的建军90周年献礼影片《建军大业》在中国大陆上映。</div>
+                    <div style="margin-top:10px;">7月28日——中国唐山大地震41周年。</div>
+                    <div style="margin-top:10px;">7月30日——中国人民解放军建军90周年大阅兵在朱日和合同战术训练基地举行。这是我军时隔36年再次在天安门以外地区举行阅兵，也是首次举行建军节专项阅兵。</div>
+                    <div style="margin-top:10px;">7月31日：北京、张家口申冬奥成功2周年。</div>
                 </el-collapse-item>
                 <el-collapse-item title="8月" name="8">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">8月1日——中国人民解放军建军90周年。</div>
+                    <div style="margin-top:10px;">8月4日~8月13日——2017年世界田径锦标赛在英国伦敦举行。</div>
+                    <div style="margin-top:10px;">8月5日——少女时代出道十周年。</div>
+                    <div style="margin-top:10px;">8月7日——8·7甘肃舟曲特大泥石流7周年。</div>
+                    <div style="margin-top:10px;">8月8日1点23分~3点18分——期间发生月偏食除欧洲西岸（含整个英国）、非洲西北岸、俄罗斯东北角外的亚、欧、非三大洲的绝大部分，及澳大利亚、新西兰等太平洋西部地区和南极洲绝大部分都可在8月7日夜晚或8日凌晨看到这是中国自2015年4月4日以来能看到的首次月食。</div>
+                    <div style="margin-top:10px;">8月8日——内蒙古各族各界隆重庆祝自治区成立70周年，庆祝大会在内蒙古少数民族群众文化体育运动中心隆重举行。 </div>
+                    <div style="margin-top:10px;">8月8日——第九个中国全民健身日；2008年北京奥运会9周年。</div>
+                    <div style="margin-top:10px;">8月8日21时19分——8·8九寨沟地震。</div>
+                    <div style="margin-top:10px;">8月9日7时27分——8·9新疆博尔塔拉州精河县地震。</div>
+                    <div style="margin-top:10px;">8月11日——菲律宾吕宋岛附近海域11日发生6.6级地震。</div>
+                    <div style="margin-top:10px;">8月12日——8·12天津滨海新区爆炸事故发生2周年。</div>
+                    <div style="margin-top:10px;">8月12日——8·12巴基斯坦爆炸事件。</div>
+                    <div style="margin-top:10px;">8月15日——日本宣布无条件投降72周年纪念日；雷锋逝世55周年。</div>
+                    <div style="margin-top:10px;">8月19日至30日——：2017年台北世界大学生夏季运动会在中国台湾台北举行。</div>
+                    <div style="margin-top:10px;">8月21日——自澳大利亚的2012年11月13日日食（当地时间为11月14日）以来首次只经过一个国家的日全食，也是美国自建国以来首次“独享”的日全食。日全食全食带经过地区除海洋外，均在美国，整个北美洲、南美洲北部、欧洲西岸、非洲西北岸、俄罗斯东北角可见日偏食，中国不可见。</div>
+                    <div style="margin-top:10px;">8月27日~9月8日——中华人民共和国第十三届运动会在天津举行。</div>
+                    <div style="margin-top:10px;">8月28日——8·28毕节山体垮塌。</div>
                 </el-collapse-item>
                 <el-collapse-item title="9月" name="9">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">9月1日——统编版三科教材开始在全国使用。</div>
+                    <div style="margin-top:10px;">9月3日——中国人民抗日战争暨世界反法西斯战争胜利72周年。</div>
+                    <div style="margin-top:10px;">9月3日至5日——金砖国家领导人第九次会晤在福建厦门举行，主题是“深化金砖伙伴关系，开辟更加光明未来”。</div>
+                    <div style="margin-top:10px;">9月4日至16日——中华人民共和国第十三届学生运动会在浙江杭州举行。</div>
+                    <div style="margin-top:10px;">9月5日——日本公信榜宣布，日本人气女子偶像组合AKB48的单曲与专辑唱片累计销量已达到5129.8万张，从而超过此前由滨崎步创下的5067.5万张的记录，创下了公信榜女性艺人专辑销量新纪录，成为唱片累计总销量最高的女性艺人。</div>
+                    <div style="margin-top:10px;">9月7日至11日——由中央纪委宣传部、中央巡视办、中央电视台联合制作的反腐纪录片《巡视利剑》在央视一套黄金时段首播。</div>
+                    <div style="margin-top:10px;">9月11日——美国911恐怖袭击事件16周年。</div>
+                    <div style="margin-top:10px;">9月11日——香港凤凰卫视自1998年4月1日起播出的知名节目《锵锵三人行》宣布因故停播</div>
+                    <div style="margin-top:10px;">9月13日——中国人民解放军联勤保障部队成立1周年。</div>
+                    <div style="margin-top:10px;">9月15日——9·15伦敦地铁爆炸事件。</div>
+                    <div style="margin-top:10px;">9月16日——歌手乔任梁逝世一周年。</div>
+                    <div style="margin-top:10px;">9月17日~9月27日——2017年阿什哈巴德亚室武会在土库曼斯坦阿什哈巴德举行。</div>
+                    <div style="margin-top:10px;">9月18日——九一八事变86周年。</div>
+                    <div style="margin-top:10px;">9月20日——日本著名女歌手安室奈美惠在其个人官方网站上宣布，将于2018年9月16日正式引退。</div>
+                    <div style="margin-top:10px;">9月28日——孔子诞辰日，孔子诞辰2560周年。</div>
+                    <div style="margin-top:10px;">9月29日——中日建交45周年。</div>
+                    <div style="margin-top:10px;">9月30日——中国大陆第四个烈士纪念日。</div>
+                    <div style="margin-top:10px;">9月30日——由宋阳、张迟昱（别名张吃鱼）联合编剧并执导，马丽、艾伦、沈腾主演的喜剧片《羞羞的铁拳》在中国大陆上映。</div>
                 </el-collapse-item>
                 <el-collapse-item title="10月" name="10">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">10月1日——中华人民共和国成立68周年，天安门广场举行升国旗仪式。</div>
+                    <div style="margin-top:10px;">10月1日——工信部全面取消手机长途漫游费。</div>
+                    <div style="margin-top:10px;">10月1日——10·1拉斯维加斯赌场枪击事件。</div>
+                    <div style="margin-top:10px;">10月3日——中国人民大学建校80周年。</div>
+                    <div style="margin-top:10px;">10月4日——呼日勒苏赫被任命为蒙古国第30任总理。</div>
+                    <div style="margin-top:10px;">10月5日——巴基斯坦发生一起自杀式爆炸袭击，已造成15人死亡。</div>
+                    <div style="margin-top:10px;">10月5日——哈维·韦恩斯坦性侵事件震惊好莱坞。</div>
+                    <div style="margin-top:10px;">10月6日——10·6俄罗斯火车与大巴相撞事故。</div>
+                    <div style="margin-top:10px;">10月8日——航天纪念日，中国航空航天事业创建61周年。</div>
+                    <div style="margin-top:10px;">10月9日——10·9阿留申群岛地震。</div>
+                    <div style="margin-top:10px;">10月10日——辛亥革命纪念日，武昌起义胜利105周年。</div>
+                    <div style="margin-top:10px;">10月18日至24日——中国共产党第十九次全国代表大会在北京召开。</div>
+                    <div style="margin-top:10px;">10月22日——红军长征胜利日，红军长征胜利81周年。</div>
+                    <div style="margin-top:10px;">10月22日——德国大选。</div>
+                    <div style="margin-top:10px;">10月24日——“嫦娥一号”探月飞船升空10周年。</div>
+                    <div style="margin-top:10px;">10月25日——中国共产党第十九届中央委员会第一次全体会议在北京举行。</div>
                 </el-collapse-item>
                 <el-collapse-item title="11月" name="11">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">11月1日——11·1张家口矿难事故。</div>
+                    <div style="margin-top:10px;">11月4日——《武林风》一龙王者挑战赛在昆明落下帷幕，武僧一龙在第二回合还剩1分10秒时惨遭自由搏击P4P之王西提猜高扫踢TKO，冲击世界排名前十的脚步被迫放缓。这场比赛不仅在中国国内引起巨大反响，在世界同样受到了各方的重点关注。</div>
+                    <div style="margin-top:10px;">11月5日——北斗三号卫星的发射成功。</div>
+                    <div style="margin-top:10px;">11月7日——十月革命胜利100周年。</div>
+                    <div style="margin-top:10px;">11月8日——日本著名女歌手安室奈美惠隐退之前最后的音乐作品，个人第七张精选专辑《Finally》发行。最终，该专辑销量突破220万张，获得2017年日本唱片销售冠军，全球销售量第二，使安室奈美惠成为日本乃至世界迄今为止唯一一位在10代、20代、30代、40代都有百万专辑的歌手。</div>
+                    <div style="margin-top:10px;">11月8日～10日——美国总统特朗普访华。</div>
+                    <div style="margin-top:10px;">11月12日——孙中山先生诞辰151周年。</div>
+                    <div style="margin-top:10px;">11月13日——11·13哥斯达黎加地震。</div>
+                    <div style="margin-top:10px;">11月15日——11·15青岛小区杀人案。</div>
+                    <div style="margin-top:10px;">11月15日——我国成功发射风云三号D气象卫星。</div>
+                    <div style="margin-top:10px;">11月18日——上海财经大学建校100周年</div>
+                    <div style="margin-top:10px;">11月21日——尼日利亚一清真寺发生爆炸，至少30人死亡。</div>
+                    <div style="margin-top:10px;">11月27日——上海音乐学院建院90周年；香港武术巨星李小龙诞辰77周年。</div>
                 </el-collapse-item>
                 <el-collapse-item title="12月" name="12">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top:10px;">12月1日——2018年俄罗斯世界杯小组赛分组抽签仪式在莫斯科克里姆林宫进行。</div>
+                    <div style="margin-top:10px;">12月2日——第六个全国交通安全日。</div>
+                    <div style="margin-top:10px;">12月3日——上海获得2010年世博会举办权15周年纪念日。</div>
+                    <div style="margin-top:10px;">12月3日——中国陆地勘查卫星一号发射成功。</div>
+                    <div style="margin-top:10px;">12月6日至8日——《财富》全球论坛在广州举办。</div>
+                    <div style="margin-top:10px;">12月11日——中国阿尔及利亚一号通信卫星发射成功。</div>
+                    <div style="margin-top:10px;">12月12日——西安事变爆发81周年。</div>
+                    <div style="margin-top:10px;">12月14日——中共中央作出《关于调整中国人民武装警察部队领导指挥体制的决定》。</div>
+                    <div style="margin-top:10px;">12月15日——北京2022年冬奥会会徽“冬梦”和冬残奥会会徽“飞跃”在国家游泳中心发布，北京冬奥会筹备工作进入新阶段。</div>
+                    <div style="margin-top:10px;">12月15日——由冯小刚执导，黄轩、苗苗、钟楚曦主演的电影《芳华》在中国大陆上映。</div>
+                    <div style="margin-top:10px;">12月20日——澳门回归中国18周年。</div>
+                    <div style="margin-top:10px;">12月23日——中国陆地勘查卫星二号发射成功。</div>
+                    <div style="margin-top:10px;">12月26日——合肥地铁2号线正式开通运营。</div>
+                    <div style="margin-top:10px;">12月26日——毛泽东诞辰124周年。</div>
+                    <div style="margin-top:10px;">12月26日—— 美国志愿者发现第50个梅森素数。</div>
+                    <div style="margin-top:10px;">12月30日——中国大地电磁探测仪成功。</div>
+                    <div style="margin-top:10px;">12月31日——国家主席习近平发表二〇一八年新年贺词。</div>
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2018">2018年
+        <el-tab-pane label="2018">
+            <img src="../assets/zodiac/dog.svg" class="zodiac">
+            <span class="year">2018年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
-                    <div>1月1日——被瑞士选民于1999年投票表决通过的新《瑞士宪法》正式实施。</div>
-                    <div>1月1日——汉中音乐广播正式开播。</div>
+                    <div style="margin-top: 10px">1月1日：新修订的《中华人民共和国反不正当竞争法》、《中华人民共和国环境保护税法》、《中华人民共和国水污染防治法》、《中华人民共和国公共图书馆法》、《中华人民共和国核安全法》、《地图审核管理规定》、《中国人民解放军军事训练条例（试行）》、《导游管理办法》正式施行</div>
+                    <div style="margin-top: 10px">1月1日：经党中央批准，由中国人民解放军担负国旗护卫和礼炮鸣放任务，此前守卫国旗35年的天安门国旗护卫队（1991年以前为“天安门国旗班”）光荣结束使命</div>
+                    <div style="margin-top: 10px">1月2日：《国际财经报道》在CCTV-2开播。</div>
+                    <div style="margin-top: 10px">1月2日：11省份加入“戎装常委”。</div>
+                    <div style="margin-top: 10px">1月2日：1·2上海吴淞口沉船事故。</div>
+                    <div style="margin-top: 10px">1月2日：中国贵遵高速复线开通。</div>
+                    <div style="margin-top: 10px">1月2日：1·2秘鲁客车坠崖事故。</div>
+                    <div style="margin-top: 10px">1月4日：1·4俄罗斯鞋厂火灾事故。</div>
+                    <div style="margin-top: 10px">1月5日：中国人民解放军航天员大队成立20周年。</div>
+                    <div style="margin-top: 10px">1月5日：中国发行《戊戌年》特种邮票</div>
+                    <div style="margin-top: 10px">1月5日～14日：中国陕西自然博物馆举行“纪念开馆十周年”系列活动。</div>
+                    <div style="margin-top: 10px">1月6日：声音魅力竞演秀节目《声临其境第一季》在湖南卫视黄金时段首播。</div>
+                    <div style="margin-top: 10px">1月7日：1·7哈尔滨火车与轿车剐碰事故</div>
+                    <div style="margin-top: 10px">1月8日：中国一汽红旗品牌战略发布会在北京人民大会堂盛大举行</div>
+                    <div style="margin-top: 10px">1月9日：微软停止对Windows 8.1的主流服务支持</div>
+                    <div style="margin-top: 10px">1月9日～27日：2018年中国U-23亚洲杯在中国举行</div>
+                    <div style="margin-top: 10px">1月10日：1·10灵武煤矿坍塌事故。</div>
+                    <div style="margin-top: 10px">1月12日：中国成功发射第二十六，二十七颗北斗导航卫星。</div>
+                    <div style="margin-top: 10px">1月13日：中国陆地勘查卫星三号发射任务圆满成功。</div>
+                    <div style="margin-top: 10px">1月18日：四川川煤华荣能源股份有限公司太平煤矿发生一起顶板事故，造成2人死亡、3人受伤，直接经济损失238万元。</div>
+                    <div style="margin-top: 10px">1月18日～19日：中国共产党第十九届中央委员会第二次全体会议在北京举行。</div>
+                    <div style="margin-top: 10px">1月19日：中国长征十一号固体运载火箭“一箭六星”发射任务圆满成功。</div>
+                    <div style="margin-top: 10px">1月19日：中国“淮安号”恩来星和吉林一号视频07星，08星与林业二号发射任务圆满成功。</div>
+                    <div style="margin-top: 10px">1月23日：第48届世界经济论坛年会在瑞士达沃斯召开，主题为“在破碎的世界中创造共同的未来”</div>
+                    <div style="margin-top: 10px">1月25日：中国渝贵铁路开通运营</div>
+                    <div style="margin-top: 10px">1月25日：中国遥感三十号04组卫星发射任务圆满成功</div>
+                    <div style="margin-top: 10px">1月25日：体细胞克隆猴“中中”和“华华”登上学术期刊《细胞》封面。</div>
+                    <div style="margin-top: 10px">1月29日：中国香港亚洲电视重新开台</div>
+                    <div style="margin-top: 10px">1月31日：“超级蓝血月全食”，这是2015年4月4日以来我国首次月全食，发生在晚上19时48分~23时11分</div>
                 </el-collapse-item>
                 <el-collapse-item title="2月" name="2">
-                    <div>控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；</div>
-                    <div>页面反馈：操作后，通过页面元素的变化清晰地展现当前状态。</div>
+                    <div style="margin-top: 10px">2月2日：中国第一颗私人卫星“风马牛一号”发射任务圆满成功</div>
+                    <div style="margin-top: 10px">2月2日：中国长征二号丁运载火箭成功将电磁监测试验卫星“张衡一号”发射升空，进入预定轨道</div>
+                    <div style="margin-top: 10px">2月6日：中国台湾花莲县附近海域发生6.5级地震，系2·4花莲地震的余震</div>
+                    <div style="margin-top: 10px">2月7日：“重型猎鹰”运载火箭成功发射，这也标志着世界上推力最强劲的商业火箭成功完成首飞 8日：日本有色金属巨头三菱综合材料公司旗下三家子公司爆出数据造假问题</div>
+                    <div style="margin-top: 10px">2月9日～25日：2018年平昌冬季奥运会在韩国平昌举行</div>
+                    <div style="margin-top: 10px">2月10日：2·10香港大埔特大交通事故</div>
+                    <div style="margin-top: 10px">2月12日：中国成功发射第二十八，二十九颗北斗导航卫星。</div>
+                    <div style="margin-top: 10px">2月15日：《2018年中国中央电视台春节联欢晚会》在中央电视台一号演播大厅举行并通过中央电视台综合频道综艺频道中文国际频道落地播出。这是1983年央视春晚开始创立以来举办的第36届春晚，也是3月份中央电视台建制被撤销，并与中央人民广播电台和中国国际广播电台整合为中央广播电视总台前举办的最后一届春晚。</div>
+                    <div style="margin-top: 10px">2月16日：井陉县电视台影视频道和井陉县电视台一档文艺类节目（《青蛙小王子的电视》）停播更名，2018年7月23日节目开播第二季（全新一季）时更名为《青蛙小王子·艾克斯的电视》</div>
+                    <div style="margin-top: 10px">2月16日：2018年春节档电影《红海行动》《唐人街探案2》等六部影片上映。</div>
+                    <div style="margin-top: 10px">2月25日：冬奥会正式进入北京周期</div>
+                    <div style="margin-top: 10px">2月26日~28日：中国共产党第十九届中央委员会第三次全体会议在北京举行</div>
                 </el-collapse-item>
                 <el-collapse-item title="3月" name="3">
-                    <div>简化流程：设计简洁直观的操作流程；</div>
-                    <div>清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；</div>
-                    <div>帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</div>
+                    <div style="margin-top: 10px">3月：河北大学由“省部共建高校”升格为首批“部省合作共建高校”，并纳入中华人民共和国教育部直属高等学校序列。</div>
+                    <div style="margin-top: 10px">3月2日：2018年中央电视台元宵晚会在中央电视台一号演播大厅举行，并通过中央电视台综合频道、综艺频道播出。</div>
+                    <div style="margin-top: 10px">3月3日：中国人民政治协商会议第十三届全国委员会第一次会议在北京开幕</div>
+                    <div style="margin-top: 10px">3月5日：中华人民共和国第十三届全国人民代表大会第一次会议在北京开幕</div>
+                    <div style="margin-top: 10px">3月9日～3月18日：2018年平昌冬季残疾人奥林匹克运动会在韩国平昌举行</div>
+                    <div style="margin-top: 10px">3月11日：第十三届全国人民代表大会第一次会议表决通过了《中华人民共和国宪法修正案》。</div>
+                    <div style="margin-top: 10px">3月15日：中国人民政治协商会议第十三届全国委员会第一次会议在北京闭幕</div>
+                    <div style="margin-top: 10px">3月17日：中华人民共和国第十三届全国人民代表大会第一次会议选举习近平为中华人民共和国主席</div>
+                    <div style="margin-top: 10px">3月17日：中国轮椅冰壶队6：5战胜挪威，实现中国冬残奥会金牌和奖牌零的突破</div>
+                    <div style="margin-top: 10px">3月18日：俄罗斯总统选举，现任总统普京成功连任</div>
+                    <div style="margin-top: 10px">3月18日：世界水资源论坛在巴西首都巴西利亚召开</div>
+                    <div style="margin-top: 10px">3月20日：中华人民共和国第十三届全国人民代表大会第一次会议在北京闭幕。</div>
+                    <div style="margin-top: 10px">3月21日：中央广播电视总台组建成立（4月19日正式揭牌亮相）。</div>
+                    <div style="margin-top: 10px">3月23日：美国总统特朗普在白宫正式签署对华贸易备忘录。</div>
+                    <div style="margin-top: 10px">3月25日：3·25俄罗斯购物中心火灾事故，</div>
+                    <div style="margin-top: 10px">3月25日～28日：应中共中央总书记、国家主席习近平邀请，朝鲜劳动党委员长、国务委员会委员长金正恩对中国进行非正式访问。</div>
+                    <div style="margin-top: 10px">3月28日：韩双方在韩国仁川国际机场举行第五批在韩中国人民志愿军烈士遗骸交接仪式</div>
+                    <div style="margin-top: 10px">3月31日：3·31印度旅馆倒塌事故</div>
+                    <div style="margin-top: 10px">3月31日：上海轨道交通浦江线试运营</div>
+                    <div style="margin-top: 10px">3月31日：巴勒斯坦抗议者与以色列士兵在加沙地带边境爆发冲突</div>
                 </el-collapse-item>
                 <el-collapse-item title="4月" name="4">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">4月3日：中国人民解放军总装备部成立20周年。</div>
+                    <div style="margin-top: 10px">4月5日：中国人民武装警察部队成立35周年</div>
+                    <div style="margin-top: 10px">4月5日：北京星际荣耀空间科技有限公司研制的“首飞箭”：双曲线一号S火箭（Hyperbola-1S）在海南发射场发射升空，标志着中国首枚民营航天火箭发射成功</div>
+                    <div style="margin-top: 10px">4月8日：博鳌亚洲论坛2018年年会在中国海南博鳌召开</div>
+                    <div style="margin-top: 10px">4月12日：中央军委在南海海域隆重举行海上阅兵，习近平检阅部队并发表重要讲话，军委副主席，委员包括辽宁号航空母舰等48艘舰艇参加南海阅兵。</div>
+                    <div style="margin-top: 10px">4月13日：习近平在庆祝海南建省办经济特区30周年大会上郑重宣布，党中央决定支持海南全岛建设自由贸易试验区。</div>
+                    <div style="margin-top: 10px">4月13日～18日：2018年全国游泳冠军赛暨亚运会选拔赛在山西红灯笼体育中心游泳馆举行。</div>
+                    <div style="margin-top: 10px">4月16日：中华人民共和国退役军人事务部在北京正式挂牌，国务院副总理孙春兰出席挂牌仪式和成立大会并讲话。</div>
+                    <div style="margin-top: 10px">4月18日：博鳌亚洲论坛2018年年会召开</div>
+                    <div style="margin-top: 10px">4月20日：朝鲜劳动党第七届中央委员会第三次全体会议在平壤举行，朝鲜劳动党委员长金正恩出席会议。此次会议上通过多项决议，决定从2018年4月21日起停止核试验和洲际弹道导弹试射，并决定集中一切力量进行社会主义经济建设。</div>
+                    <div style="margin-top: 10px">4月20日：索尼2018年游戏《战神》发行</div>
+                    <div style="margin-top: 10px">4月21日：4·21桂林龙船翻船事故，17人遇难</div>
+                    <div style="margin-top: 10px">4月21日：中国内地女团青春成长节目《创造101》在腾讯视频开播。</div>
+                    <div style="margin-top: 10px">4月22日：首届数字中国建设峰会召开</div>
+                    <div style="margin-top: 10px">4月22日：4·22朝鲜黄海北道交通事故，32名中国游客和4名朝方工作人员遇难，2名中国游客重伤</div>
+                    <div style="margin-top: 10px">4月22日：在2017-2018赛季中国男子篮球职业联赛（CBA）总决赛第四场比赛中，辽宁队主场以100-88击败浙江广厦队，从而以总比分4-0夺得总冠军，成为CBA历史上第七支冠军球队。</div>
+                    <div style="margin-top: 10px">4月23日：魂芯二号A正式发布，在一秒钟内能完成千亿次浮点运算</div>
+                    <div style="margin-top: 10px">4月26日：中国长征十一号运载火箭“一箭五星”成功发射</div>
+                    <div style="margin-top: 10px">4月27日：韩国总统文在寅与朝鲜国务委员会委员长金正恩在板门店举行历史性会晤。亦是第三次朝韩首脑会晤。</div>
+                    <div style="margin-top: 10px">4月27日：4·27榆林米脂砍学生事件</div>
                 </el-collapse-item>
                 <el-collapse-item title="5月" name="5">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">5月1日：多米尼加共和国断绝与台湾“外交关系”，与中华人民共和国正式建立外交关系，至此台湾的“邦交国”只剩下19个</div>
+                    <div style="margin-top: 10px">5月4日：“纪念马克思诞辰200周年大会”在人民大会堂举行</div>
+                    <div style="margin-top: 10px">5月4日：河南男子张某在境外宣布“组党建国”。</div>
+                    <div style="margin-top: 10px">5月5日：朝中社报道称，据朝鲜最高人民会议常任委员会政令，改定的平壤时间从5日起正式使用。朝韩双方5日起开始使用首尔时间作为统一的标准时间。</div>
+                    <div style="margin-top: 10px">5月7日～12日：越南共产党第十二届中央委员会第七次全体会议在河内举行</div>
+                    <div style="margin-top: 10px">5月8日～11日：应日本首相安倍晋三邀请，国务院总理李克强赴日出席第七次中日韩领导人会议并正式访问日本。</div>
+                    <div style="margin-top: 10px">5月9日：高分五号卫星发射成功</div>
+                    <div style="margin-top: 10px">5月12日：汶川大地震10周年祭。</div>
+                    <div style="margin-top: 10px">5月13日：001A型航空母舰鸣笛出港试航，从下水到海试，用了一年零两周的时间</div>
+                    <div style="margin-top: 10px">5月14日：美国驻以色列使馆将迁至耶路撒冷并举行开馆典礼</div>
+                    <div style="margin-top: 10px">5月14日：四川航空3U8633航班备降成都（5·14川航航班备降成都事件）</div>
+                    <div style="margin-top: 10px">5月21日：中继星“鹊桥号”成功发射，为嫦娥四号的着陆器和月球车提供地月中继通信支持。</div>
+                    <div style="margin-top: 10px">5月24日：在来自中、俄、美、英、韩等五国20多名记者的见证下，朝鲜炸毁了丰溪里核试验场的坑道，并拆除相关设施。</div>
+                    <div style="margin-top: 10px">5月24日：美国白宫发表声明说，美国总统特朗普宣布取消与朝鲜最高领导人金正恩于6月12日在新加坡的会晤。</div>
+                    <div style="margin-top: 10px">5月26日：韩国总统文在寅在板门店朝方一侧的统一阁与朝鲜国务委员会委员长金正恩举行会晤。亦是第四次朝韩首脑会晤。</div>
+                    <div style="margin-top: 10px">5月26日：布基纳法索断绝与台湾“外交关系”，与中华人民共和国正式恢复外交关系，至此台湾的“邦交国”只剩下18个</div>
+                    <div style="margin-top: 10px">5月27日：皇马成为欧冠改制后首支三连冠球队。</div>
                 </el-collapse-item>
                 <el-collapse-item title="6月" name="6">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">6月2日：中国高分六号卫星发射成功</div>
+                    <div style="margin-top: 10px">6月2日：中国珞珈一号发射成功</div>
+                    <div style="margin-top: 10px">6月3日：6·3突尼斯偷渡船倾覆事故</div>
+                    <div style="margin-top: 10px">6月3日：6·3菲律宾车辆相撞事故</div>
+                    <div style="margin-top: 10px">6月4日：6·4阿富汗首都爆炸袭击事件</div>
+                    <div style="margin-top: 10px">6月5日：6·5辽宁本溪炸药爆炸事故</div>
+                    <div style="margin-top: 10px">6月8日：中华人民共和国“友谊勋章”颁授仪式在北京人民大会堂金色大厅隆重举行。国家主席习近平向俄罗斯总统普京授予首枚“友谊勋章”。</div>
+                    <div style="margin-top: 10px">6月8日～9日：G7领导人峰会在加拿大魁北克省沙勒瓦举行。</div>
+                    <div style="margin-top: 10px">6月9日：金州勇士队夺得美国职业篮球联赛（NBA）2017/18赛季总冠军。</div>
+                    <div style="margin-top: 10px">6月9日至10日：上海合作组织青岛峰会在山东青岛举行，这是上合组织扩员后的首次峰会。</div>
+                    <div style="margin-top: 10px">6月12日：朝鲜国务委员会委员长金正恩与美国总统特朗普在新加坡嘉佩乐酒店举行首次会晤，双方握手致意。这是朝美朝美两国在任领导人历史上首次会晤及握手。</div>
+                    <div style="margin-top: 10px">6月14日～7月15日：2018年俄罗斯世界杯在俄罗斯举行，东道主俄罗斯5-0大胜沙特阿拉伯取得开门红</div>
+                    <div style="margin-top: 10px">6月19日：中共中央总书记、国家主席习近平同当日抵京对中国进行访问的朝鲜劳动党委员长、国务委员会委员长金正恩举行会谈。</div>
+                    <div style="margin-top: 10px">6月23日：中国内地女子演唱组合，火箭少女101正式成团。</div>
+                    <div style="margin-top: 10px">6月23日：6·23泰国足球队失踪事件</div>
+                    <div style="margin-top: 10px">6月27日：俄罗斯世界杯爆出开赛以来最大冷门：卫冕冠军德国队0-2不敌韩国，最终排名小组垫底，无缘晋级淘汰赛阶段</div>
+                    <div style="margin-top: 10px">6月30日：在俄罗斯世界杯的两场十六进八淘汰赛上，法国4-3击败阿根廷，乌拉圭则以2-1的比分战胜葡萄牙。“ 绝代双骄”梅西和C罗于同日告别世界杯赛场。</div>
                 </el-collapse-item>
                 <el-collapse-item title="7月" name="7">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">7月5日：7·5普吉岛游船倾覆事故</div>
+                    <div style="margin-top: 10px">7月5日：由文牧野执导，宁浩、徐峥共同监制的剧情片《我不是药神》在中国大陆上映。</div>
+                    <div style="margin-top: 10px">7月5日～10日：中国国务院总理李克强应邀对保加利亚和德国进行正式访问。访问期间，李克强还出席了在索非亚举行的第七次中国—中东欧国家领导人会晤，并主持第五轮中德政府磋商</div> 。
+                    <div style="margin-top: 10px">7月6日：日本邪教组织奥姆真理教创始人麻原彰晃在东京被执行死刑。</div>
+                    <div style="margin-top: 10px">7月6日：中国对美部分进口商品加征关税措施于北京时间6日12时01分起正式实施</div>
+                    <div style="margin-top: 10px">7月10日：我国成功发射第三十二颗北斗导航卫星</div>
+                    <div style="margin-top: 10px">7月10日：葡萄牙著名足球运动员克里斯蒂亚诺·罗纳尔多（简称C罗）转会加盟尤文图斯足球俱乐部。</div>
+                    <div style="margin-top: 10px">7月11日：美国政府宣布对从中国进口的约2000亿美元商品加征10%关税，8月2日又将加征税率提高至25%。</div>
+                    <div style="margin-top: 10px">7月15日：长春长生疫苗事件。</div>
+                    <div style="margin-top: 10px">7月15日：法国队以4-2击败克罗地亚队，自1998年之后再次捧起大力神杯。这场决赛也成为60年以来世界杯决赛进球最多的一次</div>
+                    <div style="margin-top: 10px">7月27日：火星大冲，上一次在2003年，下一次在2035年，是一生难得几回的罕见天象</div>
+                    <div style="margin-top: 10px">7月27日：由闫非、彭大魔编剧兼执导，沈腾主演的喜剧片《西虹市首富》在中国大陆上映。</div>
+                    <div style="margin-top: 10px">7月28日：月全食，发生在凌晨3:30~5:14，全食过程为1小时44分，为本世纪全食时间最长</div>
+                    <div style="margin-top: 10px">7月29日：我国成功发射第三十三，三十四颗北斗导航卫星</div>
+                    <div style="margin-top: 10px">7月31日：高分十一号卫星发射成功</div>
                 </el-collapse-item>
                 <el-collapse-item title="8月" name="8">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">8月8日：八八水灾9周年纪念日、8·8九寨沟地震一周年、在北京奥运会举办10周年纪念日之际，北京冬奥组委正式面向全球启动北京冬奥会和冬残奥会吉祥物征集。最终，广州美术学院和吉林艺术学院的设计方案脱颖而出</div>
+                    <div style="margin-top: 10px">8月11日：日偏食，本次日偏食发生在傍晚，我国大部可见，东部可见带食日落</div>
+                    <div style="margin-top: 10px">8月12日：8·12天津滨海新区爆炸事故3周年</div>
+                    <div style="margin-top: 10px">8月13日：第24届世界哲学大会在中国北京召开</div>
+                    <div style="margin-top: 10px">8月15日：日本著名女歌手滨崎步的个人第六张迷你专辑《TROUBLE》发行。</div>
+                    <div style="margin-top: 10px">8月18日：火箭少女101的第一张专辑《撞》在QQ音乐等音乐平台正式发售。</div>
+                    <div style="margin-top: 10px">8月18日～9月2日：2018年雅加达亚运会在印度尼西亚雅加达举行</div>
+                    <div style="margin-top: 10px">8月20日：首都地区环线高速公路通州至大兴段通车</div>
+                    <div style="margin-top: 10px">8月21日：萨尔瓦多共和国断绝与台湾“外交关系”，与中华人民共和国正式建立外交关系，至此台湾的“邦交国”只剩下17个</div>
+                    <div style="margin-top: 10px">8月23日：中国散裂中子源通过国家验收，投入正式运行，并将对国内外各领域的用户开放</div>
+                    <div style="margin-top: 10px">8月25日：我国成功发射第三十五，三十六颗北斗导航卫星</div>
+                    <div style="margin-top: 10px">8月27日：河北省秦皇岛市抚宁区人民检察院召开欢送援疆干部座谈会，欢送干警刘俊岭同志赴新疆巴州博湖县检察院帮助工作。</div>
+                    <div style="margin-top: 10px">8月27日：外交部发言人华春莹主持例行记者会，表示中国和萨尔瓦多在一个中国原则基础上建交，符合国际法和国际关系基本准则，堂堂正正，光明磊落。</div>
                 </el-collapse-item>
                 <el-collapse-item title="9月" name="9">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">9月2日：9·2巴西国家博物馆火灾事故</div>
+                    <div style="margin-top: 10px">9月3日：发行中国高铁普通纪念币，面额10元</div>
+                    <div style="margin-top: 10px">9月4日：2018年中非合作论坛北京峰会圆桌会议在北京人民大会堂举行</div>
+                    <div style="margin-top: 10px">9月6日：伶仃洋大桥主墩桩基开钻</div>
+                    <div style="margin-top: 10px">9月7日：签署《辛丑条约》事件117周年</div>
+                    <div style="margin-top: 10px">9月7日：我国成功发射海洋一号C卫星</div>
+                    <div style="margin-top: 10px">9月9日：朝鲜在平壤举行盛大阅兵式和群众花车游行，热烈庆祝建国70周年。</div>
+                    <div style="margin-top: 10px">9月12日：香港迪士尼乐园开幕13周年</div>
+                    <div style="margin-top: 10px">9月16日：出道满25年的日本著名女歌手安室奈美惠正式引退。</div>
+                    <div style="margin-top: 10px">9月18日：朝鲜国务委员会委员长金正恩与韩国总统文在寅在平壤举行会晤，这也是年内朝韩首脑的第三次会晤。亦是第五次朝韩首脑会晤。</div>
+                    <div style="margin-top: 10px">9月19日：朝鲜国务委员会委员长金正恩与韩国总统文在寅在平壤百花园国宾馆签署《9月平壤共同宣言》（简称《共同宣言》），就改善发展相互关系、缓和地区军事紧张、推动半岛无核化与和谈进程达成新的重要共识。</div>
+                    <div style="margin-top: 10px">9月18日：“九一八事变”87周年</div>
+                    <div style="margin-top: 10px">9月18日：世界各国领导人前往美国纽约出席联合国大会</div>
+                    <div style="margin-top: 10px">9月19日：我国成功发射第三十七、三十八颗北斗导航卫星</div>
+                    <div style="margin-top: 10px">9月23日：中国迎来第一个中国农民丰收节</div>
+                    <div style="margin-top: 10px">9月24日：美国开始实施对2000亿美元中国产品加征关税</div>
+                    <div style="margin-top: 10px">9月25日~28日：中共中央总书记、国家主席、中央军委主席习近平在东北三省考察，主持召开深入推进东北振兴座谈会。</div>
+                    <div style="margin-top: 10px">9月28日：黄菊同志诞辰80周年</div>
+                    <div style="margin-top: 10px">9月29日：微厘空间一号试验卫星发射成功</div>
+                    <div style="margin-top: 10px">9月30日：中国大陆第五个烈士纪念日</div>
+                    <div style="margin-top: 10px">9月30日：哈佳快速铁路开通运营</div>
                 </el-collapse-item>
                 <el-collapse-item title="10月" name="10">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">10月1日：中华人民共和国成立69周年</div>
+                    <div style="margin-top: 10px">10月1日：中央广播电视总台4K超高清频道（CCTV-4K）正式开播</div>
+                    <div style="margin-top: 10px">10月3日：中国大陆女演员范冰冰就“阴阳合同”等偷逃税问题在个人新浪微博上发表致歉信，表示对税务机关调查后，依法作出的一系列处罚决定完全接受。</div>
+                    <div style="margin-top: 10px">10月3日：两德统一28周年</div>
+                    <div style="margin-top: 10px">10月6日～13日：第三届亚洲残疾人运动会在印度尼西亚雅加达举行</div>
+                    <div style="margin-top: 10px">10月6日～18日：2018年布宜诺斯艾利斯青奥会在阿根廷布宜诺斯艾利斯举行</div>
+                    <div style="margin-top: 10px">10月7日：北京地铁5号线通车运行11周年</div>
+                    <div style="margin-top: 10px">10月7日：台风少年团正式出道，出道演唱会在重庆施光南大剧院举办。</div>
+                    <div style="margin-top: 10px">10月9日：遥感三十二号01组卫星发射成功</div>
+                    <div style="margin-top: 10px">10月10日：辛亥革命爆发107周年</div>
+                    <div style="margin-top: 10px">10月15日：我国成功发射第三十九、四十颗北斗导航卫星</div>
+                    <div style="margin-top: 10px">10月22日：红军长征胜利82周年</div>
+                    <div style="margin-top: 10px">10月23日：港珠澳大桥开通仪式在广东省珠海市举行</div>
+                    <div style="margin-top: 10px">10月24日：港珠澳大桥正式通车</div>
+                    <div style="margin-top: 10px">10月24日：“嫦娥一号”探月飞船升空11周年</div>
+                    <div style="margin-top: 10px">10月25日：中国首款大型水陆两栖飞机“鲲龙号”AG600成功完成水上首飞任务</div>
+                    <div style="margin-top: 10px">10月25日：日本首相安倍晋三访华，此次访华是日本首相时隔7年来首次正式访问中国</div>
+                    <div style="margin-top: 10px">10月25日：宁夏回族自治区成立60周年</div>
+                    <div style="margin-top: 10px">10月26日：Rockstar2018年度游戏大作《荒野大镖客2》发行</div>
+                    <div style="margin-top: 10px">10月28日：10·28重庆公交坠江事故</div>
+                    <div style="margin-top: 10px">10月29日：中法海洋卫星发射成功</div>
+                    <div style="margin-top: 10px">10月29日：10·29印尼客机坠海事故</div>
                 </el-collapse-item>
                 <el-collapse-item title="11月" name="11">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">11月1日：第四十一颗北斗导航卫星发射成功</div>
+                    <div style="margin-top: 10px">11月3日：11·3兰海高速车辆相撞事故</div>
+                    <div style="margin-top: 10px">11月3日：IG电子竞技俱乐部夺得LPL（中国大陆英雄联盟职业联赛）第一个英雄联盟全球总决赛冠军；首届中国国际进口博览会召开。</div>
+                    <div style="margin-top: 10px">11月5日～10日：首届中国国际进口博览会在国家会展中心（上海）举行，国家主席习近平出席开幕式并举行相关活动。172个国家、地区和国际组织参会，3600多家企业参展，超过40万名境内外采购商到会洽谈采购。</div>
+                    <div style="margin-top: 10px">11月6日：11·6献县男孩失踪遇害案</div>
+                    <div style="margin-top: 10px">11月7日：上海上港提前一轮获得2018年中超联赛冠军，这也是上海上港俱乐部历史上首个中超冠军，并打破广州恒大对中超冠军长达7年的垄断。</div>
+                    <div style="margin-top: 10px">11月8日：11·8美国加州山火</div>
+                    <div style="margin-top: 10px">11月11日：第一次世界大战结束100周年</div>
+                    <div style="margin-top: 10px">11月11日： 中国人民解放军空军建军69周年</div>
+                    <div style="margin-top: 10px">11月12日：孙中山先生诞辰152周年</div>
+                    <div style="margin-top: 10px">11月14日：马航MH370调查组解散</div>
+                    <div style="margin-top: 10px">11月17日：法国巴黎“黄背心”运动</div>
+                    <div style="margin-top: 10px">11月19日：我国成功发射第四十二，四十三颗北斗导航卫星</div>
+                    <div style="margin-top: 10px">11月21日：D&G辱华事件</div>
+                    <div style="margin-top: 10px">11月22日：11·22葫芦岛车辆撞小学生事件</div>
+                    <div style="margin-top: 10px">11月25日：11·25伊朗地震</div>
+                    <div style="margin-top: 10px">11月25日：11·25刻赤海峡事件</div>
+                    <div style="margin-top: 10px">11月26日：基因编辑婴儿事件</div>
+                    <div style="margin-top: 10px">11月26日：“洞察号”无人探测器在火星成功着陆，执行人类首次探究火星“内心深处”奥秘的任务</div>
+                    <div style="margin-top: 10px">11月26日：11·26台湾海峡地震</div>
+                    <div style="margin-top: 10px">11月28日：11·28张家口爆炸事故</div>
+                    <div style="margin-top: 10px">11月30日：11·30乐清男孩“走失”事件</div>
                 </el-collapse-item>
                 <el-collapse-item title="12月" name="12">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">12月1日：12·1象山车辆相撞事故</div>
+                    <div style="margin-top: 10px">12月2日：12·2攸县交通事故</div>
+                    <div style="margin-top: 10px">112月2日：12·2成都小区坠楼事件</div>
+                    <div style="margin-top: 10px">112月2日：12·2昆明火灾事故</div>
+                    <div style="margin-top: 10px">112月4日：12·4马来西亚商场爆炸事故</div>
+                    <div style="margin-top: 10px">112月7日：中国“一箭12星”在酒泉发射成功</div>
+                    <div style="margin-top: 10px">112月8日：中国在西昌卫星发射中心发射嫦娥四号探测器成功</div>
+                    <div style="margin-top: 10px">112月8日：深海一号在武昌船舶重工集团有限公司下水，续航力超过12000海里</div>
+                    <div style="margin-top: 10px">112月10日：12·10香港车辆冲撞行人事故</div>
+                    <div style="margin-top: 10px">112月11日：12·11法国圣诞集市枪击事件</div>
+                    <div style="margin-top: 10px">12月11日：广西壮族自治区成立60周年</div>
+                    <div style="margin-top: 10px">12月12日：西安事变82周年</div>
+                    <div style="margin-top: 10px">12月13日：“南京大屠杀”81周年祭</div>
+                    <div style="margin-top: 10px">12月13日：12·13非洲边境屠杀事件</div>
+                    <div style="margin-top: 10px">12月15日：12·15重庆煤矿运输事故</div>
+                    <div style="margin-top: 10px">12月15日：12·15赤峰煤气泄漏事故</div>
+                    <div style="margin-top: 10px">12月15日：12·15尼日利亚中国公民遇害案</div>
+                    <div style="margin-top: 10px">12月16日：12·16日本札幌餐馆爆炸事故</div>
+                    <div style="margin-top: 10px">12月17日：12·17商丘厂区火灾事故</div>
+                    <div style="margin-top: 10px">12月18日：中国共产党第十一届中央委员会第三次全体会议召开40周年暨改革开放40周年</div>
+                    <div style="margin-top: 10px">12月18日：洛杉矶马斯克旗下Boring公司首条地下隧道正式亮相</div>
+                    <div style="margin-top: 10px">12月20日：纪念澳门回归祖国19周年</div>
+                    <div style="margin-top: 10px">12月21日：12·21苏州小区爆燃事故</div>
+                    <div style="margin-top: 10px">12月22日：12·22印尼巽他海峡海啸</div>
+                    <div style="margin-top: 10px">12月22日：虹云工程技术验证卫星发射成功</div>
+                    <div style="margin-top: 10px">12月22日：12·22俄罗斯矿井火灾事故</div>
+                    <div style="margin-top: 10px">12月23日：国务院正式批准撤销山东省莱芜市地市级编制并入济南市，原莱芜市莱城区行政区域改为济南市莱芜区，原莱芜市钢城区行政区域改为济南市钢城区</div>
+                    <div style="margin-top: 10px">12月24日：12·24京昆高速交通事故</div>
+                    <div style="margin-top: 10px">12月24日：12·24延安煤矿井下事故</div>
+                    <div style="margin-top: 10px">12月25日：通信技术试验卫星三号成功发射</div>
+                    <div style="margin-top: 10px">12月25日：12·25龙岩公交车劫持案</div>
+                    <div style="margin-top: 10px">12月26日：12·26北京交通大学实验室爆炸事故</div>
+                    <div style="margin-top: 10px">12月26日：韩国火车时隔10年后再次抵达板门站</div>
+                    <div style="margin-top: 10px">12月26日：12·26越南游船翻船事故</div>
+                    <div style="margin-top: 10px">12月26日：毛泽东同志诞辰125周年</div>
+                    <div style="margin-top: 10px">12月26日：2004年12·26印度洋地震14周年纪念日</div>
+                    <div style="margin-top: 10px">12月28日：12·28埃及炸弹袭击事件</div>
+                    <div style="margin-top: 10px">12月29日：12·29福建永定矿难</div>
+                    <div style="margin-top: 10px">12月29日：云海二号卫星发射成功</div>
+                    <div style="margin-top: 10px">12月29日：京沈客运专线承德南到沈阳段开通运行。</div>
+                    <div style="margin-top: 10px">12月30日：梅艳芳逝世15周年</div>
+                    <div style="margin-top: 10px">12月30日：北京地铁8号线三期和四期，北京地铁6号线西延开通运营。</div>
+                    <div style="margin-top: 10px">12月31日：国家主席习近平发表2019年新年贺词</div>
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2019">2019年
+        <el-tab-pane label="2019">
+            <img src="../assets/zodiac/pig.svg" class="zodiac">
+            <span class="year">2019年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
-                    <div>1月1日——被瑞士选民于1999年投票表决通过的新《瑞士宪法》正式实施。</div>
-                    <div>1月1日——汉中音乐广播正式开播。</div>
+                    <div style="margin-top: 10px">1月1日——中美建交40周年</div>
+                    <div style="margin-top: 10px">1月1日——《告台湾同胞书》发表40周年</div>
+                    <div style="margin-top: 10px">1月3日——1·3美国佛州车辆相撞事故</div>
+                    <div style="margin-top: 10px">1月3日——1·3中国社会科学院中国历史研究院成立</div>
+                    <div style="margin-top: 10px">1·4平潭海域渔船碰撞事故</div>
+                    <div style="margin-top: 10px">1月7日——1·7宣威隧道塌方事故</div>
+                    <div style="margin-top: 10px">1月7日——1·7四川九龙森林火灾</div>
+                    <div style="margin-top: 10px">1月8日——1·8重庆轨道环线擦碰事故</div>
+                    <div style="margin-top: 10px">1月8日——1·8北京男子伤害孩子事件</div>
+                    <div style="margin-top: 10px">1月8日——2018年度国家科学技术奖励大会</div>
+                    <div style="margin-top: 10px">1月8日——1·8大连煤气爆炸事故</div>
+                    <div style="margin-top: 10px">1月11日——1·11廊坊车辆相撞事故</div>
+                    <div style="margin-top: 10px">1月12日——1·12巴黎燃气爆炸事故</div>
+                    <div style="margin-top: 10px">1月12日——1·12神木煤矿冒顶事故</div>
+                    <div style="margin-top: 10px">1月12日——1·12韩国液化气船泄漏事件</div>
+                    <div style="margin-top: 10px">1月14日——1·14福州持刀伤人案</div>
+                    <div style="margin-top: 10px">1月15日——1·15肯尼亚首都袭击事件</div>
+                    <div style="margin-top: 10px">1·16叙利亚爆炸事件</div>
+                    <div style="margin-top: 10px">1·17哥伦比亚袭击事件</div>
+                    <div style="margin-top: 10px">1·18俄罗斯战机碰撞事故</div>
+                    <div style="margin-top: 10px">1·18泰国寺庙枪击事件</div>
+                    <div style="margin-top: 10px">1·18墨西哥油管爆炸事故</div>
+                    <div style="margin-top: 10px">1·19印尼轮渡倾覆事故</div>
+                    <div style="margin-top: 10px">1·21阿富汗军营遭袭事件</div>
+                    <div style="margin-top: 10px">1月21日——1·21漳州海域货船沉没事故</div>
+                    <div style="margin-top: 10px">1月23日——委内瑞拉与美国断交</div>
+                    <div style="margin-top: 10px">1月25日——1·25长春公寓楼爆炸事故</div>
+                    <div style="margin-top: 10px">1月25日——1·25巴西溃坝事故</div>
+                    <div style="margin-top: 10px">1月27日——1·27菲律宾教堂爆炸事件</div>
+                    <div style="margin-top: 10px">1月27日——1·27秘鲁酒店倒塌事故</div>
+                    <div style="margin-top: 10px">1月30日——1·30日本茨城核燃料外泄事故</div>
+                    <div style="margin-top: 10px">1月30日——石家庄桥西区种错疫苗事件</div>
                 </el-collapse-item>
                 <el-collapse-item title="2月" name="2">
-                    <div>控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；</div>
-                    <div>页面反馈：操作后，通过页面元素的变化清晰地展现当前状态。</div>
+                    <div style="margin-top: 10px">2·1象州杀人案</div>
+                    <div style="margin-top: 10px">2·3上海黄浦区轿车撞人事故</div>
+                    <div style="margin-top: 10px">2月4日——2019年中央广播电视总台春节联欢晚会</div>
+                    <div style="margin-top: 10px">2月5日——2019年春节档电影《流浪地球》《疯狂的外星人》《飞驰人生》《熊出没·原始时代》《新喜剧之王》等八部影片上映。</div>
+                    <div style="margin-top: 10px">2月5日——北京冬奥会开幕倒计时3周年</div>
+                    <div style="margin-top: 10px">2·5融安爆竹店爆炸事故</div>
+                    <div style="margin-top: 10px">2·5巴黎建筑起火事故</div>
+                    <div style="margin-top: 10px">2·6土耳其居民楼倒塌事故</div>
+                    <div style="margin-top: 10px">2·8巴西足球俱乐部火灾事故</div>
+                    <div style="margin-top: 10px">2月8日——印度假酒事件</div>
+                    <div style="margin-top: 10px">2·9泰国普吉撞船事故</div>
+                    <div style="margin-top: 10px">2·9隆林杀人案</div>
+                    <div style="margin-top: 10px">2·10岳武高速车辆相撞事故</div>
+                    <div style="margin-top: 10px">2·10墨西哥飞机坠毁事故</div>
+                    <div style="margin-top: 10px">2·11汉中公交车坠江事故</div>
+                    <div style="margin-top: 10px">2月12日——马其顿国名由马其顿共和国变更为北马其顿共和国，简称北马其顿。</div>
+                    <div style="margin-top: 10px">2·12定边车辆相撞事故</div>
+                    <div style="margin-top: 10px">2·12尼日利亚踩踏事故</div>
+                    <div style="margin-top: 10px">2·13伊朗革命卫队袭击事件</div>
+                    <div style="margin-top: 10px">2·13哈尔滨锅炉房爆炸事故</div>
+                    <div style="margin-top: 10px">2·14韩国军工厂爆炸事故</div>
+                    <div style="margin-top: 10px">2·14印度恐怖袭击事件</div>
+                    <div style="margin-top: 10px">2·15东莞气体中毒事故</div>
+                    <div style="margin-top: 10px">2·16内黄纵火案</div>
+                    <div style="margin-top: 10px">2·16圣彼得堡建筑楼层坍塌事故</div>
+                    <div style="margin-top: 10px">2·16福州民房倒塌事件</div>
+                    <div style="margin-top: 10px">2·18华裔女性南非遇害</div>
+                    <div style="margin-top: 10px">2·19秘鲁酒店抢劫事件</div>
+                    <div style="margin-top: 10px">2·20孟加拉国首都火灾事故</div>
+                    <div style="margin-top: 10px">2·21吉安持刀砍人案</div>
+                    <div style="margin-top: 10px">2·23内蒙古矿业公司安全事故</div>
+                    <div style="margin-top: 10px">2·23美国货机坠毁事故</div>
+                    <div style="margin-top: 10px">2·23象山渔船沉没事故</div>
+                    <div style="margin-top: 10px">委内瑞拉与哥伦比亚断交</div>
+                    <div style="margin-top: 10px">2·24南昌房屋坍塌事故</div>
+                    <div style="margin-top: 10px">2·24孟加拉国航班劫持未遂事件</div>
+                    <div style="margin-top: 10px">2月26日——延边州体育局召开了新闻发布会，正式宣布延边富德足球俱乐部破产解散</div>
+                    <div style="margin-top: 10px">2·26印尼矿区滑坡事故</div>
+                    <div style="margin-top: 10px">2·27开罗火车站爆炸事件</div>
+                    <div style="margin-top: 10px">2·27尼泊尔直升机坠毁事故</div>
                 </el-collapse-item>
                 <el-collapse-item title="3月" name="3">
-                    <div>简化流程：设计简洁直观的操作流程；</div>
-                    <div>清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；</div>
-                    <div>帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</div>
+                    <div style="margin-top: 10px">3·2自隆高速碰撞事故</div>
+                    <div style="margin-top: 10px">中国人民政治协商会议第十三届全国委员会第二次会议</div>
+                    <div style="margin-top: 10px">3·3土耳其居民楼起火事故</div>
+                    <div style="margin-top: 10px">3·3阿根廷枪杀案</div>
+                    <div style="margin-top: 10px">3·4国航航班火警事件</div>
+                    <div style="margin-top: 10px">3·4阿拉巴马州龙卷风灾害</div>
+                    <div style="margin-top: 10px">中华人民共和国第十三届全国人民代表大会第二次会议</div>
+                    <div style="margin-top: 10px">3·5伦敦交通枢纽炸弹事件</div>
+                    <div style="margin-top: 10px">3·5埃及北部交通事故</div>
+                    <div style="margin-top: 10px">3·6成都武侯区火灾事故</div>
+                    <div style="margin-top: 10px">3·8MH370失踪5周年祭。</div>
+                    <div style="margin-top: 10px">3·8新西兰车祸事故</div>
+                    <div style="margin-top: 10px">3·9哥伦比亚飞机坠毁事故</div>
+                    <div style="margin-top: 10px">3·9墨西哥酒吧枪击案</div>
+                    <div style="margin-top: 10px">3·10埃塞俄比亚航班坠毁事故</div>
+                    <div style="margin-top: 10px">3·10宁蒗杀人案</div>
+                    <div style="margin-top: 10px">3·11俄罗斯客机紧急降落事件</div>
+                    <div style="margin-top: 10px">3·12浙江渔船沉没事故</div>
+                    <div style="margin-top: 10px">3·12中国海军战机坠毁事故</div>
+                    <div style="margin-top: 10px">3·13巴西校园枪击事件</div>
+                    <div style="margin-top: 10px">3·13尼日利亚建筑坍塌事故</div>
+                    <div style="margin-top: 10px">3·14沁源森林火灾</div>
+                    <div style="margin-top: 10px">3·14孟买天桥垮塌事故</div>
+                    <div style="margin-top: 10px">3·14阿富汗集市爆炸事件</div>
+                    <div style="margin-top: 10px">3·14伊朗天然气管道爆炸事故</div>
+                    <div style="margin-top: 10px">3·14沅江塔吊倒塌事故</div>
+                    <div style="margin-top: 10px">3·15新西兰清真寺枪击案</div>
+                    <div style="margin-top: 10px">3·15乡宁房屋垮塌事故</div>
+                    <div style="margin-top: 10px">3月16日——国际足联理事会迈阿密会议宣布联合会杯不再举办。</div>
+                    <div style="margin-top: 10px">3·16建湖杀母案</div>
+                    <div style="margin-top: 10px">3·16玉林县森林火灾</div>
+                    <div style="margin-top: 10px">山东专升本考试作弊案</div>
+                    <div style="margin-top: 10px">3·17印尼山洪爆发事件</div>
+                    <div style="margin-top: 10px">3·17河间多人落水事件</div>
+                    <div style="margin-top: 10px">3·17巴基斯坦火车遭炸弹袭击事件</div>
+                    <div style="margin-top: 10px">3·17宿迁持刀行凶案</div>
+                    <div style="margin-top: 10px">3·19美国大巴侧翻事故</div>
+                    <div style="margin-top: 10px">3·19仪陇工房爆炸事故</div>
+                    <div style="margin-top: 10px">3·19埃及枪击案</div>
+                    <div style="margin-top: 10px">3月19日——哈萨克斯坦总统努尔苏丹·纳扎尔巴耶夫对国民发表电视讲话，宣布自3月20日起辞去总统职务。</div>
+                    <div style="margin-top: 10px">3月20日——哈萨克斯坦议会通过宪法修正案，将首都阿斯塔纳更名为努尔苏丹，以向刚刚卸任总统职务的哈萨克斯坦第一任总统努尔苏丹·纳扎尔巴耶夫致敬。</div>
+                    <div style="margin-top: 10px">3·20固始车辆相撞事故</div>
+                    <div style="margin-top: 10px">3·21响水化工企业爆炸事故</div>
+                    <div style="margin-top: 10px">3·21双流机场钢筋倾倒事故</div>
+                    <div style="margin-top: 10px">3·21扬州工地脚手架坠落事故</div>
+                    <div style="margin-top: 10px">3·21伊拉克渡船沉没事故</div>
+                    <div style="margin-top: 10px">3·22枣阳恶性撞人案</div>
+                    <div style="margin-top: 10px">3·22长张高速客车自燃事故</div>
+                    <div style="margin-top: 10px">3·23马里村庄袭击事件</div>
+                    <div style="margin-top: 10px">3·27焦作幼师投毒事件</div>
+                    <div style="margin-top: 10px">3·27美国西雅图枪击案</div>
+                    <div style="margin-top: 10px">3·29沁源森林火灾</div>
+                    <div style="margin-top: 10px">3·30木里县森林火灾</div>
                 </el-collapse-item>
                 <el-collapse-item title="4月" name="4">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">4月1日——日本内阁官房长官菅义伟4月1日中午在首相官邸正式公布，代替目前平成年号的新年号为“令和”。新年号在2019年5月1日新天皇即位当天零时开始使用，亦是日本宪政史上首次在皇位继承前夕公布新年号。</div>
+                    <div style="margin-top: 10px">4·1尼泊尔暴风雨灾害</div>
+                    <div style="margin-top: 10px">4·3宁远持刀砍伤学生事件</div>
+                    <div style="margin-top: 10px">4·15巴黎圣母院火灾事故</div>
+                    <div style="margin-top: 10px">4·15刚果（金）沉船事故</div>
+                    <div style="margin-top: 10px">4·21斯里兰卡恐怖袭击事件</div>
+                    <div style="margin-top: 10px">中国人民解放军海军成立70周年</div>
+                    <div style="margin-top: 10px">4·24内蒙古化工企业爆燃事故</div>
+                    <div style="margin-top: 10px">4.26切尔诺贝利核事故30周年</div>
+                    <div style="margin-top: 10px">第二届“一带一路”国际合作高峰论坛</div>
+                    <div style="margin-top: 10px">2019年中国北京世界园艺博览会</div>
                 </el-collapse-item>
                 <el-collapse-item title="5月" name="5">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">五四运动100周年</div>
+                    <div style="margin-top: 10px">日本德仁皇太子即位新天皇</div>
+                    <div style="margin-top: 10px">北京冬奥会倒计时1000天</div>
+                    <div style="margin-top: 10px">郑州地铁5号线开通运营</div>
+                    <div style="margin-top: 10px">长沙地铁4号线开通运营</div>
                 </el-collapse-item>
                 <el-collapse-item title="6月" name="6">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">利物浦2:0击败热刺夺得队史第6座欧冠冠军奖杯。</div>
+                    <div style="margin-top: 10px">中国实现5G网络预商用</div>
+                    <div style="margin-top: 10px">香港修例风波</div>
+                    <div style="margin-top: 10px">2019年法国女足世界杯</div>
+                    <div style="margin-top: 10px">6月20日，2003年的湖南新晃一中“操场埋尸案”曝光。</div>
                 </el-collapse-item>
                 <el-collapse-item title="7月" name="7">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">7·4淳安女童失联事件</div>
+                    <div style="margin-top: 10px">第18届国际泳联世界锦标赛</div>
+                    <div style="margin-top: 10px">7·17MH17坠毁5周年祭。</div>
+                    <div style="margin-top: 10px">7·18日本京都动画纵火案</div>
+                    <div style="margin-top: 10px">7.19日本动画电影《天气之子》上映</div>
+                    <div style="margin-top: 10px">7·21靖安山洪</div>
+                    <div style="margin-top: 10px">7·23水城县山体滑坡事件</div>
+                    <div style="margin-top: 10px">7·24葫芦岛化工厂起火事故</div>
+                    <div style="margin-top: 10px">7.26中国动画电影《哪吒之魔童降世》上映</div>
+                    <div style="margin-top: 10px">7月31日——国际足联宣布，其理事会一致同意自2023年起，女足世界杯的参赛球队由如今的24支增加到32支</div>
                 </el-collapse-item>
                 <el-collapse-item title="8月" name="8">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">8月1日——由日本纪实作家小松成美编著，描写日本著名女歌手滨崎步成长秘闻的半自传小说《M 为了心爱的人》（又名《M 我珍爱的人》）出版发行</div>
+                    <div style="margin-top: 10px">CCTV-7由“军事·农业频道”更名为“国防军事频道</div>
+                    <div style="margin-top: 10px">中央电视台农业农村频道（CCTV-17）开始试播</div>
+                    <div style="margin-top: 10px">《国防军事早报》在CCTV-7开播</div>
+                    <div style="margin-top: 10px">《军事制高点》在CCTV-7开播</div>
+                    <div style="margin-top: 10px">8·3美国得克萨斯州超市枪击案</div>
+                    <div style="margin-top: 10px">8·4鹤峰山洪</div>
+                    <div style="margin-top: 10px">8·5西吉杀人案</div>
+                    <div style="margin-top: 10px">8·14城口山体滑坡</div>
+                    <div style="margin-top: 10px">2019年全国青年运动会</div>
+                    <div style="margin-top: 10px">8·19老挝大巴车祸事故</div>
+                    <div style="margin-top: 10px">2019国际篮联篮球世界杯</div>
+                    <div style="margin-top: 10px">中华人民共和国第十届残疾人运动会暨第七届特殊奥林匹克运动会在天津举办，系全国残运会首次与全运会同城举办</div>
+                    <div style="margin-top: 10px">8月30日——2019年版第五套人民币正式发行</div>
                 </el-collapse-item>
                 <el-collapse-item title="9月" name="9">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">9月1日——CCTV14《大仓库》停播。</div>
+                    <div style="margin-top: 10px">9月3日——国务院新闻办发表《中国的核安全》白皮书。这是中国发表的首部核安全白皮书。</div>
+                    <div style="margin-top: 10px">9月8日—16日——中华人民共和国第十一届少数民族传统体育运动会</div>
+                    <div style="margin-top: 10px">北京大兴国际机场式投入运营</div>
+                    <div style="margin-top: 10px">郑州地铁14号线开通运营</div>
+                    <div style="margin-top: 10px">《体育咖吧》正式停播，撤出CCTV-5</div>
+                    <div style="margin-top: 10px">《聚焦三农》正式停播，撤出CCTV-17</div>
+                    <div style="margin-top: 10px">北京冬奥会和冬残奥会吉祥物发布</div>
+                    <div style="margin-top: 10px">中央电视台农业农村频道(CCTV-17)正式开播</div>
+                    <div style="margin-top: 10px">梅西第六次当选世界足球先生</div>
+                    <div style="margin-top: 10px">国家勋章和国家荣誉称号颁授仪式在北京隆重举行</div>
+                    <div style="margin-top: 10px">深圳地铁5号线南延线投入运营。</div>
+                    <div style="margin-top: 10px">9月28日——CCTV14陆续停播《动画乐翻天》《动画梦工场》《银河剧场》等节目。</div>
+                    <div style="margin-top: 10px">9月30日——庆祝新中国成立70周年献礼片《攀登者》《中国机长》《我和我的祖国》上映</div>
                 </el-collapse-item>
                 <el-collapse-item title="10月" name="10">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">10月1日——中华人民共和国70周年大庆</div>
+                    <div style="margin-top: 10px">中央广播电视总台暂停与NBA合作</div>
+                    <div style="margin-top: 10px">中央广播电视总台启动高质量改版工作</div>
+                    <div style="margin-top: 10px">10月6日——《动画剧场》在CCTV14正式停播。</div>
+                    <div style="margin-top: 10px">10·10无锡高架桥侧翻事故</div>
+                    <div style="margin-top: 10px">中国少年先锋队成立70周年</div>
+                    <div style="margin-top: 10px">《今日环球》在CCTV-4开播</div>
+                    <div style="margin-top: 10px">第七届世界军人运动会</div>
+                    <div style="margin-top: 10px">10·20大连故意杀人案</div>
+                    <div style="margin-top: 10px">国际残奥委会更新会标</div>
+                    <div style="margin-top: 10px">《正点财经》和《天下财经》在CCTV-2开播。</div>
+                    <div style="margin-top: 10px">10月23日～24日——我们的海洋”第六次会议在挪威首都奥斯陆召开。在此次大会上，各界与会代表达成370项关于保护海洋环境的承诺，总值超640亿美元。会议期间，各方围绕气候变化对海洋的影响、海洋塑料污染和可持续渔业等议题展开了交流讨论</div>
+                    <div style="margin-top: 10px">10月28日～31日—— 中共十九届四中全会在京举行，审议通过了《中共中央关于坚持和完善中国特色社会主义制度、推进国家治理体系和治理能力现代化若干重大问题的决定》。</div>
                 </el-collapse-item>
                 <el-collapse-item title="11月" name="11">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">11月1日——长三角生态绿色一体化发展示范区建设推进大会召开，两省一市主要领导为一体化示范区、示范区理事会、示范区执委会揭牌。</div>
+                    <div style="margin-top: 10px">11月14日——美国国务卿迈克·蓬佩奥发布声明，宣布美国正式启动退出《巴黎协定》的程序。</div>
+                    <div style="margin-top: 10px">11月11日——中国人民解放军空军成立70周年</div>
+                    <div style="margin-top: 10px">第二届中国国际进口博览会</div>
+                    <div style="margin-top: 10px">FPX电子竞技俱乐部夺得2019英雄联盟全球总决赛冠军</div>
+                    <div style="margin-top: 10px">2019年鼠疫疫情</div>
                 </el-collapse-item>
                 <el-collapse-item title="12月" name="12">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">梅西第六次获颁金球奖</div>
+                    <div style="margin-top: 10px">澳门回归祖国二十周年</div>
+                    <div style="margin-top: 10px">澳门特别行政区第五届政府正式履职</div>
+                    <div style="margin-top: 10px">我国首艘国产航母“山东舰”服役</div>
+                    <div style="margin-top: 10px">古田会议90周年</div>
+                    <div style="margin-top: 10px">12·26应城地震4.9级</div>
+                    <div style="margin-top: 10px">2019新型冠状病毒疫情</div>
+                    <div style="margin-top: 10px">郑州地铁2号线二期开通运营</div>
+                    <div style="margin-top: 10px">12月17日至18日，湖南“操场埋尸案”一审宣判：杜少平犯故意杀人等罪被判死刑。</div>
+                    <div style="margin-top: 10px">12月31日——国家主席习近平发表二〇二〇年新年贺词</div>
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2020">2020年
+        <el-tab-pane label="2020">
+            <img src="../assets/zodiac/mouse.svg" class="zodiac">
+            <span class="year">2020年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
-                    <div>1月1日——被瑞士选民于1999年投票表决通过的新《瑞士宪法》正式实施。</div>
-                    <div>1月1日——汉中音乐广播正式开播。</div>
+                    <div style="margin-top: 10px">1月1日——《中华人民共和国外商投资法》、《中华人民共和国密码法》开始施行。荷兰更改国家徽标。</div>
+                    <div style="margin-top: 10px">1月2日——中国与厄瓜多尔建交40周年。</div>
+                    <div style="margin-top: 10px">1月3日——当日起，中国有关方面定期向世界卫生组织、有关国家和地区组织以及中国港澳台地区通报新型冠状病毒肺炎疫情的信息。（主词条：2020年新型冠状病毒疫情）同日，伊拉克首都巴格达国际机场附近遭美军导弹袭击，卡西姆·苏莱曼尼丧生。</div>
+                    <div style="margin-top: 10px">1月7日——中国西昌卫星发射中心长三乙成功发射通信技术试验卫星五号。</div>
+                    <div style="margin-top: 10px">1月8日——1·8乌克兰客机坠毁事故</div>
+                    <div style="margin-top: 10px">1月9日至22日——2020年洛桑冬季青年奥林匹克运动会在瑞士洛桑举行。</div>
+                    <div style="margin-top: 10px">1月11日——中国台湾地区领导人选举。</div>
+                    <div style="margin-top: 10px">1月15日（美国东部时间）——中美双方在美国华盛顿签署《中华人民共和国政府和美利坚合众国政府经济贸易协议》。</div>
+                    <div style="margin-top: 10px">1月20日，石家庄地铁3号线一期北段开通运营</div>
+                    <div style="margin-top: 10px">1月22日——国家主席习近平作出重要指示，要求立即对湖北省、武汉市人员流动和对外通道实行严格封闭的交通管控。</div>
+                    <div style="margin-top: 10px">1月23日——凌晨2时许，武汉市疫情防控指挥部发布1号通告，23日10时起机场、火车站离汉通道暂时关闭。同日起至29日，全国各省份陆续启动重大突发公共卫生事件省级一级应急响应。</div>
+                    <div style="margin-top: 10px">1月24日——2020年中央广播电视总台春节联欢晚会在央视一号演播大厅现场直播。同日开始，中国从各地和军队调集346支国家医疗队、4.26万名医务人员和965名公共卫生人员驰援湖北省和武汉市。</div>
+                    <div style="margin-top: 10px">1月26日——第62届格莱美奖在美国洛杉矶颁发。</div>
+                    <div style="margin-top: 10px">1月31日——英国正式脱离欧洲联盟。</div>
                 </el-collapse-item>
                 <el-collapse-item title="2月" name="2">
-                    <div>控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；</div>
-                    <div>页面反馈：操作后，通过页面元素的变化清晰地展现当前状态。</div>
+                    <div style="margin-top: 10px">2月3日——中央指导组从全国调集22支国家紧急医学救援队，在武汉市建设方舱医院。</div>
+                    <div style="margin-top: 10px">2月4日——武汉火神山医院开始正式接诊新型冠状病毒感染的肺炎确诊患者，并于9时许收治首批患者。</div>
+                    <div style="margin-top: 10px">2月5日——中非合作论坛成立20周年。</div>
+                    <div style="margin-top: 10px">2月10日——中国建立省际对口支援湖北省除武汉市以外地市新冠肺炎医疗救治工作机制，统筹安排19个省份对口支援湖北省武汉市以外16个市州及县级市。</div>
+                    <div style="margin-top: 10px">2月14日——中国全国除湖北省以外其他省份新增确诊病例数实现“十连降”。</div>
+                    <div style="margin-top: 10px">2月18日——全国新增治愈人数首次超过新增确诊病例数。</div>
                 </el-collapse-item>
                 <el-collapse-item title="3月" name="3">
-                    <div>简化流程：设计简洁直观的操作流程；</div>
-                    <div>清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；</div>
-                    <div>帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</div>
+                    <div style="margin-top: 10px">3月5日——国家卫健委网站发布《关于表彰全国卫生健康系统新冠肺炎疫情防控工作先进集体和先进个人的决定》。</div>
+                    <div style="margin-top: 10px">3月6日——中共中央总书记、国家主席、中央军委主席习近平在北京出席决战决胜脱贫攻坚座谈会并发表重要讲话。</div>
+                    <div style="margin-top: 10px">3月9日——美国三大股指受到新冠疫情全球扩散及油价暴跌双重打击，均出现暴跌，并因标普快速下跌触发熔断机制。</div>
+                    <div style="margin-top: 10px">3月11日——世界卫生组织总干事谭德塞表示，新冠肺炎疫情已具有大流行特征。在中国，3月11日至17日，全国每日新增本土确诊病例数维持在个位数。总体上，中国本轮疫情流行高峰已经过去，新增发病数持续下降，疫情总体保持在较低水平。</div>
+                    <div style="margin-top: 10px">3月17日——首批42支国家援鄂医疗队撤离武汉。</div>
+                    <div style="margin-top: 10px">3月24日——国际奥委会宣布2020年东京奥运会将延期一年举行，赛会名称不变。</div>
+                    <div style="margin-top: 10px">3月25日——喀布尔一锡克教宗教场所遭自杀式炸弹袭击，造成已有25人死亡，8人受伤。另有80人已从袭击地点成功救出。</div>
+                    <div style="margin-top: 10px">3月30日——国际奥委会与东京奥组委共同宣布2020年东京奥运会整体延期一年。</div>
                 </el-collapse-item>
                 <el-collapse-item title="4月" name="4">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">4月4日——为表达全国各族人民对抗击新冠肺炎疫情斗争牺牲烈士和逝世同胞的深切哀悼，国务院决定，2020年4月4日举行全国性哀悼活动。</div>
+                    <div style="margin-top: 10px">4月8日——该日起，武汉市解除持续76天的离汉离鄂通道管控措施，有序恢复对外交通，逐步恢复正常生产生活秩序。</div>
+                    <div style="margin-top: 10px">4月14日——4·14玉树地震10周年祭</div>
+                    <div style="margin-top: 10px">4月15日——武汉市火神山医院和雷神山医院正式休舱闭院。</div>
+                    <div style="margin-top: 10px">4月18日——万隆会议召开65周年、浦东开发开放30周年。</div>
+                    <div style="margin-top: 10px">4月18日——根据日本纪实作家小松成美所著的同名小说改编，讲述日本著名女歌手滨崎步成长秘闻的电视剧《M 为了心爱的人》（又名《M 我珍爱的人》）在日本朝日电视台首播。</div>
+                    <div style="margin-top: 10px">4月20日——瑞典DJ艾维奇逝世2周年。</div>
+                    <div style="margin-top: 10px">4月28日——中央编办批复同意设立中共辽宁省沈抚改革创新示范区工作委员会、辽宁省沈抚改革创新示范区管理委员会，为省委、省政府派出机构，实行合署办公。</div>
+                    <div style="margin-top: 10px">4月29日——沈阳地铁10号线开通运营。</div>
                 </el-collapse-item>
                 <el-collapse-item title="5月" name="5">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">5月1日——世界卫生组织宣布，鉴于当前国际疫情形势，新冠肺炎疫情仍然构成“国际关注的突发公共卫生事件”。</div>
+                    <div style="margin-top: 10px">5月7日——在四川省凉山州喜德县与冕宁县交界处发生森林火灾。</div>
+                    <div style="margin-top: 10px">5月12日——汶川地震12周年祭。</div>
+                    <div style="margin-top: 10px">5月14日——台风黄蜂在菲律宾萨马岛东部沿海登陆。</div>
+                    <div style="margin-top: 10px">5月17日——2019年度感动中国人物评选颁奖盛典在中央电视台综合频道播出。</div>
+                    <div style="margin-top: 10px">5月20日——特强气旋风暴"安攀"在印度的西孟加拉邦沿海登陆。</div>
+                    <div style="margin-top: 10px">5月21日——中国人民政治协商会议第十三届全国委员会第三次会议在北京召开。</div>
+                    <div style="margin-top: 10px">5月22日——中华人民共和国第十三届全国人民代表大会第三次会议在北京召开。</div>
+                    <div style="margin-top: 10px">5月25日（当地时间）——美国非洲裔男子乔治·弗洛伊德在遭遇警方暴力执法后身亡，引发抗议浪潮。</div>
+                    <div style="margin-top: 10px">5月27日——中国人民政治协商会议第十三届全国委员会第三次会议于下午闭幕。</div>
+                    <div style="margin-top: 10px">5月28日——中华人民共和国第十三届全国人民代表大会第三次会议于15时闭幕。</div>
                 </el-collapse-item>
                 <el-collapse-item title="6月" name="6">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">6月3日——中共辽宁省沈抚改革创新示范区工作委员会、辽宁省沈抚改革创新示范区管理委员会正式揭牌成立，成为全国首家也是唯一一家改革创新示范区。</div>
+                    <div style="margin-top: 10px">6月7日——哈尔滨工业大学建校100周年。</div>
+                    <div style="margin-top: 10px">6月16日——因自6月11日以来，北京连续报告新发地批发市场相关的新冠肺炎病例，报告病例以每日两位数增加，形势严峻，故宣布自6月16日起北京市应急响应级别由三级调至二级。</div>
+                    <div style="margin-top: 10px">6月19日——吉林省变更县级公主岭市代管关系工作会议在长春召开。 会上，宣读《国务院关于同意吉林省变更县级公主岭市代管关系的批复》。经国务院批复同意，将原由四平市代管的县级公主岭市改由长春市代管。</div>
+                    <div style="margin-top: 10px">6月21日——2012年5月21日后中国可见的首次日环食，下一次则为2030年6月1日。除日环食外，包括中国全境在内都能看到日偏食。</div>
+                    <div style="margin-top: 10px">6月23日——墨西哥发生7.4级地震，震源深度10千米。主词条：6·23墨西哥地震</div>
+                    <div style="margin-top: 10px">6月23日——北斗三号最后一颗全球组网卫星在西昌卫星发射中心点火升空。</div>
+                    <div style="margin-top: 10px">6月28日——长沙轨道交通3号线、长沙轨道交通5号线开通试运营</div>
+                    <div style="margin-top: 10px">6月29日——中共中央政治局就“深入学习领会和贯彻落实新时代党的组织路线”举行第二十一次集体学习。</div>
+                    <div style="margin-top: 10px">6月30日——十三届全国人大常委会第二十次会议举行第二次全体会议、第三次全体会议和闭幕会。会议表决通过了《中华人民共和国香港特别行政区维护国家安全法》。</div>
                 </el-collapse-item>
                 <el-collapse-item title="7月" name="7">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">7月1日——中国共产党建党99周年、香港回归中国23周年、青藏铁路通车14周年。</div>
+                    <div style="margin-top: 10px">7月1日——《江苏省电动自行车管理条例》、《浙江省电动自行车管理条例》开始实施。</div>
+                    <div style="margin-top: 10px">7月1日——《朝花夕拾》在中央人民广播电台中国之声开播。</div>
+                    <div style="margin-top: 10px">7月7日——贵州安顺市一辆公交车从安顺火车站驶向客车东站，在途经虹山湖大坝中段时，冲破石护栏坠入湖中。经全力搜救，截至22时，共搜救出37人，其中受伤16人，无生命体征20人，送医抢救无效死亡1人（7·7安顺公交车坠湖事故）。</div>
+                    <div style="margin-top: 10px">7月7日～8日——2020年普通高等学校招生全国统一考试举行。</div>
+                    <div style="margin-top: 10px">7月7日——浙江新安江水库开闸泄洪，这是水库61年历史中的第7次泄洪。</div>
+                    <div style="margin-top: 10px">7月8日——中央人民政府驻香港特别行政区维护国家安全公署在香港正式揭牌，宣告驻香港国家安全公署正式成立并运行。</div>
+                    <div style="margin-top: 10px">7月13日——北京申奥成功19周年。</div>
+                    <div style="margin-top: 10px">7月16日——2020年中央广播电视总台3·15晚会直播播出。</div>
+                    <div style="margin-top: 10px">7月17日——MH17坠毁6周年祭。</div>
+                    <div style="margin-top: 10px">7月23日——长征五号遥四运载火箭搭载我国自主研发的“天问一号”火星探测器在中国文昌航天发射场顺利升空，成功将探测器送入预定轨道。</div>
+                    <div style="margin-top: 10px">7月24日～8月9日——原定于2020年东京奥运会在日本东京举行，现已推迟至2021年7月23日~8月8日举行。</div>
+                    <div style="margin-top: 10px">7月30日——1949年以来首现“7月空台”。</div>
+                    <div style="margin-top: 10px">7月31日——北京申冬奥成功5周年。</div>
+                    <div style="margin-top: 10px">7月31日——北斗三号全球卫星导航系统建成暨开通仪式在北京举行。</div>
                 </el-collapse-item>
                 <el-collapse-item title="8月" name="8">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">8月1日——中国人民解放军建军93周年。</div>
+                    <div style="margin-top: 10px"> 8月4日（当地时间）——黎巴嫩首都贝鲁特港口区发生巨大爆炸。主词条：8·4黎巴嫩首都爆炸事故</div>
+                    <div style="margin-top: 10px">8月6日——中国在酒泉卫星发射中心用长征二号丁运载火箭，成功将高分九号04星送入预定轨道，发射获得圆满成功。</div>
+                    <div style="margin-top: 10px">8月7日——因连日暴雨造成地质疏松，印度喀拉拉邦伊杜基地区拉贾卡德镇发生山体滑坡。主词条：8·7印度喀拉拉邦山体滑坡</div>
+                    <div style="margin-top: 10px">8月7日——8·7甘肃舟曲特大泥石流10周年祭。</div>
+                    <div style="margin-top: 10px">8月8日——第十二个全民健身日，2008年北京奥运会举行12周年。</div>
+                    <div style="margin-top: 10px">8月15日——日本宣布无条件投降75周年以及雷锋逝世58周年。</div>
+                    <div style="margin-top: 10px">8月16日～9月27日——中华人民共和国第十四届学生运动会在山东青岛举行。</div>
+                    <div style="margin-top: 10px">8月18日——深圳地铁6号线，深圳地铁10号线开通运营。</div>
+                    <div style="margin-top: 10px">8月21日——电影《八佰》在中国大陆上映。</div>
+                    <div style="margin-top: 10px">8月22日——邓小平同志诞辰116周年。</div>
+                    <div style="margin-top: 10px">8月24日——2019-20赛季欧冠决赛在里斯本空场进行，拜仁慕尼黑1-0击败巴黎圣日耳曼，队史第6次捧起圣勃莱德杯。</div>
+                    <div style="margin-top: 10px">8月25日～9月6日——原定于2020年东京残奥会在日本东京举行，现已推迟至2021年8月24日～9月5日举行。</div>
+                    <div style="margin-top: 10px">8月26日，石家庄地铁2号线开通运营</div>
                 </el-collapse-item>
                 <el-collapse-item title="9月" name="9">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">9月3日——中国人民抗日战争暨世界反法西斯战争胜利75周年。</div>
+                    <div style="margin-top: 10px">9月4日～9日——2020年中国国际服务贸易交易会在北京国家会议中心成功举办。</div>
+                    <div style="margin-top: 10px">9月8日——全国抗击新冠肺炎疫情表彰大会在北京人民大会堂隆重举行。</div>
+                    <div style="margin-top: 10px">9月9日——毛泽东逝世44周年。</div>
+                    <div style="margin-top: 10px">9月10日——燕山大学建校100周年。</div>
+                    <div style="margin-top: 10px">9月17日——中国首部抗疫题材电视系列剧《最美逆行者》首播。</div>
+                    <div style="margin-top: 10px">9月18日——九一八事变89周年。</div>
+                    <div style="margin-top: 10px">9月22日——《中国三农报道》在CCTV-17开播。</div>
+                    <div style="margin-top: 10px">9月22日——两伊战争爆发40周年。</div>
+                    <div style="margin-top: 10px">9月29日——《中国文艺报道》在CCTV-3开播。</div>
                 </el-collapse-item>
                 <el-collapse-item title="10月" name="10">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">10月1日——中华人民共和国成立71周年，新疆大学成立60周年。</div>
+                    <div style="margin-top: 10px">10月1日——由张艺谋担任总监制，宁浩担任总导演，张一白担任总策划的喜剧电影《我和我的家乡》在中国大陆上映。</div>
+                    <div style="margin-top: 10px">10月3日——两德统一30周年；中国与新加坡建交30周年。</div>
+                    <div style="margin-top: 10px">10月5日～12日——2020年诺贝尔奖陆续揭晓。</div>
+                    <div style="margin-top: 10px">10月5日——10·5鸡东食物中毒事件。</div>
+                    <div style="margin-top: 10px">10月10日——国务院组织召开打击治理电信网络新型违法犯罪工作部际联席会议全国“断卡”行动部署会部署在全国范围内开展“断卡”行动。</div>
+                    <div style="margin-top: 10px">10月14日——深圳经济特区建立40周年庆祝大会在广东省深圳市隆重举行。中共中央总书记、国家主席、中央军委主席习近平出席大会并发表重要讲话。</div>
+                    <div style="margin-top: 10px">10月20日——中国篮协官方宣布，八一男女篮今后不再参加CBA联赛和WCBA联赛。</div>
+                    <div style="margin-top: 10px">10月20日——阿联酋2020年迪拜世界博览会原定开幕日。现已推迟至2021年10月1日开幕。</div>
+                    <div style="margin-top: 10px">10月22日——红军长征胜利日，红军长征胜利84周年。</div>
+                    <div style="margin-top: 10px">10月24日——联合国成立75周年。</div>
+                    <div style="margin-top: 10px">10月25日——中国人民志愿军抗美援朝出国作战70周年。</div>
+                    <div style="margin-top: 10px">10月26日～29日——中国共产党第十九届中央委员会第五次全体会议在北京召开。</div>
+                    <div style="margin-top: 10px">10月28日——深圳地铁2号线三期，深圳地铁3号线三期，深圳地铁4号线三期，深圳地铁8号线一期，无锡地铁3号线一期开通运营。</div>
+                    <div style="margin-top: 10px">v10月31日——江西师范大学（原国立中正大学）80周年校庆。</div>
+                    <div style="margin-top: 10px">10月——福建革命军事馆建设工作启动。</div>
                 </el-collapse-item>
                 <el-collapse-item title="11月" name="11">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">11月1日——第19号台风天鹅登陆菲律宾。</div>
+                    <div style="margin-top: 10px">11月6日——中国与意大利建交50周年。</div>
+                    <div style="margin-top: 10px">11月7日（当地时间）——据美国多家媒体统计，拜登在2020年美国总统选举中已获得超过270张选举人票。</div>
+                    <div style="margin-top: 10px">11月12日——中国人民银行2015年版第五套人民币100元纸币发行5周年。</div>
+                    <div style="margin-top: 10px">11月12日——浦东开发开放30周年庆祝大会在上海市举行。中共中央总书记、国家主席、中央军委主席习近平在会上发表重要讲话。</div>
+                    <div style="margin-top: 10px">11月15日——区域全面经济伙伴关系协定（RCEP）签署仪式以视频方式进行，15个RCEP成员国经贸部长将在仪式上正式签署该协定。</div>
+                    <div style="margin-top: 10px">11月18日——丁真与理塘县国资委下属的一家国有公司进行签约，成为理塘县的旅游大使。</div>
+                    <div style="margin-top: 10px">11月21日——海峡交流基金会成立30周年。</div>
+                    <div style="margin-top: 10px">11月21日——中国最后一位“流氓罪”获罪者牛玉强将服刑至2020年。1997年7月1日，经过第四次修改之后的新刑法正式实施，1984年被用来判决牛玉强的流氓罪被从刑法中永久地删除。</div>
+                    <div style="margin-top: 10px">11月23日——贵州宣布最后9个深度贫困县退出贫困县序列，标志着国务院扶贫办确定的全国832个贫困县全部脱贫摘帽。</div>
+                    <div style="margin-top: 10px">11月24日——11月24日4时30分，我国在中国文昌航天发射场，用长征五号遥五运载火箭成功发射探月工程嫦娥五号探测器，火箭飞行约2200秒后，顺利将探测器送入预定轨道，开启我国首次地外天体采样返回之旅。</div>
+                    <div style="margin-top: 10px">11月26日——广州地铁8号线北延段开通运营。</div>
+                    <div style="margin-top: 10px">11月28日——徐州地铁2号线正式运营。</div>
                 </el-collapse-item>
                 <el-collapse-item title="12月" name="12">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">12月1日——嫦娥五号着陆器和上升器组合体成功着陆月球。</div>
+                    <div style="margin-top: 10px">12月2日——嫦娥五号着陆器和上升器组合体完成了月球钻取采样及封装。</div>
+                    <div style="margin-top: 10px">12月3日——嫦娥五号上升器成功将携带样品的上升器送入到预定环月轨道。</div>
+                    <div style="margin-top: 10px">12月2日——美国国会众议院表决通过《外国公司问责法案》，对外国公司在美上市提出额外的信息披露要求。</div>
+                    <div style="margin-top: 10px">12月6日——嫦娥五号上升器成功与轨道器返回器组合体交会对接，并将月球样品容器安全转移至返回器中。</div>
+                    <div style="margin-top: 10px">12月8日——中国国家主席习近平同尼泊尔总统班达里互致信函，共同宣布珠穆朗玛峰最新高程8848.86米。</div>
+                    <div style="margin-top: 10px">12月9日——一二·九运动85周年。</div>
+                    <div style="margin-top: 10px">12月11日——连淮扬镇铁路竣工通车。</div>
+                    <div style="margin-top: 10px">12月12日——西安事变84周年。</div>
+                    <div style="margin-top: 10px">12月13日——南京大屠杀83周年祭。</div>
+                    <div style="margin-top: 10px">12月15日——中国与智利建交50周年。</div>
+                    <div style="margin-top: 10px">12月17日——嫦娥五号返回器携带月球样品成功着陆在四子王旗着陆场。</div>
+                    <div style="margin-top: 10px">12月18日——成都地铁6号线一二三期，成都地铁8号线，成都地铁9号线，成都地铁17号线，成都地铁18号线二期开通运营。</div>
+                    <div style="margin-top: 10px">12月19日——中国资本市场诞生30周年暨上海证券交易所成立30周年。</div>
+                    <div style="margin-top: 10px">12月20日——澳门回归祖国21周年。</div>
+                    <div style="margin-top: 10px">12月24日——华盛顿哥伦比亚特区市长穆里尔·鲍泽宣布2020年12月24日为华盛顿特区的“安东尼·福奇日”。</div>
+                    <div style="margin-top: 10px">12月25日——苏维埃社会主义共和国联盟停止存在第29年</div>
+                    <div style="margin-top: 10px">12月26日——毛泽东同志诞辰127周年。</div>
+                    <div style="margin-top: 10px">12月26日——郑州地铁3号线、郑州地铁4号线开通运营。</div>
+                    <div style="margin-top: 10px">12月26日——太原地铁第一条线路（太原地铁2号线）开通运营。</div>
+                    <div style="margin-top: 10px">12月26日——上海地铁18号线一期南段，上海地铁10号线二期开通运营。</div>
+                    <div style="margin-top: 10px">12月27日——福州地铁1号线二期工程开通运营，京雄城际铁路全线开通运营。</div>
+                    <div style="margin-top: 10px">12月28日——西安地铁5号线、西安地铁6号线、西安地铁9号线一期开通运营</div>
+                    <div style="margin-top: 10px">12月29日——日本著名女歌手滨崎步通过官方网站宣布，其跨年演唱会的一名工作人员确诊感染新冠病毒，她也成为密切接触者，因此决定取消原计划31日通过网络进行直播的跨年演唱会。</div>
+                    <div style="margin-top: 10px">12月30日——中国广播事业诞生80周年暨中央人民广播电台成立80周年。</div>
+                    <div style="margin-top: 10px">12月30日——盐城至南通高速铁路开通运营。</div>
+                    <div style="margin-top: 10px">12月31日——中国人民解放军火箭军、战略支援部队成立5周年。</div>
+                    <div style="margin-top: 10px">12月31日——北京地铁16号线中段，北京地铁房山线北延段开通运营</div>
+                    <div style="margin-top: 10px">12月31日——国家主席习近平发表2021年新年贺词</div>
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2021">2021年
+        <el-tab-pane label="2021">
+            <img src="../assets/zodiac/cow.svg" class="zodiac">
+            <span class="year">2021年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
-                    <div>1月1日——被瑞士选民于1999年投票表决通过的新《瑞士宪法》正式实施。</div>
-                    <div>1月1日——汉中音乐广播正式开播。</div>
+                    <div style="margin-top: 10px">1月1日——《中华人民共和国民法典》、《中华人民共和国档案法》、《中华人民共和国退役军人保障法》、《中华人民共和国国防法》实施。</div>
+                    <div style="margin-top: 10px">1月1日——《化妆品监督管理条例》、《军队计量条例》、《军队军事职业教育条例（试行）》实施。</div>
+                    <div style="margin-top: 10px">1月1日——《全国人民代表大会常务委员会关于修改 中华人民共和国国徽法 的决定》、《全国人民代表大会常务委员会关于修改 中华人民共和国国旗法 的决定》实施。</div>
+                    <div style="margin-top: 10px">1月1日——2006年跨年曼谷连环爆炸案15周年纪念日。</div>
+                    <div style="margin-top: 10px">1月3日，厦门国际马拉松，中国厦门。</div>
+                    <div style="margin-top: 10px">1月3日至15日，达喀尔汽车拉力赛，沙特阿拉伯。</div>
+                    <div style="margin-top: 10px">1月6日——福州地铁1号线一期全线运营4周年：1·6美国国会暴乱。</div>
+                    <div style="margin-top: 10px">1月9日——印尼客机发生空难。</div>
+                    <div style="margin-top: 10px">1月10日——自2021年起，每年1月10日为中国人民警察节。</div>
+                    <div style="margin-top: 10px">1月12日——蒙古发生6.8级地震。</div>
+                    <div style="margin-top: 10px">1月20日——约瑟夫·拜登就任美国第46任总统</div>
+                    <div style="margin-top: 10px">1月22日——京哈高铁全线正式开通运营。</div>
+                    <div style="margin-top: 10px">1月23日——上海地铁15号线（除桂林路站）开通</div>
                 </el-collapse-item>
                 <el-collapse-item title="2月" name="2">
-                    <div>控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；</div>
-                    <div>页面反馈：操作后，通过页面元素的变化清晰地展现当前状态。</div>
+                    <div style="margin-top: 10px">2月1日——《中华人民共和国海警法》实施。</div>
+                    <div style="margin-top: 10px">2月1日——《政府督查工作条例》实施。</div>
+                    <div style="margin-top: 10px">2月1日——中央广播电视总台8K超高清频道（CCTV-8K）开始试播。</div>
+                    <div style="margin-top: 10px">2月1日至11日，国际足联世俱杯，卡塔尔。</div>
+                    <div style="margin-top: 10px">2月4日——北京冬奥会开幕倒计时1周年。</div>
+                    <div style="margin-top: 10px">2月8日至21日，澳大利亚网球公开赛，澳大利亚墨尔本。</div>
+                    <div style="margin-top: 10px">2月11日——2021年中央广播电视总台春节联欢晚会在中央电视台一号演播大厅举行。这是第39届春晚，也是中央广播电视总台挂牌成立后举行的第3届春晚。</div>
+                    <div style="margin-top: 10px">2月19日——邓小平同志逝世24周年。</div>
+                    <div style="margin-top: 10px">2月21日——新华社受权发布《中共中央 国务院关于全面推进乡村振兴加快农业农村现代化的意见》。</div>
+                    <div style="margin-top: 10px">2月23日——厄瓜多尔至少3所监狱发生暴乱，暴力流血冲突造成至少50名服刑人员死亡。（主词条：2·23厄瓜多尔监狱暴乱事件）</div>
+                    <div style="margin-top: 10px">2月25日——全国脱贫攻坚总结表彰大会在京隆重举行。</div>
                 </el-collapse-item>
                 <el-collapse-item title="3月" name="3">
-                    <div>简化流程：设计简洁直观的操作流程；</div>
-                    <div>清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；</div>
-                    <div>帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</div>
+                    <div style="margin-top: 10px">3月1日——3.1云南昆明火车站暴力恐怖案件7周年祭。</div>
+                    <div style="margin-top: 10px">3月1日——《中华人民共和国长江保护法》、《中华人民共和国刑法修正案（十一）》实施。</div>
+                    <div style="margin-top: 10px">3月1日——《企业名称登记管理规定》、《排污许可管理条例》实施。</div>
+                    <div style="margin-top: 10px">3月4日——全国政协十三届四次会议在北京召开。</div>
+                    <div style="margin-top: 10px">3月8日——3·8马来西亚航班失踪事件发生7周年。</div>
+                    <div style="margin-top: 10px">3月11日——东日本大地震10周年祭。</div>
+                    <div style="margin-top: 10px">3月12日——孙中山先生逝世96周年。</div>
+                    <div style="margin-top: 10px">3月22日——浙江绍兴英烈杨钢林牺牲18周年纪念日。</div>
+                    <div style="margin-top: 10px">3月22日至28日，世界花样滑冰锦标赛，瑞典斯德哥尔摩。</div>
+                    <div style="margin-top: 10px">3月25日——希腊独立200周年。</div>
+                    <div style="margin-top: 10px">3月28日——洛阳地铁一号线开通。</div>
                 </el-collapse-item>
                 <el-collapse-item title="4月" name="4">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">4月1日——4·1中美南海撞机事件20周年、王伟烈士牺牲20周年、雄安新区设立4周年。</div>
+                    <div style="margin-top: 10px">4月2日——中国台湾台铁太鲁阁号408次列车，在行至花莲大清水隧道时发生出轨事故。</div>
+                    <div style="margin-top: 10px">4月2日至10日——第六届亚洲沙滩运动会在海南省三亚市举办。（已延期）</div>
+                    <div style="margin-top: 10px">4月7日——卢旺达种族大屠杀27周年。</div>
+                    <div style="margin-top: 10px">4月6日——女红军李鸿翔逝世。</div>
+                    <div style="margin-top: 10px">4月8日——英国前首相玛格丽特·希尔达·撒切尔逝世8周年。</div>
+                    <div style="margin-top: 10px">4月8日——2021年扬州世界园艺博览会在江苏省扬州市仪征枣林湾开幕。</div>
+                    <div style="margin-top: 10px">4月9日——菲利普亲王去世。</div>
+                    <div style="margin-top: 10px">4月14日——玉树地震11周年祭。</div>
+                    <div style="margin-top: 10px"> 4月13日——日本政府13日确定将把福岛核废水排入大海</div>
+                    <div style="margin-top: 10px">4月15日——《中华人民共和国生物安全法》实施。</div>
+                    <div style="margin-top: 10px">4月15日——巴黎圣母院大火2周年</div>
+                    <div style="margin-top: 10px">4月17日至5月3日，世界斯诺克锦标赛，英国谢菲尔德。</div>
+                    <div style="margin-top: 10px">4月20日——雅安地震8周年祭。</div>
+                    <div style="margin-top: 10px">4月23日——黑龙江鸡西市密山市白鱼湾镇附近村庄出现一只东北虎，一名村民被咬伤</div>
+                    <div style="margin-top: 10px">4月27日——汪辜会谈28周年、《板门店宣言》签署3周年。</div>
+                    <div style="margin-top: 10px">4月28日——广西玉林北流市新丰镇一幼儿园，一男子持刀砍伤2名教师、16名幼儿。</div>
                 </el-collapse-item>
                 <el-collapse-item title="5月" name="5">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">5月1日——《中华人民共和国动物防疫法》实施。</div>
+                    <div style="margin-top: 10px">5月1日——《医疗保障基金使用监督管理条例》、《防范和处置非法集资条例》实施。</div>
+                    <div style="margin-top: 10px">5月2日——南昌大学建校100周年</div>
+                    <div style="margin-top: 10px">5月12日——汶川地震13周年祭、中国第13个防灾减灾日。</div>
+                    <div style="margin-top: 10px">5月15日——中国“天问一号”火星探测器携“祝融号”火星车成功着陆火星。</div>
+                    <div style="margin-top: 10px">5月17日至30日——延期后的联合国《生物多样性公约》第十五次缔约方大会（COP15）将在云南昆明举办。</div>
+                    <div style="margin-top: 10px">5月17日至6月6日，法国网球公开赛，法国巴黎。</div>
+                    <div style="margin-top: 10px">5月21日——中国与巴基斯坦建交70周年。</div>
+                    <div style="margin-top: 10px">5月22日——甘肃白银黄河石林马拉松越野跑事故，造成21名参赛选手死亡，8人受伤。</div>
+                    <div style="margin-top: 10px">5月23日——西藏和平解放70周年。</div>
+                    <div style="margin-top: 10px">5月26日——月全食。月食全过程发生在中国标准时间17:45~20:52，全食阶段在19:11~19:26。中国新疆绝大部分和西藏中西部完全不可见，其余地区带食月出。其中贯穿黑河-天津-防城港的较窄的一线可见部分全食阶段和结尾的偏食阶段；该线以东仅开头的偏食阶段有一部分不可见，而可见完整的全食阶段；该线以西（除完全不可见区域以外）只可见结尾的偏食阶段。此外，亚洲东部、整个大洋洲、美洲中西部、整个南极洲都可见不同完整度的月食。</div>
                 </el-collapse-item>
                 <el-collapse-item title="6月" name="6">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">6月1日——《中华人民共和国未成年人保护法》、《中华人民共和国预防未成年人犯罪法》实施。</div>
+                    <div style="margin-top: 10px">6月1日——《全国人民代表大会常务委员会关于修改〈中华人民共和国专利法〉的决定》、《全国人民代表大会常务委员会关于修改 中华人民共和国著作权法 的决定》实施。</div>
+                    <div style="margin-top: 10px">6月7日至6月8日，全国高考。</div>
+                    <div style="margin-top: 10px">6月10日——6·10代县铁矿透水事故。</div>
+                    <div style="margin-top: 10px">6月11日至7月11日——延期后的第16届欧洲足球锦标赛将由11个国家的12个城市举办。这是欧洲足球锦标赛创立以来首次由欧洲全境多国多城市联合举办并以巡回赛的形式进行，真正实现了“欧洲的欧洲杯”。</div>
+                    <div style="margin-top: 10px">6月11日至7月11日，美洲杯足球赛，阿根廷、哥伦比亚。</div>
+                    <div style="margin-top: 10px">6月11日至7月11日，欧洲足球锦标赛，欧洲。</div>
+                    <div style="margin-top: 10px">6月13日——6·13十堰燃气爆炸事故。</div>
+                    <div style="margin-top: 10px">6月15日——上海合作组织成立20周年。</div>
+                    <div style="margin-top: 10px">6月16日——上海迪士尼度假区开园5周年。</div>
+                    <div style="margin-top: 10px">6月16日，黄熙龄院士逝世。</div>
+                    <div style="margin-top: 10px">6月17日，我国翻译界泰斗、北京大学新闻与传播教授许渊冲在家中安详离世，享年100岁。</div>
+                    <div style="margin-top: 10px">6月17日9时22分，神舟十二号载人飞船在酒泉卫星发射中心成功点火发射。</div>
+                    <div style="margin-top: 10px">6月17日15时54分，神舟十二号载人飞船入轨后采用自主快速交会对接模式成功对接于天和核心舱前向端口。</div>
+                    <div style="margin-top: 10px">6月24日——微软发布Windows 11操作系统。</div>
+                    <div style="margin-top: 10px">6月26日至7月18日，环法自行车赛，法国。</div>
+                    <div style="margin-top: 10px">6月27日——上海地铁桂林路站开通</div>
+                    <div style="margin-top: 10px">6月28日——商合杭高铁合湖段开通1周年。</div>
+                    <div style="margin-top: 10px">6月28日至7月11日，温布尔登网球公开赛，英国伦敦。</div>
+                    <div style="margin-top: 10px">6月29日——iPhone上市14周年。</div>
+                    <div style="margin-top: 10px">6月30日——南昌地铁2号线全线开通运营2周年。</div>
                 </el-collapse-item>
                 <el-collapse-item title="7月" name="7">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">7月1日——中国共产党成立100周年。</div>
+                    <div style="margin-top: 10px">7月1日——香港回归24周年。</div>
+                    <div style="margin-top: 10px">7月1日——青藏铁路通车15周年。</div>
+                    <div style="margin-top: 10px">7月4日8时11分，神舟十二号航天员乘组首次次出舱任务圆满完成。</div>
+                    <div style="margin-top: 10px">7月13日——北京申奥成功20周年。</div>
+                    <div style="margin-top: 10px">7月15日——《中华人民共和国行政处罚法》实施。</div>
+                    <div style="margin-top: 10px">7月23日至8月8日——2020年东京奥运会举办。</div>
+                    <div style="margin-top: 10px">7月28日——秘鲁独立200周年。</div>
+                    <div style="margin-top: 10px">7月28日——唐山大地震45周年祭。</div>
+                    <div style="margin-top: 10px">7月31日——北京申冬奥成功6周年。</div>
                 </el-collapse-item>
                 <el-collapse-item title="8月" name="8">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">8月1日——中国人民解放军建军94周年。</div>
+                    <div style="margin-top: 10px">8月7日——舟曲特大泥石流11周年（8·7甘肃舟曲特大泥石流）。</div>
+                    <div style="margin-top: 10px">8月8日——八八水灾12周年纪念日。</div>
+                    <div style="margin-top: 10px">8月8日——2008年北京奥运会13周年纪念日，第13个全民健身日。</div>
+                    <div style="margin-top: 10px">8月15日——阿富汗塔利班控制首都喀布尔。阿塔晚间发表声明，为维护社会治安，已批准武装人员以“和平”方式进入城市。总统府已被阿塔武装分子控制，总统加尼则连夜“出走”海外。</div>
+                    <div style="margin-top: 10px">8月16日——阿富汗总统加尼首次发声。在脸书发文承认自己已经离开阿富汗，称离开阿富汗是“艰难的选择”，是为了“避免大量的流血冲突”。</div>
+                    <div style="margin-top: 10px">8月18日至29日——第31届世界大学生夏季运动会（原定举办时间，后延期到2022）。</div>
+                    <div style="margin-top: 10px">8月18日——南昌地铁2号线首通段开通运营4周年。</div>
+                    <div style="margin-top: 10px">8月20日8时38分，神舟十二号航天员乘组第二次出舱任务圆满完成。</div>
+                    <div style="margin-top: 10px">8月24日至9月5日——2020年东京残奥会举办</div>
+                    <div style="margin-top: 10px">8月30日至9月12日，美国网球公开赛，美国纽约。</div>
                 </el-collapse-item>
                 <el-collapse-item title="9月" name="9">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">9月1日——《中华人民共和国城市维护建设税法》、《中华人民共和国契税法》正式施行。</div>
+                    <div style="margin-top: 10px">9月3日——中国人民抗日战争暨世界反法西斯战争胜利76周年。</div>
+                    <div style="margin-top: 10px">9月7日——签署《辛丑条约》120周年。</div>
+                    <div style="margin-top: 10px">9月11日——9·11事件20周年。</div>
+                    <div style="margin-top: 10px">9月12日——香港迪士尼乐园开幕16周年。</div>
+                    <div style="margin-top: 10px">9月13日——中国人民解放军联勤保障部队成立5周年。</div>
+                    <div style="margin-top: 10px">9月15日——危地马拉、洪都拉斯、萨尔瓦多、尼加拉瓜、哥斯达黎加独立200周年。</div>
+                    <div style="margin-top: 10px">9月15日至27日——中华人民共和国第十四届运动会在陕西省举办，这是全运会首次在我国中西部地区举办。</div>
+                    <div style="margin-top: 10px">9月16日，神舟十二号载人飞船撤离空间站组合体。</div>
+                    <div style="margin-top: 10px">9月17日13时30分许 神舟十二号返回舱在东风着陆场安全着陆。</div>
+                    <div style="margin-top: 10px">9月18日——九一八事变90周年。</div>
+                    <div style="margin-top: 10px">9月22日~27日——第46届世界技能大赛原计划在中国上海举行，现已推迟至2022年，预计在10月至11月间举办。受此影响，原定于2023年在法国里昂举办的第47届世界技能大赛也将推迟至2024年举办。</div>
                 </el-collapse-item>
                 <el-collapse-item title="10月" name="10">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">10月1日——中华人民共和国成立72周年。</div>
+                    <div style="margin-top: 10px">10月1日至2022年3月31日——延期后的迪拜世博会举办。</div>
+                    <div style="margin-top: 10px">10月3日——两德统一31周年。</div>
+                    <div style="margin-top: 10px">10月7日——北京地铁5号线通车运行14周年。</div>
+                    <div style="margin-top: 10px">10月9日至17日，汤姆斯杯/尤伯杯羽毛球团体赛，丹麦奥胡斯。</div>
+                    <div style="margin-top: 10px">10月10日——辛亥革命爆发110周年。</div>
+                    <div style="margin-top: 10px">10月16日——神舟十三号载人飞船发射取得圆满成功。</div>
+                    <div style="margin-top: 10px">10月16日6时56分，神舟十三号载人飞船与空间站组合体完成自主快速交会对接。</div>
+                    <div style="margin-top: 10px">10月17日——仰韶文化发现暨中国现代考古学诞生100周年纪念大会在河南三门峡举行。</div>
+                    <div style="margin-top: 10px">10月18日——河北大学建校100周年。</div>
+                    <div style="margin-top: 10px">10月22日——红军长征胜利85周年。</div>
+                    <div style="margin-top: 10px">10月22日至29日——中华人民共和国第十一届残疾人运动会暨第八届特殊奥林匹克运动会在陕西省举办，这是全运会与全国残运会暨特奥会首次同年同地举办， 从而实现了与国际的接轨。</div>
+                    <div style="margin-top: 10px">10月27日——北京冬奥会开幕倒计时100天。</div>
+                    <div style="margin-top: 10px">10月24日——“嫦娥一号”探月飞船升空14周年。</div>
                 </el-collapse-item>
                 <el-collapse-item title="11月" name="11">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">11月7日，神舟十三号航天员乘组首次出舱任务圆满完成。</div>
+                    <div style="margin-top: 10px">11月12日——孙中山先生诞辰155周年。</div>
+                    <div style="margin-top: 10px">11月12日——中国人民银行2015年版第五套人民币100元纸币发行6周年。</div>
+                    <div style="margin-top: 10px">11月16日至21日——空手道世界锦标赛在迪拜举行。</div>
+                    <div style="margin-top: 10px">11月19日——中国标准时间15:19~18:47发生月偏食，亚洲东部、欧洲中西部、非洲西部、大洋洲除澳大利亚西岸外的部分、整个美洲可见。其中中国仅黑龙江极东北角很小的区域可见全过程，新疆中西部、西藏中西部完全不可见，其余地区带食月出。</div>
+                    <div style="margin-top: 10px">11月20日至28日——第三届亚洲青年运动会将在中国汕头举行。</div>
+                    <div style="margin-top: 10px">11月23日，韩国前总统全斗焕在家中去世，终年90岁。</div>
+                    <div style="margin-top: 10px">11月24日——北京冬残奥会开幕倒计时100天。</div>
+                    <div style="margin-top: 10px">11月29日至12月5日，世界羽毛球锦标赛，西班牙韦尔瓦。</div>
                 </el-collapse-item>
                 <el-collapse-item title="12月" name="12">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">12月1日——商合杭高铁商合段开通2周年。</div>
+                    <div style="margin-top: 10px">12月4日——南极洲部分地区发生日全食，整个南极洲、南美洲南端、非洲南端、澳大利亚东南角、新西兰南端可见日偏食。中国不可见</div>
+                    <div style="margin-top: 10px">12月5日——南非前总统纳尔逊·罗利赫拉赫拉·曼德拉逝世8周年。</div>
+                    <div style="margin-top: 10px">12月7日——偷袭珍珠港80周年。</div>
+                    <div style="margin-top: 10px">12月11日——中国加入世界贸易组织20周年。</div>
+                    <div style="margin-top: 10px">12月11日至21日，第30届世界大学生冬季运动会，瑞士卢塞恩。</div>
+                    <div style="margin-top: 10px">12月12日——西安事变85周年。</div>
+                    <div style="margin-top: 10px">12月13日至18日，世界短池游泳锦标赛，阿联酋阿布扎比。</div>
+                    <div style="margin-top: 10px">12月18日——王安石诞辰1000周年。</div>
+                    <div style="margin-top: 10px">12月20日——澳门回归22周年。</div>
+                    <div style="margin-top: 10px">12月25日——苏联解体30周年。</div>
+                    <div style="margin-top: 10px">12月25日——美国宇航局詹姆斯·韦伯太空望远镜在法属圭亚那库鲁基地发射升空。</div>
+                    <div style="margin-top: 10px">12月26日——洛阳地铁二号线开通运营。</div>
+                    <div style="margin-top: 10px">12月26日——2004年印度洋大地震17周年纪念日。</div>
+                    <div style="margin-top: 10px">12月26日——南昌地铁1号线一期全线开通6周年。</div>
+                    <div style="margin-top: 10px">12月26日——毛泽东同志诞辰128周年纪念日。</div>
+                    <div style="margin-top: 10px">12月26日，神舟十三号航天员乘组第二次出舱任务圆满完成。</div>
+                    <div style="margin-top: 10px">12月28日—— 南宁地铁1号线全线开通5周年。</div>
+                    <div style="margin-top: 10px">12月28日—— 南宁地铁2号线全线开通5周年。</div>
+                    <div style="margin-top: 10px">12月28日—— 佛山地铁2号线开通运营。</div>
+                    <div style="margin-top: 10px">12月28日——南宁地铁3号线全线开通3周年。</div>
+                    <div style="margin-top: 10px">12月30日——南昌地铁3号线一期全线开通1周年。</div>
+                    <div style="margin-top: 10px">12月30日——零时43分，长征三号乙遥八十四运载火箭在西昌卫星发射中心点火升空，成功将通信技术试验卫星九号送入预定轨道，发射任务取得圆满成功，为中国航天全年宇航发射任务画上了圆满的句号。</div>
+                    <div style="margin-top: 10px">12月31日——南昌地铁4号线一期全线开通。</div>
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
-        <el-tab-pane label="2022">2022年
+        <el-tab-pane label="2022">
+            <img src="../assets/zodiac/tiger.svg" class="zodiac">
+            <span class="year">2022年</span>
             <el-collapse v-model="activeNames" @change="handleChange" >
                 <el-collapse-item title="1月" name="1">
-                    <div>1月1日——被瑞士选民于1999年投票表决通过的新《瑞士宪法》正式实施。</div>
-                    <div>1月1日——汉中音乐广播正式开播。</div>
+                    <div style="margin-top: 10px">1月1日——《中华人民共和国监察官法》、《中华人民共和国法律援助法》、《中华人民共和国家庭教育促进法》、《中华人民共和国陆地国界法》、《中华人民共和国科学技术进步法》实行。</div>
+                    <div style="margin-top: 10px">1月1日——《征信业务管理办法》、《区域全面经济伙伴关系协定》（RCEP）实行。</div>
+                    <div style="margin-top: 10px">1月1日——《全国人民代表大会常务委员会关于修改 中华人民共和国审计法 的决定》、《全国人民代表大会常务委员会关于修改 中华人民共和国民事诉讼法 的决定》、《全国人民代表大会常务委员会关于修改 中华人民共和国工会法 的决定》实行。</div>
+                    <div style="margin-top: 10px">1月15日12时27分（北京时间），南太平洋岛国汤加海域Hunga Tonga火山发生大规模喷发并引发局地海啸。</div>
+                    <div style="margin-top: 10px">1月18日，“缅怀抗战英烈，振兴民族精神”——“一·二八”淞沪抗战90周年纪念活动在十九路军淞沪抗日阵亡将士陵园先烈纪念碑前举行。</div>
                 </el-collapse-item>
                 <el-collapse-item title="2月" name="2">
-                    <div>控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；</div>
-                    <div>页面反馈：操作后，通过页面元素的变化清晰地展现当前状态。</div>
+                    <div style="margin-top: 10px">2月4日~2月20日——2022年北京冬季奥运会在中国北京和张家口举行。</div>
+                    <div style="margin-top: 10px">2月20日——第二十四届冬季奥林匹克运动会闭幕式在国家体育场举行。</div>
+                    <div style="margin-top: 10px">2月24日，随着俄罗斯总统普京对乌克兰宣战，俄乌战争正式拉开序幕。</div>
                 </el-collapse-item>
                 <el-collapse-item title="3月" name="3">
-                    <div>简化流程：设计简洁直观的操作流程；</div>
-                    <div>清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；</div>
-                    <div>帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</div>
+                    <div style="margin-top: 10px">3月——2022年世界半程马拉松锦标赛在中国扬州举行。</div>
+                    <div style="margin-top: 10px">3月1日——《中华人民共和国医师法》实行。</div>
+                    <div style="margin-top: 10px">3月1日——《中华人民共和国市场主体登记管理条例》实行。</div>
+                    <div style="margin-top: 10px">3月1日——《全国人民代表大会常务委员会关于修改 中华人民共和国种子法 的决定》实行。</div>
+                    <div style="margin-top: 10px">3月4日~3月13日——2022年北京冬季残疾人奥林匹克运动会（简称：2022年北京冬残奥会）在中国北京和张家口举行。</div>
+                    <div style="margin-top: 10px">3月4日-3月10日，全国政协十三届五次会议在北京召开。</div>
+                    <div style="margin-top: 10px">3月5日-3月11日，十三届全国人大五次会议在北京召开。</div>
+                    <div style="margin-top: 10px">3月21日，东航MU5735客机在飞行过程中坠毁，造成132人遇难。事件主词条：3·21东航客机事故</div>
                 </el-collapse-item>
                 <el-collapse-item title="4月" name="4">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">4月——第四届世界古都论坛在洛阳市举办。</div>
+                    <div style="margin-top: 10px">4月1日，《机动车驾驶证申领和使用规定》实行。</div>
+                    <div style="margin-top: 10px">2022年4月8日上午，北京冬奥会冬残奥会总结表彰大会在人民大会堂举行；同日，武汉解封两周年。</div>
+                    <div style="margin-top: 10px">4月28日，全国五一劳动奖和全国工人先锋号表彰大会举行。</div>
+                    <div style="margin-top: 10px">4月29日，4·29长沙自建房倒塌事故。</div>
                 </el-collapse-item>
                 <el-collapse-item title="5月" name="5">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">5月——中国共产主义青年团成立100周年。</div>
+                    <div style="margin-top: 10px">5月1日——内蒙古自治区成立75周年。</div>
+                    <div style="margin-top: 10px">5月1日——《中华人民共和国反有组织犯罪法》施行。</div>
+                    <div style="margin-top: 10px">5月1日——《信访工作条例》施行。</div>
+                    <div style="margin-top: 10px">5月6日，亚洲奥林匹克理事会向外界发布通告，宣布原定于2022年9月10日至25日在中国杭州举办的第19届亚洲运动会将延期举行。</div>
+                    <div style="margin-top: 10px">5月13日~5月29日——第19届国际泳联世界锦标赛在日本福冈举行</div>
+                    <div style="margin-top: 10px">5月16日，微软Edge浏览器官网微博发文宣布将于2022年6月16日正式停用IE浏览器，包括终止对IE浏览器的更新和技术支持。之后由Edge浏览器代替服务。</div>
                 </el-collapse-item>
                 <el-collapse-item title="6月" name="6">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">6月1日——《中华人民共和国湿地保护法》实行。</div>
+                    <div style="margin-top: 10px">6月1日，6·1芦山地震。</div>
+                    <div style="margin-top: 10px">6月5日——《中华人民共和国噪声污染防治法》实行。 [24]  神舟十四号发射取得圆满成功。</div>
+                    <div style="margin-top: 10px">6月26日~7月7日——第31届世界大学生夏季运动会在中国成都举行。（延期）</div>
+                    <div style="margin-top: 10px">6月7日23时，新疆画院退休干部、国家一级美术师阿曼·艾孜力比克（艺名“阿曼·穆罕诺夫”）同志，因病医治无效，在家中逝世，享年86岁。</div>
+                    <div style="margin-top: 10px">6月10日，安徽日报社原党组副书记、副总编辑余士锟因病在合肥逝世，享年95岁。</div>
+                    <div style="margin-top: 10px">6月17日上午，我国第三艘航空母舰下水命名仪式在中国船舶集团有限公司江南造船厂举行。经中央军委批准，我国第三艘航空母舰命名为“中国人民解放军海军福建舰”，舷号为“18”。</div>
+                    <div style="margin-top: 10px">6月19日，中国共产党的优秀党员，第十三届全国人大代表，北京人民艺术剧院院长、著名导演、艺术委员会主任任鸣同志，因病医治无效，在北京逝世，享年62岁。</div>
+                    <div style="margin-top: 10px">6月19日3时38分，中国排坛名宿、资深教练李耀先同志因病医治无效在北京东方医院去世，享年87岁。</div>
+                    <div style="margin-top: 10px">6月20日凌晨，湖南前省委书记熊清泉先生因病医治无效，于长沙辞世，享年95岁。</div>
                 </el-collapse-item>
                 <el-collapse-item title="7月" name="7">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">7月——2021年国际篮联亚洲杯在印度尼西亚雅加达举行。</div>
+                    <div style="margin-top: 10px">7月1日——香港回归中国25周年。</div>
+                    <div style="margin-top: 10px">7月1日——《中华人民共和国印花税法》实行。</div>
+                    <div style="margin-top: 10px">7月7日——七七事变爆发85周年纪念日。</div>
+                    <div style="margin-top: 10px">7月21日2022世界动力电池大会在长江首城宜宾拉开帷幕。</div>
+                    <div style="margin-top: 10px">7月15日~7月24日——2022年尤金田径世界锦标赛举行。</div>
                 </el-collapse-item>
                 <el-collapse-item title="8月" name="8">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">8月1日——中国人民解放军建军95周年。</div>
                 </el-collapse-item>
                 <el-collapse-item title="9月" name="9">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px"></div>
                 </el-collapse-item>
                 <el-collapse-item title="10月" name="10">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">10月——第46届世界技能大赛在中国上海举行。</div>
                 </el-collapse-item>
                 <el-collapse-item title="11月" name="11">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">11月5日~11月10日——第五届中国国际进口博览会在国家会展中心（上海）举行。</div>
+                    <div style="margin-top: 10px">11月12日——中国人民银行2015年版第五套人民币100元纸币发行7周年。</div>
+                    <div style="margin-top: 10px">11月21日~12月18日——2022年卡塔尔世界杯在卡塔尔举行。</div>
                 </el-collapse-item>
                 <el-collapse-item title="12月" name="12">
-                    <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
-                    <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                    <div style="margin-top: 10px">12月13日——南京大屠杀爆发85周年。</div>
+                    <div style="margin-top: 10px">12月20日至28日，在广东省汕头市举行第三届亚青会</div>
                 </el-collapse-item>
             </el-collapse>
         </el-tab-pane>
@@ -3385,36 +5570,54 @@
         name: "Aside",
         data:function () {
             return {tabPosition:"left",
-                timeLineHeight: "",
+                timeLineHeight: 0,
             }
         },
         methods: {
-            handleChange(val) {
-                console.log(val);
-            }
+
         },
-        mounted() {
-            this.timeLineHeight = document.documentElement.clientHeight;
-            window.onresize = () => {
-                this.timeLineHeight = document.documentElement.clientHeight;
-            };
-        }
+        created() {
+            let h = document.documentElement.clientHeight || document.body.clientHeight;
+            this.timeLineHeight = h - 130 + 'px';
+        },
 
     }
 </script>
 
 <style>
-    .el-tabs{
-        margin: 32px;
-    }
+
+    /* 标签内容左右边界 */
     .demo-tabs > .el-tabs__content {
-        padding: 32px;
-        color: #6b778c;
+       
+
+    }
+
+    /* 标签内容月份之间的间距 */
+    .el-collapse-item{
+        margin-top: 20px;
+        
+    }
+    .el-collapse-item__wrap{
+        background-color: #d3dce6;
+        
+    }
+
+    /* 标题：年份属性 */
+    .year{
         font-size: 32px;
         font-weight: 600;
+        color: black;
+        margin-left: 15px;
     }
+
+    /* 标题：十二生肖图片大小 */
+    .zodiac{
+        width: 50px;
+    }
+
     .el-tabs--right .el-tabs__content,
     .el-tabs--left .el-tabs__content {
         height: 100%;
     }
+
 </style>
